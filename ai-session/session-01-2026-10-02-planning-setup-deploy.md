@@ -3,8 +3,8 @@
 - **Project:** khmer-menus (Khmer Menu Intelligence Challenge)
 - **Session file:** `b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl`
 - **Started:** 2026-10-02T03:22:59.781Z
-- **Last activity:** 2026-10-02T05:47:03.740Z
-- **User turns:** 49
+- **Last activity:** 2026-10-02T05:56:50.615Z
+- **User turns:** 50
 
 > Exported from the Claude Code transcript. Hidden reasoning and system messages are omitted;
 > tool calls are collapsed (click to expand) with truncated results. API keys are redacted.
@@ -11042,6 +11042,644 @@ uploading 0 files (6 unchanged, skipped)...
 publish_result.live_version_id=01M3XH7WWFREDV904F6G1V3BNE
 no password → page 401, proxy 401
 with password → live bundle: assets/index-D3mcU-5r.js · local: index-D3mcU-5r.js · menus.json 200 · proxy: ok
+```
+
+</details>
+
+### 🤖 Claude
+
+The live site was already on the latest build: 0 files changed, same version. One last session export so the log includes this redeploy check:
+
+<details><summary>🔧 <b>Bash</b> — Final re-export of the session log with secret check</summary>
+
+```bash
+node scripts/export-session.mjs ~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" && (grep -qE "sk-or-v1-[A-Za-z0-9]{10}|hnk_[A-Za-z0-9]{10}" ai-session/*.md && echo "❌ secret pattern" || echo "secret scan: clean")
+```
+
+**Result** ✅
+
+```
+wrote ai-session/session-01-2026-10-02-planning-setup-deploy.md (49 user turns)
+secret scan: clean
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 Final session export, redeploy, wrap-up — ✅ Done
+
+### 📊 Summary
+- **Session log:** exported to [ai-session/session-01-2026-10-02-planning-setup-deploy.md](ai-session/session-01-2026-10-02-planning-setup-deploy.md), 49 user turns. No secret values or key patterns appear in it.
+- **Redeploy:** the live site was **already on the latest build**. The rebuild produced the same bundle, so 0 files were uploaded and the version stayed the same.
+- **Verified live:** the password gate is on, and with the password the page, data and AI proxy all work.
+- **Time:** about **2h25 of the 3h budget** (03:22 → 05:47 UTC).
+
+### ✅ Final state
+| Item | Status |
+|---|---|
+| Live app | https://swift-sleet-z44r.here.now/, password-protected (`SITE_PASSWORD` in `.env`) |
+| Without the password | Page **401**, `/api/chat` **401** |
+| With the password | Live bundle `index-D3mcU-5r.js` matches local; `menus.json` 200; proxy replied "ok" |
+| Build | Production (minified, no source map); `tsc` and lint clean |
+| Secrets | `.env` git-ignored; live-site scan clean; session-log scan clean |
+
+### 📦 Deliverables
+| Deliverable | Where |
+|---|---|
+| Plan, accuracy prediction, pre-build assumptions | [PLAN.md](PLAN.md) / [PLAN.txt](PLAN.txt) |
+| Live app with recommendations | here.now link above (brief answer: **Rainbow, $5.50**) |
+| C4 system design, data storage, data flows, tech stack | [README.md](README.md) → System design, plus [docs/diagrams/](docs/diagrams/) |
+| Extraction method, measured accuracy (with method and intervals), cost | README → Step 1 |
+| Algorithm, flow diagram, worked example | README → Step 2 |
+| Chat agent (Gemini 3.5 Flash, custom tool-calling loop) | README → Step 3 |
+| What changed vs the plan, final assumptions, limitations, self-critique, future work | README (end sections) |
+| AI session log | [ai-session/](ai-session/) |
+
+### ⚠️ Not committed
+These are modified or new and not committed: `README.md`, `package.json`, `.env.example`, `scripts/export-session.mjs`, `src/App.tsx`, `src/index.css`, `src/components/QuickPlanner.tsx`, `docs/`, the session log. Commit when you're ready; I haven't made any commits.
+
+### 📋 After the challenge
+1. 🔴 Revoke the throwaway OpenRouter key, and delete the here.now account variable `OPENROUTER_API_KEY`.
+2. 🟡 Share the site password only with the reviewers. Change it afterwards, or take the site down.
+3. 🟢 Commit the final state, including `docs/diagrams/` and the session log.
+
+---
+
+## 🧑 User — turn 50 · 05:53 UTC
+
+Your GitHub repo, benchmarks, and AI usage trail. As described in the information sheet. Commit as you go, keep raw benchmark numbers and scripts, and save prompts, transcripts, and tool logs, including your full Claude Code or other agent session history for this project. These are submissions, not suggestions.
+
+Let mention where to find items in README
+
+### 🤖 Claude
+
+I'll start by checking the repo's current state: commits, remote, what's tracked, and what's ignored that the submission needs.
+
+<details><summary>🔧 <b>Bash</b> — Inspect git history, remote, tracked files and ignore rules</summary>
+
+```bash
+git log --oneline | head -20; echo "--- remotes:"; git remote -v; echo "--- gh:"; gh auth status 2>&1 | head -3; echo "--- tracked count/size:"; git ls-files | wc -l; git ls-files | grep -c "^data/raw/"; echo "--- ignore rules:"; cat .gitignore; echo "--- ignored but relevant:"; git check-ignore -v logs/llm-usage.jsonl logs/run-extract-full.log data/cache/extract data/cache/crosscheck 2>&1; ls logs; du -sh data/cache/*
+```
+
+**Result** ✅
+
+```
+760d406 feat: add algorithm flow diagrams and sequence diagrams for chat requests
+c72d063 feat: add debug logging, menu data loading, and meal planning functionality
+--- remotes:
+origin	git@github.com:thanhlam2410/khmer-meal-planner.git (fetch)
+origin	git@github.com:thanhlam2410/khmer-meal-planner.git (push)
+--- gh:
+(eval):1: command not found: gh
+--- tracked count/size:
+      89
+32
+--- ignore rules:
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.
+… [truncated 763 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Un-ignore logs and raw model outputs; scan them for secrets</summary>
+
+```bash
+python3 - <<'E'
+p='.gitignore'; s=open(p).read()
+s=s.replace("# Logs\nlogs\n*.log\n","# Logs (logs/ IS committed: LLM usage log + pipeline run logs are part of the AI usage trail)\n*.log\n!logs/*.log\n",1)
+s=s.replace("# Raw dataset archive + extraction cache\nkhmer-menus.zip\ndata/cache/\n","# Raw dataset archive + re-encoded JPEGs (raw model outputs in data/cache/extract + crosscheck ARE committed)\nkhmer-menus.zip\ndata/cache/jpeg/\n",1)
+open(p,'w').write(s)
+E
+git status --short --untracked-files=all | grep -E "logs/|data/cache" | head; python3 - <<'E'
+import re, glob, os
+env={}
+for l in open('.env'):
+    l=l.strip()
+    if l and not l.startswith('#') and '=' in l:
+        k,v=l.split('=',1); env[k]=v
+secrets=[v for k,v in env.items() if any(t in k for t in ('KEY','PASSWORD','TOKEN','CODE','SECRET')) and len(v)>=6]
+files=glob.glob('logs/*')+glob.glob('data/cache/extract/*')+glob.glob('data/cache/crosscheck/*')
+bad=[]
+for f in files:
+    c=open(f,errors='replace').read()
+    if any(v in c for v in secrets) or re.search(r'sk-or-v1-[A-Za-z0-9]{10}|hnk_[A-Za-z0-9]{10}|Bearer [A-Za-z0-9_-]{20}',c): bad.append(f)
+print(f'scanned {len(files)} files to be tracked → secrets found: {bad or "none ✅"}')
+E
+```
+
+**Result** ✅
+
+```
+?? data/cache/crosscheck/2026-07-20_22-23-50.png.json
+?? data/cache/crosscheck/2026-07-20_22-24-59.png.json
+?? data/cache/crosscheck/2026-07-20_22-27-14.png.json
+?? data/cache/crosscheck/2026-07-20_22-31-05.png.json
+?? data/cache/crosscheck/2026-07-20_22-31-15.png.json
+?? data/cache/crosscheck/2026-07-20_22-36-45.png.json
+?? data/cache/crosscheck/2026-07-20_22-43-25.png.json
+?? data/cache/crosscheck/2026-07-20_22-47-26.png.json
+?? data/cache/crosscheck/2026-07-21_11-15-08.png.json
+?? data/cache/crosscheck/2026-07-21_11-16-25.png.json
+scanned 44 files to be tracked → secrets found: none ✅
+```
+
+</details>
+
+### 🤖 Claude
+
+No secrets in the 44 files. I'll look at what's already pending, so the commits can be grouped logically:
+
+<details><summary>🔧 <b>Bash</b> — Show pending changes and commit author config</summary>
+
+```bash
+git diff --stat && git status --short --untracked-files=normal && git log -1 --format='%an <%ae>' && git config user.name; git config user.email
+```
+
+**Result** ✅
+
+```
+.gitignore | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ M .gitignore
+?? data/cache/
+?? logs/
+lam <thanhlam24101991@gmail.com>
+lam
+thanhlam24101991@gmail.com
+```
+
+</details>
+
+### 🤖 Claude
+
+You already committed the app, README and diagrams, so only the newly tracked raw data is pending. **Commit 1:** raw model outputs and LLM logs.
+
+<details><summary>🔧 <b>Bash</b> — Commit raw model outputs and LLM logs</summary>
+
+```bash
+git add .gitignore data/cache/extract data/cache/crosscheck logs && git commit -q -m "chore: track raw model outputs and LLM usage logs
+
+- data/cache/extract/*.json: raw Gemini 2.5 Pro extraction output per image
+  (prompt result, model, usage, latency) — the input to every benchmark
+- data/cache/crosscheck/*.json: raw Claude Opus 5.5 per-item verdicts
+- logs/llm-usage.jsonl: every OpenRouter call (tokens, reasoning tokens, cost, latency, errors)
+- logs/run-*.log: console output of the full extraction and cross-check runs
+- .gitignore: only re-encoded JPEGs stay ignored; scanned for secrets (none)
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" && git log --oneline -1 && git show --stat HEAD | tail -3
+```
+
+**Result** ✅
+
+```
+b5c68e2 chore: track raw model outputs and LLM usage logs
+ logs/run-crosscheck.log                            |   14 +
+ logs/run-extract-full.log                          |   34 +
+ 45 files changed, 18522 insertions(+), 4 deletions(-)
+```
+
+</details>
+
+### 🤖 Claude
+
+**Commit 2:** benchmarks. Three repeatable scripts, each writing raw JSON plus a readable Markdown summary into `benchmarks/results/`:
+
+<details><summary>🔧 <b>Bash</b> — Write three benchmark scripts, add npm bench, run them</summary>
+
+```bash
+mkdir -p /Users/lam/Projects/khmer-menus/benchmarks/results && cd /Users/lam/Projects/khmer-menus/benchmarks && cat > extraction_accuracy.py <<'E'
+#!/usr/bin/env python3
+"""Extraction accuracy benchmark (model-vs-model agreement).
+
+Reads the raw cross-check verdicts (Claude Opus 5.5 judging Gemini 2.5 Pro's extraction) from
+data/cache/crosscheck/ and the extractions from data/cache/extract/, and writes:
+  benchmarks/results/extraction-accuracy.json   raw numbers (per field, per image, every disputed item)
+  benchmarks/results/extraction-accuracy.md     readable summary
+
+    python3 benchmarks/extraction_accuracy.py      (stdlib only)
+"""
+
+import json
+import math
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+CC = ROOT / "data" / "cache" / "crosscheck"
+EX = ROOT / "data" / "cache" / "extract"
+OUT = ROOT / "benchmarks" / "results"
+FIELDS = ["exists", "name_km_ok", "translation_ok", "price_ok", "category_ok"]
+PREDICTED = {  # written in PLAN.md §5 before any image was processed
+    "exists": None, "name_km_ok": "60–75%", "translation_ok": "85–90%", "price_ok": "88–93%", "category_ok": "90–95%",
+}
+
+
+def wilson(k: int, n: int, z: float = 1.96):
+    if n == 0:
+        return None, None
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
+    return round(100 * (c - h), 1), round(100 * (c + h), 1)
+
+
+def rate(verdicts, field):
+    vals = [v.get(field) for v in verdicts if isinstance(v.get(field), bool)]
+    k, n = sum(vals), len(vals)
+    lo, hi = wilson(k, n)
+    return {"agreed": k, "judged": n, "rate_pct": round(100 * k / n, 1) if n else None, "ci95_pct": [lo, hi]}
+
+
+def main():
+    audits = [json.loads(p.read_text()) for p in sorted(CC.glob("*.json"))]
+    all_v, per_image, disputed = [], [], []
+    for a in audits:
+        vs = a["result"].get("items", [])
+        all_v += vs
+        ex = json.loads((EX / f"{a['image']}.json").read_text())
+        names = {f"{Path(a['image']).stem}#{i + 1:03d}": it.get("name_en") for i, it in enumerate(ex["result"]["items"])}
+        per_image.append({
+            "image": a["image"],
+            "items_extracted": len(ex["result"]["items"]),
+            "items_judged": len(vs),
+            "missing_items_reported": len(a["result"].get("missing_items") or []),
+            **{f: rate(vs, f)["rate_pct"] for f in FIELDS},
+            "judge_model": a.get("model"),
+            "judge_cost_usd": (a.get("usage") or {}).get("cost"),
+        })
+        for v in vs:
+            bad = [f for f in FIELDS if v.get(f) is False]
+            if bad:
+                disputed.append({"id": v.get("id"), "name_en": names.get(v.get("id")), "failed": bad, "note": v.get("note")})
+
+    all_ok = sum(all(v.get(f) is not False for f in FIELDS) for v in all_v)
+    lo, hi = wilson(all_ok, len(all_v))
+    price_bad_images = sorted({d["id"].split("#")[0] for d in disputed if "price_ok" in d["failed"]})
+    result = {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "method": "Claude Opus 5.5 judged each extracted item against the menu image (true/false per field). "
+        "rate = agreed / judged; 95% Wilson interval. Model-vs-model agreement, not human ground truth.",
+        "sample": {
+            "images_total": len(list(EX.glob("*.json"))),
+            "images_audited": len(audits),
+            "items_audited": len(all_v),
+            "selection": "random, ceil(31 × 0.3) = 10 images, seed 42 (scripts/extraction/extract.py)",
+        },
+        "fields": {f: {**rate(all_v, f), "predicted": PREDICTED[f]} for f in FIELDS},
+        "all_fields_correct": {"agreed": all_ok, "judged": len(all_v), "rate_pct": round(100 * all_ok / len(all_v), 1), "ci95_pct": [lo, hi]},
+        "missing_items_reported": sum(p["missing_items_reported"] for p in per_image),
+        "price_disputes_by_image": price_bad_images,
+        "per_image": per_image,
+        "disputed_items": disputed,
+    }
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "extraction-accuracy.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
+
+    label = {"exists": "Item exists", "name_km_ok": "Khmer spelling", "translation_ok": "English meaning", "price_ok": "Price", "category_ok": "Category"}
+    lines = [
+        "# Extraction accuracy (model-vs-model)",
+        "",
+        f"Generated {result['generated_at']} by `benchmarks/extraction_accuracy.py` from `data/cache/crosscheck/`.",
+        "",
+        f"Sample: {len(audits)} of {result['sample']['images_total']} images, {len(all_v)} items. {result['method']}",
+        "",
+        "| Field | Predicted | Agreed | Rate | 95% CI |",
+        "|---|---|---|---|---|",
+    ]
+    for f in FIELDS:
+        r = result["fields"][f]
+        lines.append(f"| {label[f]} | {r['predicted'] or '—'} | {r['agreed']}/{r['judged']} | {r['rate_pct']}% | {r['ci95_pct'][0]}–{r['ci95_pct'][1]}% |")
+    a = result["all_fields_correct"]
+    lines += [
+        f"| All fields | — | {a['agreed']}/{a['judged']} | {a['rate_pct']}% | {a['ci95_pct'][0]}–{a['ci95_pct'][1]}% |",
+        "",
+        f"Missing items reported: {result['missing_items_reported']}. Price disputes come from: {', '.join(price_bad_images) or 'none'}.",
+        "",
+        "## Per image",
+        "",
+        "| Image | Items | Exists | Khmer | English | Price | Category | Missing |",
+        "|---|---|---|---|---|---|---|---|",
+    ]
+    for p in per_image:
+        lines.append(f"| {p['image']} | {p['items_judged']} | {p['exists']} | {p['name_km_ok']} | {p['translation_ok']} | {p['price_ok']} | {p['category_ok']} | {p['missing_items_reported']} |")
+    (OUT / "extraction-accuracy.md").write_text("\n".join(lines) + "\n")
+    print(f"wrote {OUT.relative_to(ROOT)}/extraction-accuracy.json + .md ({len(all_v)} items, {len(disputed)} disputed)")
+
+
+if __name__ == "__main__":
+    main()
+E
+cat > llm_usage.py <<'E'
+#!/usr/bin/env python3
+"""LLM usage benchmark: calls, tokens, cost and latency per stage/model from logs/llm-usage.jsonl.
+
+    python3 benchmarks/llm_usage.py      (stdlib only)
+
+Writes benchmarks/results/llm-usage.json + .md. The chat agent's runtime calls happen in visitors'
+browsers and are not in this log (only offline pipeline calls are).
+"""
+
+import json
+import statistics
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LOG = ROOT / "logs" / "llm-usage.jsonl"
+OUT = ROOT / "benchmarks" / "results"
+
+
+def pct(xs, q):
+    xs = sorted(xs)
+    return round(xs[min(len(xs) - 1, int(q * (len(xs) - 1) + 0.5))], 1) if xs else None
+
+
+def main():
+    rows = [json.loads(l) for l in LOG.read_text().splitlines() if l.strip()]
+    groups = defaultdict(list)
+    for r in rows:
+        groups[(r.get("stage"), r.get("model_requested"))].append(r)
+    summary = []
+    for (stage, model), rs in sorted(groups.items()):
+        ok = [r for r in rs if r.get("ok")]
+        secs = [r["seconds"] for r in ok if r.get("seconds") is not None]
+        summary.append({
+            "stage": stage,
+            "model": model,
+            "calls": len(rs),
+            "failed_attempts": len(rs) - len(ok),
+            "prompt_tokens": sum(r.get("prompt_tokens") or 0 for r in rs),
+            "completion_tokens": sum(r.get("completion_tokens") or 0 for r in rs),
+            "reasoning_tokens": sum(r.get("reasoning_tokens") or 0 for r in rs),
+            "cost_usd": round(sum(float(r.get("cost_usd") or 0) for r in rs), 4),
+            "cost_per_success_usd": round(sum(float(r.get("cost_usd") or 0) for r in rs) / max(1, len(ok)), 4),
+            "latency_s": {"p50": pct(secs, 0.5), "p95": pct(secs, 0.95), "max": max(secs) if secs else None, "mean": round(statistics.mean(secs), 1) if secs else None},
+            "errors": sorted({r.get("error", "")[:120] for r in rs if not r.get("ok")}),
+        })
+    total = round(sum(s["cost_usd"] for s in summary), 4)
+    result = {"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "source": "logs/llm-usage.jsonl", "calls": len(rows), "total_cost_usd": total, "by_stage_model": summary}
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "llm-usage.json").write_text(json.dumps(result, indent=2) + "\n")
+    lines = ["# LLM usage (offline pipeline)", "", f"Generated {result['generated_at']} from `logs/llm-usage.jsonl`. Total: **{len(rows)} calls, ${total}**.", "",
+             "| Stage | Model | Calls | Failed | Prompt tok | Completion tok | Reasoning tok | Cost | p50 s | p95 s |", "|---|---|---|---|---|---|---|---|---|---|"]
+    for s in summary:
+        lines.append(f"| {s['stage']} | {s['model']} | {s['calls']} | {s['failed_attempts']} | {s['prompt_tokens']} | {s['completion_tokens']} | {s['reasoning_tokens']} | ${s['cost_usd']} | {s['latency_s']['p50']} | {s['latency_s']['p95']} |")
+    (OUT / "llm-usage.md").write_text("\n".join(lines) + "\n")
+    print(f"wrote {OUT.relative_to(ROOT)}/llm-usage.json + .md ({len(rows)} calls, ${total})")
+
+
+if __name__ == "__main__":
+    main()
+E
+cat > solver_bench.ts <<'E'
+// Solver benchmark: latency and results of planMeal over fixed scenarios on the real dataset.
+//
+//   node benchmarks/solver_bench.ts            (Node 24 runs TypeScript directly)
+//
+// Writes benchmarks/results/solver-bench.json (raw: every scenario's full best plan + timings)
+// and benchmarks/results/solver-bench.md. Not a test suite: it records what the solver does.
+
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { planMeal, type PlanRequest } from '../src/optimizer/planMeal.ts'
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
+const data = JSON.parse(readFileSync(join(ROOT, 'data/menus.json'), 'utf8'))
+const RUNS = 200
+
+const scenarios: { name: string; req: PlanRequest }[] = [
+  { name: 'brief: $10 chicken + vegetables + 2 beers', req: { budget_usd: 10, wants: [{ tag: 'chicken', qty: 1 }, { tag: 'vegetables', qty: 1 }, { tag: 'beer', qty: 2 }] } },
+  { name: 'brief at $4 (over budget → 2-stop option)', req: { budget_usd: 4, wants: [{ tag: 'chicken', qty: 1 }, { tag: 'vegetables', qty: 1 }, { tag: 'beer', qty: 2 }] } },
+  { name: 'no budget: chicken + 2 beers', req: { wants: [{ tag: 'chicken', qty: 1 }, { tag: 'beer', qty: 2 }] } },
+  { name: 'dish name: $10 oysters', req: { budget_usd: 10, wants: [{ tag: 'oyster', qty: 1 }] } },
+  { name: 'premium: $100 feast for two', req: { budget_usd: 100, style: 'premium', wants: [{ tag: 'seafood', qty: 1 }, { tag: 'beef', qty: 1 }, { tag: 'vegetables', qty: 1 }, { tag: 'soup', qty: 1 }, { tag: 'beer', qty: 2 }] } },
+  { name: '$10 duck + juice + beer', req: { budget_usd: 10, wants: [{ tag: 'duck', qty: 1 }, { tag: 'juice', qty: 1 }, { tag: 'beer', qty: 1 }] } },
+  { name: 'stress: 6 wants, 3 dishes each kind', req: { budget_usd: 60, wants: [{ tag: 'chicken', qty: 2 }, { tag: 'vegetables', qty: 2 }, { tag: 'seafood', qty: 2 }, { tag: 'pork', qty: 1 }, { tag: 'rice', qty: 1 }, { tag: 'beer', qty: 4 }] } },
+  { name: 'unavailable: wine', req: { budget_usd: 20, wants: [{ tag: 'wine', qty: 1 }] } },
+]
+
+const pct = (xs: number[], q: number) => [...xs].sort((a, b) => a - b)[Math.min(xs.length - 1, Math.round(q * (xs.length - 1)))]
+const round = (x: number) => Math.round(x * 100) / 100
+
+const results = scenarios.map(({ name, req }) => {
+  planMeal(data, req) // warm-up
+  const times: number[] = []
+  let out = planMeal(data, req)
+  for (let i = 0; i < RUNS; i++) {
+    const t0 = performance.now()
+    out = planMeal(data, req)
+    times.push(performance.now() - t0)
+  }
+  const b = out.best
+  return {
+    name,
+    request: req,
+    latency_ms: { p50: round(pct(times, 0.5)), p95: round(pct(times, 0.95)), max: round(Math.max(...times)), runs: RUNS },
+    found: out.found,
+    best: b && {
+      restaurants: b.stops.map((s) => s.restaurant.name_en),
+      total_usd: b.total_usd,
+      within_budget: b.within_budget,
+      over_budget_by_usd: b.over_budget_by_usd,
+      lines: b.stops.flatMap((s) => s.lines.map((l) => `${l.qty}× ${l.name_en} (${l.price_text} ≈ $${l.unit_price_usd}) @ ${s.restaurant.name_en}`)),
+    },
+    within_budget_option: out.within_budget_option && { restaurants: out.within_budget_option.stops.map((s) => s.restaurant.name_en), total_usd: out.within_budget_option.total_usd },
+    alternatives: out.alternatives.map((a) => ({ restaurants: a.stops.map((s) => s.restaurant.name_en), total_usd: a.total_usd })),
+    unavailable_wants: out.unavailable_wants,
+    notes: out.notes,
+  }
+})
+
+const outDir = join(ROOT, 'benchmarks/results')
+mkdirSync(outDir, { recursive: true })
+const meta = { generated_at: new Date().toISOString(), node: process.version, dataset: data.meta, runs_per_scenario: RUNS }
+writeFileSync(join(outDir, 'solver-bench.json'), JSON.stringify({ meta, results }, null, 2) + '\n')
+
+const md = [
+  '# Solver benchmark (planMeal)',
+  '',
+  `Generated ${meta.generated_at} by \`benchmarks/solver_bench.ts\` on Node ${meta.node}; ${data.meta.restaurants} restaurants, ${data.meta.items} items; ${RUNS} timed runs per scenario after a warm-up.`,
+  '',
+  '| Scenario | p50 ms | p95 ms | Best plan | Total | Within budget | Within-budget option |',
+  '|---|---|---|---|---|---|---|',
+  ...results.map((r) =>
+    `| ${r.name} | ${r.latency_ms.p50} | ${r.latency_ms.p95} | ${r.best ? r.best.restaurants.join(' + ') : '— (' + (r.unavailable_wants.join(', ') || 'none') + ' unavailable)'} | ${r.best ? '$' + r.best.total_usd : '—'} | ${r.best ? (r.best.within_budget ? 'yes' : `no (+$${r.best.over_budget_by_usd})`) : '—'} | ${r.within_budget_option ? r.within_budget_option.restaurants.join(' + ') + ' $' + r.within_budget_option.total_usd : '—'} |`,
+  ),
+  '',
+  'Full plans (every line item) are in `solver-bench.json`.',
+].join('\n')
+writeFileSync(join(outDir, 'solver-bench.md'), md + '\n')
+console.log(`wrote benchmarks/results/solver-bench.json + .md (${results.length} scenarios)`)
+E
+cd .. && python3 - <<'E'
+import json
+p='package.json'; d=json.load(open(p))
+d['scripts']['bench']='python3 benchmarks/extraction_accuracy.py && python3 benchmarks/llm_usage.py && node benchmarks/solver_bench.ts'
+open(p,'w').write(json.dumps(d,indent=2)+'\n')
+E
+npm run -s bench 2>&1 | grep -v ExperimentalWarning && cat benchmarks/results/solver-bench.md && cat benchmarks/results/llm-usage.md && head -16 benchmarks/results/extraction-accuracy.md
+```
+
+**Result** ✅
+
+```
+wrote benchmarks/results/extraction-accuracy.json + .md (165 items, 34 disputed)
+wrote benchmarks/results/llm-usage.json + .md (42 calls, $3.5352)
+wrote benchmarks/results/solver-bench.json + .md (8 scenarios)
+# Solver benchmark (planMeal)
+
+Generated 2026-10-02T05:55:35.277Z by `benchmarks/solver_bench.ts` on Node v24.12.0; 12 restaurants, 546 items; 200 timed runs per scenario after a warm-up.
+
+| Scenario | p50 ms | p95 ms | Best plan | Total | Within budget | Within-budget option |
+|---|---|---|---|---|---|---|
+| brief: $10 chicken + vegetables + 2 beers | 0.22 | 0.37 | Rainbow | $5.5 | yes 
+… [truncated 1922 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Fix the unavailable scenario, write benchmarks README, commit</summary>
+
+````bash
+sed -i '' "s/{ name: 'unavailable: wine', req: { budget_usd: 20, wants: \[{ tag: 'wine', qty: 1 }\] } },/{ name: 'unavailable dish: pizza', req: { budget_usd: 20, wants: [{ tag: 'pizza', qty: 1 }] } },\n  { name: 'synonym: wine → alcohol category', req: { budget_usd: 20, wants: [{ tag: 'wine', qty: 1 }] } },/" benchmarks/solver_bench.ts && node benchmarks/solver_bench.ts 2>&1 | grep -v Experimental && tail -5 benchmarks/results/solver-bench.md && cat > benchmarks/README.md <<'E'
+# Benchmarks
+
+Raw numbers plus the scripts that produce them. Run everything with:
+
+```bash
+npm run bench
+```
+
+| Script | Measures | Input | Raw output | Summary |
+|---|---|---|---|---|
+| [extraction_accuracy.py](extraction_accuracy.py) | Extraction accuracy per field (model-vs-model agreement, 95% Wilson CI), per image, every disputed item | `data/cache/crosscheck/`, `data/cache/extract/` | [results/extraction-accuracy.json](results/extraction-accuracy.json) | [results/extraction-accuracy.md](results/extraction-accuracy.md) |
+| [llm_usage.py](llm_usage.py) | Calls, tokens (incl. reasoning), cost, latency p50/p95 per stage and model | `logs/llm-usage.jsonl` | [results/llm-usage.json](results/llm-usage.json) | [results/llm-usage.md](results/llm-usage.md) |
+| [solver_bench.ts](solver_bench.ts) | `planMeal` latency (200 timed runs per scenario) and the plan it returns for 9 fixed scenarios (brief, over-budget, no budget, dish name, premium, stress, unavailable, synonym) | `data/menus.json` | [results/solver-bench.json](results/solver-bench.json) | [results/solver-bench.md](results/solver-bench.md) |
+
+Upstream raw data, also committed:
+- `data/cache/extract/*.json`: Gemini 2.5 Pro's raw extraction per image (with token usage and latency)
+- `data/cache/crosscheck/*.json`: Claude Opus 5.5's raw per-item verdicts
+- `logs/llm-usage.jsonl`: one line per model call
+- `logs/run-*.log`: console output of the full runs
+
+Notes:
+- **Extraction accuracy is agreement between two models, not human ground truth.** See the caveats in the main README ("How these numbers were measured").
+- These are records of what the system does, not pass/fail tests. No unit-test suite exists by design.
+- The chat agent's runtime calls happen in visitors' browsers through the here.now proxy, so they aren't in `logs/llm-usage.jsonl`. With `?debug`, the browser console shows each call's timing and usage.
+E
+git add benchmarks package.json && git commit -q -m "bench: add reproducible benchmarks with raw results
+
+- extraction_accuracy.py: per-field agreement with 95% Wilson CIs, per-image table,
+  all 34 disputed items (from raw cross-check verdicts)
+- llm_usage.py: calls/tokens/reasoning tokens/cost/latency per stage and model (42 calls, \$3.54)
+- solver_bench.ts: planMeal latency (200 runs) + returned plan for 9 scenarios
+  (p50 0.1–8 ms; brief → Rainbow \$5.50)
+- results/*.json (raw) + *.md (summaries); npm run bench runs all three
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" && git log --oneline -1
+````
+
+**Result** ✅
+
+```
+wrote benchmarks/results/solver-bench.json + .md (9 scenarios)
+| stress: 6 wants, 3 dishes each kind | 7.84 | 8.77 | Rainbow | $19.76 | yes | — |
+| unavailable dish: pizza | 0.21 | 0.24 | — (pizza unavailable) | — | — | — |
+| synonym: wine → alcohol category | 0.21 | 0.25 | Rainbow | $1.63 | yes | — |
+
+Full plans (every line item) are in `solver-bench.json`.
+99db0b3 bench: add reproducible benchmarks with raw results
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Locate exporter args and list raw session and memory files</summary>
+
+```bash
+grep -n "titleIdx\|const title\|writeFileSync(outPath\|mkdirSync(dirname(outPath)" scripts/export-session.mjs && ls -la ~/.claude/projects/-Users-lam-Projects-khmer-menus/*.jsonl && ls ~/.claude/projects/-Users-lam-Projects-khmer-menus/ && ls ~/.claude/projects/-Users-lam-Projects-khmer-menus/memory/
+```
+
+**Result** ✅
+
+```
+19:const titleIdx = rest.indexOf('--title')
+20:const title = titleIdx >= 0 ? rest[titleIdx + 1] : 'AI working session'
+167:mkdirSync(dirname(outPath), { recursive: true })
+168:writeFileSync(outPath, redact(header + body))
+-rw-------  1 lam  staff  24945603 Oct  2 12:56 /Users/lam/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl
+b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl
+memory
+MEMORY.md
+herenow-deployment.md
+no-tests-unless-asked.md
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Add raw transcript export, export trail, copy memory, scan for secrets</summary>
+
+```bash
+python3 - <<'E'
+p='scripts/export-session.mjs'; s=open(p).read()
+def rep(a,b):
+    global s; assert a in s, a[:60]; s=s.replace(a,b,1)
+rep("""//   node scripts/export-session.mjs <session.jsonl> <out.md> [--title "Session 01"]""","""//   node scripts/export-session.mjs <session.jsonl> <out.md> [--title "Session 01"] [--raw <out.jsonl>]
+//
+// --raw also writes the complete original transcript (every message, tool call, tool result,
+// image) as JSONL, with the same secret redaction applied, for the AI usage trail.""")
+rep("""const title = titleIdx >= 0 ? rest[titleIdx + 1] : 'AI working session'""","""const title = titleIdx >= 0 ? rest[titleIdx + 1] : 'AI working session'
+const rawIdx = rest.indexOf('--raw')
+const rawPath = rawIdx >= 0 ? rest[rawIdx + 1] : null""")
+rep("""mkdirSync(dirname(outPath), { recursive: true })
+writeFileSync(outPath, redact(header + body))""","""mkdirSync(dirname(outPath), { recursive: true })
+writeFileSync(outPath, redact(header + body))
+if (rawPath) {
+  mkdirSync(dirname(rawPath), { recursive: true })
+  writeFileSync(rawPath, redact(readFileSync(inPath, 'utf8')))
+  console.log(`wrote ${rawPath} (raw transcript, redacted)`)
+}""")
+open(p,'w').write(s)
+E
+node --check scripts/export-session.mjs && S=~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl && node scripts/export-session.mjs $S ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" --raw ai-session/raw/session-01-b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl && mkdir -p ai-session/claude-memory && cp ~/.claude/projects/-Users-lam-Projects-khmer-menus/memory/*.md ai-session/claude-memory/ && python3 - <<'E'
+import re, json, glob
+env={}
+for l in open('.env'):
+    l=l.strip()
+    if l and not l.startswith('#') and '=' in l:
+        k,v=l.split('=',1); env[k]=v
+secrets={k:v for k,v in env.items() if any(t in k for t in ('KEY','PASSWORD','TOKEN','CODE','SECRET')) and len(v)>=6}
+for f in glob.glob('ai-session/**/*', recursive=True):
+    if not f.endswith(('.md','.jsonl')): continue
+    c=open(f, errors='replace').read()
+    leaks=[k for k,v in secrets.items() if v in c]
+    pats=[p for p in [r'sk-or-v1-[A-Za-z0-9]{20,}', r'hnk_[A-Za-z0-9]{20,}', r'sk-ant-[A-Za-z0-9_-]{20,}'] if re.search(p,c)]
+    print(f'{f:75} {len(c)//1024:6} KB  secrets: {leaks or "none"}  patterns: {pats or "none"}')
+# raw stays valid JSONL after redaction?
+n=0
+for line in open('ai-session/raw/session-01-b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl'):
+    if line.strip(): json.loads(line); n+=1
+print('raw JSONL lines parse OK:', n)
+E
 ```
 
 </details>

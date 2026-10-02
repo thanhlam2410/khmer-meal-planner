@@ -2,7 +2,10 @@
 // Export a Claude Code session transcript (.jsonl) to a readable Markdown file.
 //
 // Usage:
-//   node scripts/export-session.mjs <session.jsonl> <out.md> [--title "Session 01"]
+//   node scripts/export-session.mjs <session.jsonl> <out.md> [--title "Session 01"] [--raw <out.jsonl>]
+//
+// --raw also writes the complete original transcript (every message, tool call, tool result,
+// image) as JSONL, with the same secret redaction applied, for the AI usage trail.
 //
 // Keeps: user messages (incl. ones sent mid-turn), assistant replies, tool calls
 // (collapsed, with a short result preview). Drops: hidden reasoning, system
@@ -18,6 +21,8 @@ if (!inPath || !outPath) {
 }
 const titleIdx = rest.indexOf('--title')
 const title = titleIdx >= 0 ? rest[titleIdx + 1] : 'AI working session'
+const rawIdx = rest.indexOf('--raw')
+const rawPath = rawIdx >= 0 ? rest[rawIdx + 1] : null
 
 const PREVIEW_CHARS = 600
 
@@ -166,4 +171,9 @@ const header = [
 
 mkdirSync(dirname(outPath), { recursive: true })
 writeFileSync(outPath, redact(header + body))
+if (rawPath) {
+  mkdirSync(dirname(rawPath), { recursive: true })
+  writeFileSync(rawPath, redact(readFileSync(inPath, 'utf8')))
+  console.log(`wrote ${rawPath} (raw transcript, redacted)`)
+}
 console.log(`wrote ${outPath} (${turn} user turns)`)

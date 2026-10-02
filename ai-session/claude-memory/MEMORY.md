@@ -1,0 +1,2 @@
+- [here.now deployment](herenow-deployment.md) — live slug swift-sleet-z44r, password-gated, proxy /api/chat, secrets in .env
+- [No tests unless asked](no-tests-unless-asked.md) — never write/run unit tests without explicit request
