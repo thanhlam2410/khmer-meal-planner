@@ -1,0 +1,45 @@
+%%{init: {"flowchart": {"wrappingWidth": 330, "nodeSpacing": 40, "rankSpacing": 50}}}%%
+%% C4 Level 2 — Containers (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i>"]:::person
+    dev["<b>Developer</b><br/><i>[Person]</i>"]:::person
+
+    subgraph browser["Visitor's browser"]
+        direction LR
+        spa["<b>Web app (SPA)</b><br/><i>[Container: React 19 · TypeScript 6 · Vite 8]</i><br/><br/>Chat UI, agent tool-calling loop,<br/>exact meal optimizer, no-AI quick planner"]:::container
+        storage[("<b>Chat sessions</b><br/><i>[Container: localStorage]</i><br/><br/>Newest 20 chats,<br/>this browser only")]:::db
+    end
+
+    subgraph hosting["here.now · site swift-sleet-z44r · password-gated"]
+        direction LR
+        static[("<b>Static site</b><br/><i>[Container: here.now hosting]</i><br/><br/>index.html, JS/CSS bundle,<br/>menus.json")]:::db
+        proxy["<b>LLM proxy route</b><br/><i>[Container: here.now proxy]</i><br/><br/>POST /api/chat → OpenRouter<br/>injects OPENROUTER_API_KEY<br/>60 requests/hour/IP"]:::container
+    end
+
+    openrouter["<b>OpenRouter</b><br/><i>[Software System — external]</i><br/><br/>Gemini 2.5 Pro · Claude Opus 5.5<br/>· Gemini 3.5 Flash"]:::ext
+
+    subgraph local["Developer machine · offline, Step 1"]
+        direction LR
+        pipeline["<b>Extraction pipeline</b><br/><i>[Container: Python 3.13 · requests · Pillow]</i><br/><br/>Photos → model JSON → USD prices,<br/>grouping, manual fixes"]:::container
+        files[("<b>Dataset and cache</b><br/><i>[Container: JSON / JSONL files]</i><br/><br/>photos, cache, manual fixes,<br/>menus.json, usage log")]:::db
+    end
+
+    visitor -- "Uses<br/><i>[HTTPS]</i>" --> spa
+    spa -- "Saves / loads chats" --> storage
+    spa -- "Loads app + menus.json<br/><i>[HTTPS + session cookie]</i>" --> static
+    spa -- "Chat completions with tools<br/><i>[POST /api/chat]</i>" --> proxy
+    proxy -- "Forwards + Bearer key<br/><i>[HTTPS]</i>" --> openrouter
+    dev -- "npm run extract" --> pipeline
+    pipeline -- "Reads photos, writes<br/>cache + menus.json" --> files
+    pipeline -- "Vision extraction<br/>+ cross-check <i>[HTTPS]</i>" --> openrouter
+    dev -- "npm run build → publish.sh" --> static
+
+    classDef person fill:#08427b,stroke:#052e56,color:#fff
+    classDef system fill:#1168bd,stroke:#0b4884,color:#fff
+    classDef container fill:#438dd5,stroke:#2e6295,color:#fff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000
+    classDef ext fill:#999999,stroke:#6b6b6b,color:#fff
+    classDef db fill:#438dd5,stroke:#2e6295,color:#fff
+    style browser fill:none,stroke:#444,stroke-dasharray:6 4
+    style hosting fill:none,stroke:#444,stroke-dasharray:6 4
+    style local fill:none,stroke:#444,stroke-dasharray:6 4

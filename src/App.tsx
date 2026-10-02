@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
 import { isPlanResult, runAgent } from './agent/agent'
 import { PlanCards } from './components/PlanCard'
+import { QuickPlanner } from './components/QuickPlanner'
 import { RichText } from './components/RichText'
 import { SessionSidebar } from './components/SessionSidebar'
 import { ThinkingPanel } from './components/ThinkingPanel'
@@ -30,6 +31,7 @@ export default function App() {
   const [status, setStatus] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [drawerOpen, setDrawerOpen] = useState(false) // sidebar on small screens
+  const [quickOpen, setQuickOpen] = useState(false) // AI-free planner; opens itself if the AI fails
   const endRef = useRef<HTMLDivElement>(null)
 
   const active = sessions.find((s) => s.id === activeId) ?? sessions[0]
@@ -122,6 +124,7 @@ export default function App() {
       // The failed question stays visible but isn't added to the model history.
       derror('send failed', err)
       setError(err instanceof Error ? err.message : String(err))
+      setQuickOpen(true) // fallback: the same optimizer without the AI
     } finally {
       setPendingId(null)
       setStatus(null)
@@ -155,6 +158,13 @@ export default function App() {
           {data && ` ${data.meta.restaurants} restaurants · ${data.meta.items} dishes from Khmer menus.`}
         </p>
       </header>
+
+      <QuickPlanner
+        data={data}
+        open={quickOpen}
+        onToggle={setQuickOpen}
+        reason={error ? 'The AI assistant is unavailable right now — you can still plan with this form.' : null}
+      />
 
       <main className="log">
         {active.entries.length === 0 && (

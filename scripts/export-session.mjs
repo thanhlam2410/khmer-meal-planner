@@ -21,8 +21,22 @@ const title = titleIdx >= 0 ? rest[titleIdx + 1] : 'AI working session'
 
 const PREVIEW_CHARS = 600
 
+// Values of secret-looking variables in the project .env (e.g. SITE_PASSWORD) are redacted verbatim.
+const envSecrets = (() => {
+  try {
+    return readFileSync('.env', 'utf8')
+      .split('\n')
+      .map((l) => l.match(/^\s*([A-Z0-9_]*(?:KEY|SECRET|TOKEN|PASSWORD|CODE)[A-Z0-9_]*)\s*=\s*(.+?)\s*$/))
+      .filter((m) => m && m[2].length >= 6)
+      .map((m) => m[2])
+  } catch {
+    return []
+  }
+})()
+
 const redact = (s) =>
-  s
+  envSecrets
+    .reduce((acc, v) => acc.split(v).join('[REDACTED]'), s)
     .replace(/sk-or-v1-[A-Za-z0-9]+/g, 'sk-or-v1-[REDACTED]')
     .replace(/sk-ant-[A-Za-z0-9_-]+/g, 'sk-ant-[REDACTED]')
     .replace(/hnk_[A-Za-z0-9]+/g, 'hnk_[REDACTED]')

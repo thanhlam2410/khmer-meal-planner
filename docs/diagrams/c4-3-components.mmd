@@ -1,0 +1,43 @@
+%%{init: {"flowchart": {"wrappingWidth": 330, "nodeSpacing": 40, "rankSpacing": 50}}}%%
+%% C4 Level 3 — Components of the web app (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i>"]:::person
+
+    subgraph spa["Web app (SPA) · runs entirely in the browser"]
+        direction TB
+        ui["<b>Chat UI</b><br/><i>[Component: React · App.tsx]</i><br/><br/>Message log, plan cards, Thinking panel,<br/>error boundary"]:::component
+        sidebar["<b>Session sidebar</b><br/><i>[Component: React]</i><br/><br/>New chat, switch, delete"]:::component
+        quick["<b>Quick planner</b><br/><i>[Component: React]</i><br/><br/>No-AI form; opens<br/>automatically if the AI fails"]:::component
+        agent["<b>Agent loop</b><br/><i>[Component: agent/agent.ts]</i><br/><br/>Confirm budget + wants first,<br/>≤ 6 steps, last step must answer"]:::component
+        client["<b>OpenRouter client</b><br/><i>[Component: lib/openrouter.ts]</i><br/><br/>Builds requests, reasoning<br/>kept out of replies"]:::component
+        tools["<b>Tools</b><br/><i>[Component: agent/tools.ts]</i><br/><br/>plan_meal · search_menu ·<br/>list_restaurants · dish guard"]:::component
+        optimizer["<b>Meal optimizer</b><br/><i>[Component: optimizer/planMeal.ts]</i><br/><br/>Fewest restaurants, then cheapest<br/>or best spread; keyword search"]:::component
+        loader["<b>Menu loader</b><br/><i>[Component: lib/menuData.ts]</i><br/><br/>Loads /menus.json once"]:::component
+        sessions["<b>Session store</b><br/><i>[Component: lib/sessions.ts]</i><br/><br/>Serialises chats"]:::component
+    end
+
+    proxy["<b>LLM proxy route</b><br/><i>[Container: here.now]</i><br/>POST /api/chat"]:::container
+    static[("<b>Static site</b><br/><i>[Container: here.now]</i><br/>menus.json")]:::db
+    storage[("<b>Chat sessions</b><br/><i>[Container: localStorage]</i>")]:::db
+
+    visitor -- "Types requests" --> ui
+    visitor -- "Fills the form" --> quick
+    ui -- "Runs a turn" --> agent
+    agent -- "Model calls" --> client
+    client -- "POST /api/chat" --> proxy
+    agent -- "Executes tool calls" --> tools
+    tools -- "plan_meal / search_menu" --> optimizer
+    quick -- "planMeal() directly" --> optimizer
+    optimizer -- "Menu data" --> loader
+    loader -- "GET /menus.json" --> static
+    ui -- "Persist chats" --> sessions
+    sidebar -- "List / switch / delete" --> sessions
+    sessions -- "Read / write" --> storage
+
+    classDef person fill:#08427b,stroke:#052e56,color:#fff
+    classDef system fill:#1168bd,stroke:#0b4884,color:#fff
+    classDef container fill:#438dd5,stroke:#2e6295,color:#fff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000
+    classDef ext fill:#999999,stroke:#6b6b6b,color:#fff
+    classDef db fill:#438dd5,stroke:#2e6295,color:#fff
+    style spa fill:none,stroke:#444,stroke-dasharray:6 4

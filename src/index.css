@@ -120,3 +120,17 @@ footer { padding: 0 0 12px; font-size: 0.75rem; color: var(--muted); }
   .sidebar-backdrop.show { display: block; position: fixed; inset: 0; z-index: 10; background: rgba(0,0,0,0.35); }
   .session-delete { opacity: 1; }
 }
+
+/* AI-free quick planner */
+.quick { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 10px 12px; margin-top: 8px; }
+.quick summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.quick-reason { margin-top: 8px; font-size: 0.85rem; color: var(--accent); }
+.quick-form { display: grid; gap: 10px; margin: 10px 0; }
+.quick-budget { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+.quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px 14px; }
+.quick-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 0.88rem; }
+.quick input, .quick select { font: inherit; font-size: 0.88rem; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+.quick input[type='number'] { width: 64px; }
+.quick-dish { flex: 1; min-width: 0; }
+.quick-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.quick .plans { margin-top: 6px; }

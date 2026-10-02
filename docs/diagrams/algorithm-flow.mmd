@@ -1,0 +1,26 @@
+%%{init: {"flowchart": {"wrappingWidth": 330, "nodeSpacing": 40, "rankSpacing": 50}}}%%
+flowchart TD
+    U([User message]) --> A{"Agent: budget and<br/>food/drink known?"}
+    A -- "no" --> Q["Ask for the budget, or propose a set<br/>from the real menus and wait for a yes"] --> U
+    A -- "yes" --> T["plan_meal(budget, wants, style)"]
+
+    T --> N["1 · Normalise wants<br/>synonyms (veg → vegetables), merge duplicates,<br/>classify food / beverage"]
+    N --> M["2 · Candidate offers per restaurant × want<br/>match category, tag or dish name (oysters → oyster, not oyster sauce)<br/>drop untrusted prices: disputed, suspicious, sticker-covered"]
+    M --> C["3 · Unit combinations<br/>food = distinct dishes · beverages = repeats allowed"]
+    C --> S{style}
+
+    S -- "premium" --> P["Per restaurant: best spread ≤ budget<br/>(food first, drinks weighted ½)"]
+    P --> PQ{"one restaurant<br/>can do it?"}
+    PQ -- "yes" --> R
+    PQ -- "no" --> TB
+
+    S -- "cheapest" --> TB["4 · Table: cheapest way each restaurant serves<br/>each subset of wants<br/>(exhaustive search + pruning; a dish never counts twice)"]
+    TB --> K["5 · k = 1 restaurant"]
+    K --> KS["Best split of all wants across every set of k restaurants"]
+    KS --> COV{"covers every want?"}
+    COV -- "no" --> KI["k = k + 1"] --> KS
+    COV -- "yes" --> B{"cheapest total ≤ budget?"}
+    B -- "yes" --> R
+    B -- "no" --> OB["Keep it, flagged over budget<br/>and continue with k + 1 to find a within-budget option"] --> R
+
+    R["6 · Result: best plan + alternatives<br/>+ within_budget_option + notes"] --> UI["Plan cards rendered straight from the tool result<br/>+ the agent's short answer"]

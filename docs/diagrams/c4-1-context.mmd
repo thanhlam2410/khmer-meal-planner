@@ -1,0 +1,22 @@
+%%{init: {"flowchart": {"wrappingWidth": 330, "nodeSpacing": 40, "rankSpacing": 50}}}%%
+%% C4 Level 1 — System context (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i><br/><br/>Someone in Cambodia deciding what<br/>to order and where, within a budget"]:::person
+    dev["<b>Developer</b><br/><i>[Person]</i><br/><br/>Builds the dataset from menu photos,<br/>fixes data, deploys"]:::person
+
+    planner["<b>Khmer Menu Planner</b><br/><i>[Software System]</i><br/><br/>Chat web app that turns<br/>'$10, chicken, vegetables, 2 beers'<br/>into an exact order from real Khmer menus"]:::system
+
+    openrouter["<b>OpenRouter</b><br/><i>[Software System — external]</i><br/><br/>AI gateway: Gemini 2.5 Pro (extraction),<br/>Claude Opus 5.5 (cross-check),<br/>Gemini 3.5 Flash (chat agent)"]:::ext
+    herenow["<b>here.now</b><br/><i>[Software System — external]</i><br/><br/>Static hosting, server-side<br/>password gate, API proxy route"]:::ext
+
+    visitor -- "Asks for meal plans<br/><i>[HTTPS, password]</i>" --> planner
+    dev -- "Runs extraction,<br/>publishes versions" --> planner
+    planner -- "Reads menu photos (offline),<br/>chats with tools (runtime)<br/><i>[HTTPS]</i>" --> openrouter
+    planner -- "Hosted on; LLM calls<br/>go through its proxy" --> herenow
+
+    classDef person fill:#08427b,stroke:#052e56,color:#fff
+    classDef system fill:#1168bd,stroke:#0b4884,color:#fff
+    classDef container fill:#438dd5,stroke:#2e6295,color:#fff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000
+    classDef ext fill:#999999,stroke:#6b6b6b,color:#fff
+    classDef db fill:#438dd5,stroke:#2e6295,color:#fff

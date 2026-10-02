@@ -1,0 +1,23 @@
+sequenceDiagram
+    autonumber
+    actor U as Visitor
+    participant B as Browser (React app)
+    participant H as here.now (gate + proxy)
+    participant O as OpenRouter
+    participant G as Gemini 3.5 Flash
+
+    U->>H: Open site, enter password
+    H-->>B: Session cookie, index.html, JS bundle, menus.json
+    U->>B: "$10 — chicken, vegetables, 2 beers?"
+    B->>B: Add the message to the active session (localStorage)
+    B->>H: POST /api/chat {history + tool specs}
+    H->>O: Forward + Authorization: Bearer ${OPENROUTER_API_KEY}
+    O->>G: Request
+    G-->>B: tool_call plan_meal({budget 10, wants…})
+    B->>B: Run plan_meal locally over menus.json (~2 ms, exact)
+    B->>H: POST /api/chat {…, tool result}
+    H->>O: Forward
+    O->>G: Request
+    G-->>B: Final answer text
+    B->>B: Render plan cards from the tool result + answer, save session
+    B-->>U: "Go to Rainbow — $5.50 total, $4.50 to spare"

@@ -3,8 +3,8 @@
 - **Project:** khmer-menus (Khmer Menu Intelligence Challenge)
 - **Session file:** `b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl`
 - **Started:** 2026-10-02T03:22:59.781Z
-- **Last activity:** 2026-10-02T05:13:15.065Z
-- **User turns:** 38
+- **Last activity:** 2026-10-02T05:47:03.740Z
+- **User turns:** 49
 
 > Exported from the Claude Code transcript. Hidden reasoning and system messages are omitted;
 > tool calls are collapsed (click to expand) with truncated results. API keys are redacted.
@@ -8797,3 +8797,2251 @@ Type-check, lint and the debug build are clean. Deployed: the live bundle `index
 ## 🧑 User — turn 38 · 05:13 UTC
 
 Let write ai-session while I test
+
+<details><summary>🔧 <b>Bash</b> — Re-export the session log and scan for secrets</summary>
+
+```bash
+node scripts/export-session.mjs ~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" && f=ai-session/session-01-2026-10-02-planning-setup-deploy.md && wc -c $f && (grep -nE "sk-or-v1-[A-Za-z0-9]{10}|hnk_[A-Za-z0-9]{10}" $f || echo "secret scan: clean") && grep -c "^## 🧑" $f && grep "^## 🧑" $f | tail -3
+```
+
+**Result** ✅
+
+```
+wrote ai-session/session-01-2026-10-02-planning-setup-deploy.md (38 user turns)
+  391558 ai-session/session-01-2026-10-02-planning-setup-deploy.md
+secret scan: clean
+39
+## 🧑 User (sent mid-turn) — turn 36 · 05:09 UTC
+## 🧑 User (sent mid-turn) — turn 37 · 05:10 UTC
+## 🧑 User — turn 38 · 05:13 UTC
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 Export the session log to `ai-session/` — ✅ Done
+
+### 📊 Summary
+I re-exported this session to [ai-session/session-01-2026-10-02-planning-setup-deploy.md](ai-session/session-01-2026-10-02-planning-setup-deploy.md). It has **38 user turns** (03:22 → 05:13 UTC, 392 KB) and covers everything: planning, extraction, manual refinement, the meal planner, the chat agent, the bug fixes, sessions and every deploy.
+
+### 📝 Changes Made
+| File | Change |
+|---|---|
+| [ai-session/session-01-2026-10-02-planning-setup-deploy.md](ai-session/session-01-2026-10-02-planning-setup-deploy.md) | Replaced the earlier partial export (26 turns) with the full log; title updated to "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" |
+
+### ✅ Checks
+- **Secret scan:** clean. No OpenRouter (`sk-or-v1-…`) or here.now (`hnk_…`) keys appear, and the exporter blanks those patterns out anyway.
+- **What's in it:** user messages (the ones you sent while I was working are marked *"sent mid-turn"*), my replies, and tool calls as collapsible blocks with result previews. My hidden reasoning and system messages are left out.
+
+### Impact
+- ⚠️ Your screenshots appear only as their text; the images themselves aren't embedded.
+- ℹ️ The file shows one more 🧑 heading than the turn count, because one of your pasted logs contains a line that looks like a heading. Nothing is duplicated.
+- ⚠️ It's a snapshot up to this request. Re-run at the very end to capture anything after your testing:
+  `npm run export-session -- ~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — …"`
+
+### 📋 Next Steps
+1. 🔴 Send me anything that looks off from your testing.
+2. 🟢 Re-export at the end of the session.
+
+---
+
+## 🧑 User — turn 39 · 05:20 UTC
+
+1 thing to add. you should make a algorithm diagram to visualize how our meal plan algorithm works
+
+1 thing to discuss, the application is kinda completed but the input restaurant data is limited is not perfect. to improve it, we need more improvement (if have enough time)
+- Break down the menu into single food images -> OCR could drop details when working on a lot of detail -> Improve accuracy
+- Grouping data by restaurant. build a proper RAG to support the agent running
+
+and listing out what is our tool's limitation in bulletins in README
+
+<details><summary>🔧 <b>Bash</b> — List README sections to place the diagram and new sections</summary>
+
+```bash
+grep -n "^## \|^### \|^\*\*Objective\|^\*\*Method" README.md
+```
+
+**Result** ✅
+
+```
+20:## Project layout
+41:## Setup
+55:## Step 1 — Menu extraction
+57:### Approach
+82:### Run it
+92:### Manual refinement
+109:### Accuracy — predicted vs measured
+125:### Known limitations (extraction is not perfect)
+135:### Cost
+147:## Step 2 — Meal-plan algorithm
+153:**Objective (lexicographic):**
+158:**Method (exact, ~1–10 ms):**
+173:## Step 3 — Chat agent
+185:## Deployment
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/README.md`</summary>
+
+
+
+**Result** ✅
+
+```
+145	---
+146	
+147	## Step 2 — Meal-plan algorithm
+148	
+149	[src/optimizer/planMeal.ts](src/optimizer/planMeal.ts) runs in the browser over `menus.json`.
+150	
+151	**Problem.** Given a budget and a list of *wants* (e.g. 1× chicken, 1× vegetables, 2× beer), choose menu items, from one or more restaurants, that satisfy every want. This is a **multiple-choice knapsack** with a set-cover layer on top.
+152	
+153	**Objective (lexicographic):**
+154	1. **Fewest restaurants.** One stop is best; two only if no single restaurant has everything, and so on.
+155	2. **Lowest total cost** among plans with that nu
+… [truncated 2837 chars]
+```
+
+</details>
+
+### 🤖 Claude
+
+Writing the README additions: the algorithm diagram (Mermaid, which GitHub renders), updated steps 2–3, a limitations list, and future improvements.
+
+<details><summary>🔧 <b>Bash</b> — Add algorithm diagram, updated steps, limitations and future work to README</summary>
+
+````bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+start=s.index("## Step 2 — Meal-plan algorithm"); end=s.index("## Deployment")
+new = r'''## Step 2 — Meal-plan algorithm
+
+[src/optimizer/planMeal.ts](src/optimizer/planMeal.ts) runs in the browser over `menus.json`.
+
+**Problem.** Given a budget and a list of *wants* (e.g. 1× chicken, 1× vegetables, 2× beer), choose menu items, from one or more restaurants, that satisfy every want. This is a **multiple-choice knapsack** with a set-cover layer on top.
+
+**Objective (lexicographic):**
+1. **Fewest restaurants.** One stop is best; two only if no single restaurant has everything, and so on.
+2. Then, by `style`:
+   - `cheapest` (default): **lowest total cost**.
+   - `premium`: **best spread within the budget**, spending on food first. Used for "luxury / treat" requests.
+3. If the optimum is **over budget, it is still returned, flagged** (`within_budget: false`, `over_budget_by_usd`), together with a `within_budget_option` that uses more restaurants when one fits. The agent must open its reply with "⚠️ Over budget".
+4. **No budget given** means no price limit, and nothing is reported as "left over". The agent asks for a budget before planning, so this is a fallback only.
+
+### How it works
+
+```mermaid
+flowchart TD
+    U([User message]) --> A{"Agent: budget and<br/>food/drink known?"}
+    A -- "no" --> Q["Ask for the budget, or propose a set<br/>from the real menus and wait for a yes"] --> U
+    A -- "yes" --> T["plan_meal(budget, wants, style)"]
+
+    T --> N["1 · Normalise wants<br/>synonyms (veg → vegetables), merge duplicates,<br/>classify food / beverage"]
+    N --> M["2 · Candidate offers per restaurant × want<br/>match category, tag or dish name (oysters → oyster, not oyster sauce)<br/>drop untrusted prices: disputed, suspicious, sticker-covered"]
+    M --> C["3 · Unit combinations<br/>food = distinct dishes · beverages = repeats allowed"]
+    C --> S{style}
+
+    S -- "premium" --> P["Per restaurant: best spread ≤ budget<br/>(food first, drinks weighted ½)"]
+    P --> PQ{"one restaurant<br/>can do it?"}
+    PQ -- "yes" --> R
+    PQ -- "no" --> TB
+
+    S -- "cheapest" --> TB["4 · Table: cheapest way each restaurant serves<br/>each subset of wants<br/>(exhaustive search + pruning; a dish never counts twice)"]
+    TB --> K["5 · k = 1 restaurant"]
+    K --> KS["Best split of all wants across every set of k restaurants"]
+    KS --> COV{"covers every want?"}
+    COV -- "no" --> KI["k = k + 1"] --> KS
+    COV -- "yes" --> B{"cheapest total ≤ budget?"}
+    B -- "yes" --> R
+    B -- "no" --> OB["Keep it, flagged over budget<br/>and continue with k + 1 to find a within-budget option"] --> R
+
+    R["6 · Result: best plan + alternatives<br/>+ within_budget_option + notes"] --> UI["Plan cards rendered straight from the tool result<br/>+ the agent's short answer"]
+```
+
+**Worked example (the brief: $10, 1× chicken, 1× vegetables, 2× beer):**
+
+| Step | What happens |
+|---|---|
+| Candidates | Only 2 of 12 restaurants have all three: Rainbow and The Street Cambodia TK branch. The other 10 have no beer, and Tbal Khmer has no chicken |
+| k = 1 | Rainbow: chicken with rice $2 + papaya salad $2 + 2× Anchor can $0.75 = **$5.50**. The Street TK: $7.51 |
+| Budget | $5.50 ≤ $10, so stop: best plan Rainbow ($4.50 left), alternative The Street TK |
+
+At $4 the same request returns Rainbow at $5.50 **flagged $1.50 over**, plus a within-budget 2-stop option: The Street for the food and Rainbow for the beers, **$3.76**.
+
+**Method details (exact, ~1–10 ms):**
+- Each (restaurant, subset of wants) cell is solved by depth-first search over price-sorted combinations, pruned by cost bounds. Candidates are capped at 25 offers and 3,000 combinations per want, which keeps the worst case bounded.
+- Restaurant sets are enumerated by size, with a bitmask split of the wants between them. With 12 restaurants and ≤ 6 wants this is a few thousand cheap lookups.
+
+**Classification.**
+- Every item is `food` or `beverage` (from its category). Of the 546 items, 402 are food and 144 beverages.
+- A want like `vegetables` means a *vegetable dish*: vegetable or salad category, or a meat-free dish tagged vegetables. Herb salads with shrimp count; a beef dish with a lettuce garnish doesn't.
+- `beer` excludes beer cocktails.
+- Any other word is matched as a category, a tag or a **dish name** (whole word, plurals, Khmer). Flavourings like "oyster sauce" are excluded.
+
+**Price safety.** Prices the cross-checker disputed, prices flagged as suspicious or sticker-covered, and items with no price are never recommended.
+
+Other options considered: ILP (e.g. `javascript-lp-solver`) for richer constraints, 0/1-knapsack DP for a "maximise value" objective, and greedy (cheapest per want) as a baseline. Exhaustive search is exact and fast enough for 12 menus.
+
+## Step 3 — Chat agent
+
+[src/agent/](src/agent/) is an OpenRouter **tool-calling loop that runs in the browser** (model from `AGENT_MODEL` in `.env`).
+
+| Tool | What it does |
+|---|---|
+| `plan_meal` | The algorithm above |
+| `search_menu` | Search items by text, tag, kind (food/beverage), restaurant, max price |
+| `list_restaurants` | Restaurants with food/beverage counts and chicken/vegetable/beer availability |
+
+- **Confirms before planning.** A missing budget is asked for, never invented. A vague wish ("any recommendation?") gets a proposed set from the real menus, and planning starts only after the user confirms.
+- **All prices and arithmetic come from the tools.** Plan cards are rendered straight from the tool result, so the numbers never depend on the model's wording.
+- **Dish guard.** If the user names a dish ("oysters") but the model only asks for a broad tag ("seafood"), the tool result tells it to call again with the dish.
+- **No thinking in replies.** Reasoning goes to a separate channel. Intermediate steps and tool calls are collapsed under "▸ Thinking".
+- **Bounded.** At most 6 model steps; the last one is forced to answer from what it has.
+- **Sessions.** Separate chats in a left sidebar, each with its own model history, saved in the browser's localStorage.
+- **Debug build.** `npm run build:debug` (or `?debug` on any URL) gives readable code and logs every request, response, tool call and its timing to the console.
+
+'''
+s=s[:start]+new+s[end:]
+
+s=s.rstrip('\n')+r'''
+
+---
+
+## Limitations
+
+**Data**
+- **12 restaurants, 546 items, ~2024 photos.** Prices may be out of date, and the riel rate is a flat 4,000 ៛/$.
+- **Extraction is model-read, not human-verified.** Prices agreed 97% in the cross-check, but only 10 of 31 images were audited, and the check is model-vs-model (shared blind spots aren't caught).
+- **Dense pages lose detail.** Pages with 30–45 items are where the model misses items or misreads Khmer. About 12% of Khmer names have a one-character slip.
+- **Some prices are unusable:** 22 items have no readable price, and sticker-covered prices are excluded rather than guessed.
+- **Restaurant grouping and names were done by hand.** Four restaurants show no name on their menus ("Unnamed restaurant #N"), and there is no address, opening hours or location.
+- **Only 3 restaurants list beer**, so beer requests always land on Rainbow, The Street TK or Tbal Khmer.
+
+**Algorithm**
+- **Matching is rule-based.** "Vegetables" means a vegetable *dish* (our definition). Dish names match English words or Khmer text, so "prawn" won't find "shrimp" and "something sour" can't be expressed.
+- **No notion of quality, taste, portion size or how many people it feeds.** "Cheapest" can mean a small plate, and "premium" just means pricier items.
+- **One unit per price line.** Per-kg items count as one order, and "large plate = 2× price" notes are ignored.
+- **Premium covers only one restaurant**; multi-stop premium falls back to the cheapest search.
+- **Search caps** (25 candidates / 3,000 combinations per want) keep it fast but could, in rare large requests, skip the true optimum.
+
+**Agent and app**
+- **The LLM can still misread intent** (wrong quantities, or skipping the confirmation step). The tool guards reduce this but don't remove it.
+- **Answers depend on one model** (`AGENT_MODEL`). A slow or failing OpenRouter call shows an error, and there's no automatic fallback model yet.
+- **The proxy is shared and rate-limited** (60 requests/hour/IP) on one OpenRouter key, and the browser chooses the model. It should be locked to one model before wider sharing.
+- **Chats live only in that browser** (localStorage): no accounts and no sync across devices.
+- **English UI.** Replies follow the user's language, but dish matching is strongest in English.
+- **The live site runs the debug build** (unminified, public source map) while testing continues.
+
+## Future improvements (if time allows)
+
+1. **Crop menus into single-item images before OCR.** Dense pages are where accuracy drops.
+   - Pass 1: have the vision model return a bounding box per item, or use a layout detector. Pass 2: crop each item (with a margin), upscale, and read name + price per crop.
+   - Expected: fewer missed items, better Khmer spelling, cleaner price-to-item pairing. It costs more calls, so it's best applied only to dense pages (> 20 items).
+   - Measure the gain on a hand-labelled gold set before rolling it out.
+2. **RAG over restaurant-grouped data.** Keep the structured tools for prices and arithmetic, and add semantic retrieval for fuzzy wishes ("something sour", "prawn", Khmer queries, "good for groups").
+   - Precompute embeddings for each item (name_en + name_km + description + section + restaurant) and store them with `menus.json`.
+   - Add a `semantic_search` tool that returns item ids, which `plan_meal` then accepts as wants.
+   - Add per-restaurant summary documents (cuisine, signature dishes, price range) so the agent can answer "where should I go for…?" without scanning every item.
+3. **Human-verified gold set** of ~3 menus to measure accuracy properly, instead of model-vs-model agreement.
+4. **Restaurant metadata** (location, hours, Google Maps link) and portion and "serves N" hints for better premium and group plans.
+5. **Production hardening:** lock the proxy to one model, add a fallback model, use the minified build, and remove the public source map.
+'''
+open(p,'w').write(s+'\n')
+E
+grep -n "^## \|^### " README.md
+````
+
+**Result** ✅
+
+```
+20:## Project layout
+41:## Setup
+55:## Step 1 — Menu extraction
+57:### Approach
+82:### Run it
+92:### Manual refinement
+109:### Accuracy — predicted vs measured
+125:### Known limitations (extraction is not perfect)
+135:### Cost
+147:## Step 2 — Meal-plan algorithm
+161:### How it works
+215:## Step 3 — Chat agent
+233:## Deployment
+243:## Limitations
+268:## Future improvements (if time allows)
+```
+
+</details>
+
+---
+
+## 🧑 User (sent mid-turn) — turn 40 · 05:21 UTC
+
+Budget your three hours across all deliverables. A plan, assumptions list, self-critique, and a live app with a partial recommendation scores better than a strong pipeline with no link.
+
+Check on these delivery items, we do we still missing?
+
+### 🤖 Claude
+
+The README update is in. Now your deliverables question. Checking the plan files against what was actually built:
+
+<details><summary>🔧 <b>Bash</b> — Check plan and README against delivered features and elapsed time</summary>
+
+```bash
+grep -n -i "fallback\|structured form\|gemini-2.5-pro\|gemini-2.5-flash\|claude-sonnet\|most food\|more food\|self-critique\|critique" PLAN.md | head -20; echo ---; grep -n -i "critique\|assumption" README.md | head; echo ---; date -u +%H:%M
+```
+
+**Result** ✅
+
+```
+14:- **Primary extractor:** `google/gemini-2.5-pro`. It is strong on Khmer script and dense layouts.
+15:- **Cross-checker:** a second vision model, e.g. `anthropic/claude-sonnet-4.5` or `openai/gpt-5`. I'll check the exact slugs on openrouter.ai/models on the day. Rows where the two models disagree on price or category get flagged for a human to check.
+18:**Optimizer: deterministic code, not the LLM.** The question is a **multiple-choice knapsack** problem. Pick ≥1 chicken dish, ≥1 vegetable dish and 2 beers, all from **one restaurant**, with total ≤ budget. Prefer more food and money left ove
+… [truncated 1322 chars]
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 Deliverables check — 💬 Answer: 2 items missing, 2 partial; about 1 hour left
+
+### 📊 Summary
+**Elapsed: 2h00 of 3h** (03:22 → 05:22 UTC). The **live app with a working recommendation, the plan, the accuracy prediction and the assumptions list are delivered.** Still missing:
+1. A **self-critique**.
+2. The **AI-free fallback form** that [PLAN.md](PLAN.md) promised but I never built.
+
+Partial: the **assumptions** and **approach** text describe the plan as written beforehand, not what was actually built. Everything left is about 40 minutes of work, so there's time.
+
+### ✅ Checklist
+| Deliverable | Status | Where / what's missing |
+|---|---|---|
+| Live app at a here.now link | ✅ | https://swift-sleet-z44r.here.now/ answers the brief: Rainbow, $5.50 |
+| Plan (approach, fallback, not doing, how it goes live) | ✅ written beforehand | [PLAN.md](PLAN.md) / [PLAN.txt](PLAN.txt) |
+| Accuracy prediction before processing | ✅ | PLAN.md §5; measured vs predicted in [README.md](README.md) |
+| Assumptions list | ⚠️ partial | PLAN.md §6 has 18 assumptions from before the build. Assumptions made *during* the build aren't listed anywhere: what counts as "vegetables", fewest restaurants first, one unit per price line, confirm budget before planning, folders as restaurant grouping |
+| **Self-critique** | ❌ **missing** | Only a "Limitations" list exists. Nothing on what went well or badly, what I'd change, where time went, or how the prediction compared |
+| 2 extra brief requirements | ✅ mostly | (1) Evidence: cards show Khmer name, printed price and source image (on hover) ✅; the "verify price" label shows as a warning line ✅. (2) Honest infeasibility: over-budget flag plus a within-budget option ✅ |
+| Fallback if AI fails | ❌ **missing** | PLAN.md promised *"a structured form (budget + category checkboxes) that calls the optimizer directly… answered with no AI"*. Not built: if OpenRouter fails, the app has no answer |
+| Plan vs reality | ⚠️ drift not written down | PLAN said one restaurant only, "more food first", Sonnet as cross-checker, Gemini 2.5 Flash as agent. The build has multiple restaurants with fewest-first then cheapest, Opus 5.5 and Gemini 3.5 Flash. That's fine, but it should be stated |
+| Algorithm diagram | ✅ new | README → "How it works" (Mermaid) + worked example |
+| Limitations + future improvements | ✅ new | README, including your two ideas (below) |
+| Session log | ✅ (re-export at the end) | [ai-session/](ai-session/) |
+
+### 💬 On your two improvement ideas (both now in the README)
+- **Cropping menus into single-item images: agreed, high value.** The data supports it: the errors cluster on dense pages (30–45 items, up to 150 s per call), where the model misses items and misreads Khmer. Do two passes (find item boxes, then read each crop). It costs more calls, so I'd apply it only to pages with more than 20 items and measure against a hand-labelled set first.
+- **RAG: useful, but as an addition, not a replacement.** With 546 items, the structured tools already act as exact retrieval for prices and arithmetic, and vector search shouldn't do math. Where RAG helps is fuzzy wishes: "prawn" vs "shrimp", "something sour", Khmer-language questions. I'd add a `semantic_search` tool over precomputed item embeddings that feeds item ids into `plan_meal`, plus per-restaurant summaries. The restaurant grouping it needs is already done.
+
+### 📝 Changes Made (this turn)
+| File | Change |
+|---|---|
+| [README.md](README.md) | **Algorithm diagram** (Mermaid flowchart + worked example for $10 and $4); Step 2 updated (styles, optional budget, dish matching); Step 3 updated (confirm before planning, dish guard, thinking panel, sessions, debug build); new **Limitations** (data, algorithm, agent/app) and **Future improvements** sections |
+
+⚠️ I haven't seen the Mermaid diagram rendered. It displays on GitHub or in VS Code's Markdown preview with a Mermaid extension.
+
+### 📋 Next Steps (about 40 min, in priority order)
+1. 🔴 **Self-critique** section in the README (about 10 min): what worked, what didn't, the prediction vs reality, time spent per step, what I'd do differently.
+2. 🔴 **AI-free fallback form** (about 15 min): budget, chicken/vegetables/beer/other checkboxes with quantities, then `planMeal` directly into the same plan cards. It also appears automatically when a chat request fails. This keeps the plan's promise.
+3. 🟡 **"Final assumptions" + "What changed vs the plan"** in the README (about 10 min).
+4. 🟢 Production build, redeploy, final session-log export (about 5 min).
+
+Shall I go ahead with 1–4?
+
+---
+
+## 🧑 User — turn 41 · 05:25 UTC
+
+Okay do it
+- 1 more step, Let scan the live app url for leaked credential or secrets
+
+### 🤖 Claude
+
+Starting with the AI-free fallback form (the plan's promise), then the README sections, production build, deploy and secret scan.
+
+<details><summary>🔧 <b>Write</b> — Write `/Users/lam/Projects/khmer-menus/src/components/QuickPlanner.tsx`</summary>
+
+```
+import { useState, type FormEvent } from 'react'
+import { planMeal, type PlanResult, type Style, type Want } from '../optimizer/planMeal.ts'
+import type { MenuData } from '../optimizer/types.ts'
+import { PlanCards } from './PlanCard.tsx'
+
+// AI-free fallback: the same optimizer, driven by a plain form. Works even if OpenRouter is down.
+const PRESETS: { tag: string; label: string; initial: number }[] = [
+  { tag: 'chicken', label: '🍗 Chicken dishes', initial: 1 },
+  { tag: 'vegetables', label: '🥬 Vegetable dishes', initial: 1 },
+  { tag: 'beer', label: '🍺 Beers', initial: 2 },
+  { tag: 'seafood', label: '🦐 Seafood dishes', initial: 0 },
+  { tag: 'rice', label: '🍚 Rice dishes', initial: 0 },
+  { tag: 'soft_drink', label: '🥤 Soft drinks', initial: 0 },
+]
+
+export function QuickPlanner({ data, open, onToggle, reason }: { data: MenuData | null; open: boolean; onToggle: (open: boolean) => void; reason?: string | null }) {
+  const [budget, setBudget] = useState('10')
+  const [qty, setQty] = useState<Record<string, number>>(() => Object.fromEntries(PRESETS.map((p) => [p.tag, p.initial])))
+  const [dish, setDish] = useState('')
+  const [dishQty, setDishQty] = useState(1)
+  const [style, setStyle] = useState<Style>('cheapest')
+  const [result, setResult] = useState<PlanResult | null>(null)
+
+  function run(e: FormEvent) {
+    e.preventDefault()
+    if (!data) return
+    const wants: Want[] = PRESETS.filter((p) => qty[p.tag] > 0).map((p) => ({ tag: p.tag, qty: qty[p.tag] }))
+    if (dish.trim()) wants.push({ tag: dish.trim(), qty: dishQty })
+    const b = Number(budget)
+    setResult(planMeal(data, { budget_usd: b > 0 ? b : null, wants, style }))
+  }
+
+  return (
+    <details className="quick" open={open} onToggle={(e) => onToggle((e.target as HTMLDetailsElement).open)}>
+      <summary>⚡ Quick planner — no AI</summary>
+      {reason && <div className="quick-reason">{reason}</div>}
+      <form onSubmit={run} className="quick-form">
+        <label className="quick-budget">
+          Budget (USD)
+          <input type="number" min="0" step="0.5" value={budget} onChange={(e) => setBudget(e.target.value)} />
+        </label>
+        <div className="quick-grid">
+          {PRESETS.map((p) => (
+            <label key={p.tag} className="quick-row">
+              <span>{p.label}</span>
+              <input
+                type="number"
+                min="0"
+                max="6"
+                value={qty[p.tag]}
+                onChange={(e) => setQty((q) => ({ ...q, [p.tag]: Math.max(0, Math.min(6, Number(e.target.value) || 0)) }))}
+              />
+            </label>
+          ))}
+          <label className="quick-row">
+            <input className="quick-dish" placeholder="Other dish, e.g. oyster" value={dish} onChange={(e) => setDish(e.target.value)} />
+            <input type="number" min="1" max="6" value={dishQty} onChange={(e) => setDishQty(Math.max(1, Math.min(6, Number(e.target.value) || 1)))} />
+          </label>
+        </div>
+        <div cla
+… [truncated 493 chars]
+```
+
+**Result** ✅
+
+```
+File created successfully at: /Users/lam/Projects/khmer-menus/src/components/QuickPlanner.tsx (file state is current in your context — no need to Read it back)
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Wire fallback planner into App, add styles, type-check and lint</summary>
+
+```bash
+python3 - <<'E'
+p='src/App.tsx'; s=open(p).read()
+def rep(a,b):
+    global s; assert a in s, a[:90]; s=s.replace(a,b,1)
+rep("import { PlanCards } from './components/PlanCard'","import { PlanCards } from './components/PlanCard'\nimport { QuickPlanner } from './components/QuickPlanner'")
+rep("""  const [drawerOpen, setDrawerOpen] = useState(false) // sidebar on small screens""","""  const [drawerOpen, setDrawerOpen] = useState(false) // sidebar on small screens
+  const [quickOpen, setQuickOpen] = useState(false) // AI-free planner; opens itself if the AI fails""")
+rep("""      derror('send failed', err)
+      setError(err instanceof Error ? err.message : String(err))""","""      derror('send failed', err)
+      setError(err instanceof Error ? err.message : String(err))
+      setQuickOpen(true) // fallback: the same optimizer without the AI""")
+rep("""      <main className="log">""","""      <QuickPlanner
+        data={data}
+        open={quickOpen}
+        onToggle={setQuickOpen}
+        reason={error ? 'The AI assistant is unavailable right now — you can still plan with this form.' : null}
+      />
+
+      <main className="log">""")
+open(p,'w').write(s)
+E
+cat >> src/index.css <<'E'
+
+/* AI-free quick planner */
+.quick { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 10px 12px; margin-top: 8px; }
+.quick summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.quick-reason { margin-top: 8px; font-size: 0.85rem; color: var(--accent); }
+.quick-form { display: grid; gap: 10px; margin: 10px 0; }
+.quick-budget { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+.quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px 14px; }
+.quick-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 0.88rem; }
+.quick input, .quick select { font: inherit; font-size: 0.88rem; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+.quick input[type='number'] { width: 64px; }
+.quick-dish { flex: 1; min-width: 0; }
+.quick-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.quick .plans { margin-top: 6px; }
+E
+npx tsc -b 2>&1 | head -5 && npx oxlint src 2>&1 | tail -1
+```
+
+**Result** ✅
+
+```
+(Bash completed with no output)
+```
+
+</details>
+
+### 🤖 Claude
+
+The fallback form type-checks. Now the README: what changed vs the plan, final assumptions, and the self-critique.
+
+<details><summary>🔧 <b>Bash</b> — Add plan-vs-built, final assumptions and self-critique to README</summary>
+
+```bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+def rep(a,b):
+    global s; assert a in s, a[:90]; s=s.replace(a,b,1)
+
+# Step 3: mention fallback
+rep("""- **Debug build.** `npm run build:debug`""","""- **AI-free fallback.** "⚡ Quick planner — no AI" (budget + dish/drink counts) runs the same optimizer straight from a form. It opens by itself if an AI request fails, so the core question can always be answered.
+- **Debug build.** `npm run build:debug`""")
+rep("""| React UI, `menus.json`, the meal-plan algorithm, the agent loop |""","""| React UI, `menus.json`, the meal-plan algorithm, the agent loop, the no-AI quick planner |""")
+rep("""- **The live site runs the debug build** (unminified, public source map) while testing continues.\n""","")
+rep("""5. **Production hardening:** lock the proxy to one model, add a fallback model, use the minified build, and remove the public source map.""","""5. **Production hardening:** lock the proxy to one model (needs a server-side check, since the here.now proxy forwards the request body as-is) and add a fallback model.""")
+
+block = r'''## What changed vs the plan
+
+[PLAN.md](PLAN.md) was written before anything was built and is kept unchanged on purpose. Differences:
+
+| Plan | What was built | Why |
+|---|---|---|
+| Restaurants grouped by printed name + photo time gaps | Grouped **by hand** into folders; names fixed by hand with the evidence noted | The model often found no name, or took section headings ("dishes") for names |
+| Cross-checker Claude Sonnet / GPT-5 | Claude **Opus 5.5** | Strongest second opinion on Khmer; at 10 images the cost difference was small |
+| Agent Gemini 2.5 Flash | Gemini **3.5 Flash** (`AGENT_MODEL`) | Better tool calling; set in `.env` |
+| One restaurant only; "more food, then money left" | **Multiple restaurants allowed**: fewest first, then cheapest (or best spread with `premium`); over-budget plans are flagged rather than hidden | New requirement during the build |
+| Agent plans straight away | Agent **confirms the budget and the food/drink wish first** | Without that, the model invented a budget |
+| Extraction cost "< $1" | **$3.53** | Gemini 2.5 Pro's reasoning tokens weren't in the estimate |
+| Hand-labelled 3-menu gold set | **Not done**; accuracy comes from model-vs-model cross-check only | Time went to the app; see the self-critique |
+| AI-free fallback form | ✅ Built (Quick planner) | — |
+
+## Assumptions (final)
+
+The 18 pre-build assumptions are in [PLAN.md §6](PLAN.md). These are the ones the app actually runs on:
+
+**Request**
+- "A couple" = 2, "a few" = 3, "some vegetables" = 1 vegetable dish. Food counts in dishes, drinks in units.
+- **Vegetables means a vegetable dish:** vegetable or salad category, or a meat-free dish tagged vegetables. Herb salads with shrimp count; meat with a garnish doesn't.
+- "Beer" excludes beer cocktails. "Chicken" includes chicken feet and the Rainbow dishes where chicken is one of the meat choices.
+- A named dish ("oysters") is matched by whole-word name; "oyster sauce" and "oyster mushroom" don't count.
+- The budget is in USD, covers menu prices only (no tax, tip or delivery), and **comes from the user**. The agent asks for it rather than assuming one.
+
+**Plan**
+- **Fewer restaurants beats a lower price.** One stop at $5.50 beats two stops at $5.00. If the best plan is over budget it's still shown, flagged, with a within-budget alternative when one exists.
+- One price line is one order. Per-kg items count as one unit, and "large plate = 2× price" notes are ignored.
+- 2 beers may be the same beer; 2 dishes must be different dishes. One dish never counts for two wants.
+- "Premium" = the most generous single-restaurant spread within the budget, food first.
+
+**Data**
+- 4,000 ៛ = $1 flat. Where both $ and ៛ are printed, both are kept as variants.
+- Printed (~2024) prices are taken as current. Disputed, suspicious, sticker-covered and unreadable prices are never recommended.
+- One `data/raw/` folder = one restaurant; names come from the menu, or by hand where the menu shows none.
+
+'''
+rep("## Limitations\n", block + "## Limitations\n")
+
+critique = r'''## Self-critique
+
+**What went well**
+- **The accuracy prediction was written before processing, then measured.** Every measured field beat the prediction (price 97% vs 88–93%).
+- **The LLM never does arithmetic.** The optimizer is exact and deterministic, and the plan cards render straight from the tool output, so the numbers on screen can't be "hallucinated".
+- **Cache everything, rebuild for free.** Manual grouping, names and 14 item fixes were applied with `--build-only`, with no extra model calls and $3.53 spent in total.
+- **Deployed early.** An empty chat with a working proxy was live about 35 minutes in, so hosting risk was gone before any feature work.
+
+**What didn't, and what I'd do differently**
+- **No human gold set.** The "accuracy" is one model checking another. I planned a 3-menu hand-labelled set and dropped it for app work. It's the biggest gap in the evaluation, and I'd do it first next time (about 15 minutes).
+- **Grouping by heuristic was a mistake.** Time gaps plus printed names produced wrong restaurants (headings as names, "Lilis" for Bayon, a split Rainbow). Five minutes of human grouping before extraction would have avoided three rounds of fixes.
+- **Prompt-only guardrails failed in real use.** The model invented a "$20 budget", turned "oysters" into "seafood", and leaked its reasoning into replies. Each fix was *structural*: optional budget plus a confirmation step, a dish guard inside the tool, a separate reasoning channel, a forced final step. I should have designed the tool contracts defensively from the start.
+- **A crash reached the live site** (an effect returning a Promise blanked the page) because I skipped a 2-minute browser check after deploying. Lesson: always click through the deployed build once.
+- **The cost estimate was about 3.5× off** ($1 vs $3.53) because reasoning tokens weren't counted. The per-call usage log made it visible.
+- **Changes mid-run cost time:** porting the extractor from JS to Python during the run, and redesigning the objective for multi-restaurant plans. Both were right calls, but they pushed the promised fallback form to the very end.
+
+**Time spent** (approximate, from the [session log](ai-session/) timestamps)
+
+| Block | Time |
+|---|---|
+| Plan, model research, prediction, assumptions | ~25 min |
+| Setup, here.now auth, first deploy | ~20 min |
+| Extraction, cross-check, manual refinement, README | ~45 min |
+| Optimizer, agent, multi-restaurant redesign | ~25 min |
+| Bug fixes and UX (crash, thinking panel, oysters, sessions, confirm-first) | ~35 min |
+| Docs, fallback form, deliverable checks | ~20 min |
+
+'''
+rep("## Future improvements (if time allows)", critique + "## Future improvements (if time allows)")
+open(p,'w').write(s)
+E
+grep -n "^## " README.md
+```
+
+**Result** ✅
+
+```
+20:## Project layout
+41:## Setup
+55:## Step 1 — Menu extraction
+147:## Step 2 — Meal-plan algorithm
+215:## Step 3 — Chat agent
+234:## Deployment
+244:## What changed vs the plan
+259:## Assumptions (final)
+281:## Limitations
+305:## Self-critique
+332:## Future improvements (if time allows)
+```
+
+</details>
+
+### 🤖 Claude
+
+The README has its new sections. Next: production build (minified, no source map), deploy, and a secret scan of the live site.
+
+<details><summary>🔧 <b>Bash</b> — Build minified production bundle and deploy with retries</summary>
+
+```bash
+rm -rf dist && npm run build 2>&1 | grep -E "error|built|kB" && ls -a dist dist/assets && set -a && . ./.env && set +a && for i in 1 2 3; do out=$(~/.agents/skills/here-now/scripts/publish.sh dist --slug swift-sleet-z44r --client claude-code/publish-sh 2>&1 | grep -v hnk_); echo "$out" | grep -E "curl:|uploading|live_version|warn"; echo "$out" | grep -q live_version && break; sleep 8; done
+```
+
+**Result** ✅
+
+```
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/index-BQu1e9LZ.css    7.61 kB │ gzip:  2.26 kB
+dist/assets/index-D3mcU-5r.js   252.29 kB │ gzip: 80.68 kB
+✓ built in 100ms
+dist:
+.
+..
+.herenow
+assets
+favicon.svg
+index.html
+menus.json
+
+dist/assets:
+.
+..
+index-BQu1e9LZ.css
+index-D3mcU-5r.js
+uploading 3 files (3 unchanged, skipped)...
+publish_result.live_version_id=01M3XH7WWFREDV904F6G1V3BNE
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Download all live site files and probe common leak paths</summary>
+
+```bash
+S=/private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/livescan && rm -rf $S && mkdir -p $S && U=https://swift-sleet-z44r.here.now && sleep 2 && curl -s $U/ -o $S/index.html && for a in $(grep -o 'assets/[^"]*' $S/index.html); do curl -s $U/$a -o $S/$(basename $a); done && curl -s $U/menus.json -o $S/menus.json && curl -s $U/favicon.svg -o $S/favicon.svg && ls -la $S && echo "--- probe paths (expect 404/SPA fallback, never real content)" && for p in .env .env.local .env.example .herenow/proxy.json .herenow/state.json .git/config .git/HEAD package.json vite.config.ts src/App.tsx assets/$(ls $S | grep '\.js$').map assets/index-BorsxyO_.js.map logs/llm-usage.jsonl data/menus.json scripts/extraction/llm.py; do printf "%-40s %s\n" "$p" "$(curl -s -o $S/probe.out -w '%{http_code} %{size_download}B' $U/$p) $(head -c 60 $S/probe.out | tr '\n' ' ' | cut -c1-60)"; done
+```
+
+**Result** ✅
+
+```
+total 1952
+drwxr-xr-x   7 lam  wheel     224 Oct  2 12:26 .
+drwx------  10 lam  wheel     320 Oct  2 12:26 ..
+-rw-r--r--   1 lam  wheel    9522 Oct  2 12:26 favicon.svg
+-rw-r--r--   1 lam  wheel    7614 Oct  2 12:26 index-BQu1e9LZ.css
+-rw-r--r--   1 lam  wheel  252292 Oct  2 12:26 index-D3mcU-5r.js
+-rw-r--r--   1 lam  wheel     830 Oct  2 12:26 index.html
+-rw-r--r--   1 lam  wheel  693556 Oct  2 12:26 menus.json
+--- probe paths (expect 404/SPA fallback, never real content)
+.env                                     404 9B Not found
+.env.local                               404 9B Not found
+.env.e
+… [truncated 747 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Scan live files for real secret values and secret patterns</summary>
+
+```bash
+S=/private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/livescan && rm -f $S/probe.out && python3 - "$S" <<'E'
+import os, re, sys
+S = sys.argv[1]
+env = {}
+for line in open('.env'):
+    line = line.strip()
+    if line and not line.startswith('#') and '=' in line:
+        k, v = line.split('=', 1); env[k.strip()] = v.strip()
+secret_keys = [k for k in env if any(t in k for t in ('KEY', 'SECRET', 'TOKEN', 'CODE'))]
+files = {f: open(os.path.join(S, f), 'rb').read().decode('utf-8', 'replace') for f in sorted(os.listdir(S))}
+
+print('1) Exact .env secret values in live files (values never printed):')
+for k in secret_keys:
+    v = env[k]
+    if not v:
+        print(f'   {k:22} (empty in .env, skipped)'); continue
+    hits = [f for f, c in files.items() if v in c or v[8:28] in c]
+    print(f'   {k:22} {"❌ FOUND in " + ", ".join(hits) if hits else "✅ not found"}')
+
+patterns = {
+    'OpenRouter key (sk-or-…)': r'sk-or-v1-[A-Za-z0-9]{20,}',
+    'Anthropic key (sk-ant-…)': r'sk-ant-[A-Za-z0-9_-]{20,}',
+    'OpenAI-style key (sk-…)': r'\bsk-[A-Za-z0-9]{32,}',
+    'here.now key (hnk_…)': r'hnk_[A-Za-z0-9]{20,}',
+    'Google API key (AIza…)': r'AIza[0-9A-Za-z_-]{35}',
+    'AWS access key': r'AKIA[0-9A-Z]{16}',
+    'GitHub token': r'gh[pousr]_[A-Za-z0-9]{36,}',
+    'Slack token': r'xox[abpr]-[A-Za-z0-9-]{10,}',
+    'Private key block': r'-----BEGIN [A-Z ]*PRIVATE KEY-----',
+    'JWT': r'eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}',
+    'Bearer with literal token': r'Bearer\s+[A-Za-z0-9._-]{20,}',
+    'Env var names with = value': r'(OPENROUTER_API_KEY|HERENOW_API_KEY|HERENOW_SIGNIN_CODE)\s*[=:]\s*["\']?[A-Za-z0-9_-]{8,}',
+}
+print('2) Secret patterns:')
+for name, pat in patterns.items():
+    hits = [(f, m.group(0)[:12] + '…') for f, c in files.items() for m in re.finditer(pat, c)]
+    print(f'   {name:28} {"❌ " + str(hits[:3]) if hits else "✅ none"}')
+
+print('3) Other things worth knowing:')
+for label, pat in [('user email', re.escape(env.get('HERENOW_EMAIL', '@@none@@'))), ('local file paths (/Users/…)', r'/Users/[A-Za-z0-9_.-]+'), ('localhost URLs', r'localhost:\d+'), ('.env mentions', r'\.env\b'), ('sourceMappingURL', r'sourceMappingURL')]:
+    hits = sorted({f for f, c in files.items() if re.search(pat, c)})
+    print(f'   {label:28} {"⚠️ in " + ", ".join(hits) if hits else "✅ none"}')
+m = re.search(r'google/[a-z0-9.-]+|anthropic/[a-z0-9.-]+', files[[f for f in files if f.endswith('.js')][0]])
+print(f'   model id in bundle            ℹ️ {m.group(0) if m else "none"} (public by design, not a secret)')
+E
+```
+
+**Result** ✅
+
+```
+1) Exact .env secret values in live files (values never printed):
+   OPENROUTER_API_KEY     ✅ not found
+   HERENOW_SIGNIN_CODE    (empty in .env, skipped)
+   HERENOW_API_KEY        ✅ not found
+2) Secret patterns:
+   OpenRouter key (sk-or-…)     ✅ none
+   Anthropic key (sk-ant-…)     ✅ none
+   OpenAI-style key (sk-…)      ✅ none
+   here.now key (hnk_…)         ✅ none
+   Google API key (AIza…)       ✅ none
+   AWS access key               ✅ none
+   GitHub token                 ✅ none
+   Slack token                  ✅ none
+   Private key block            ✅ none
+   JWT                          ✅ no
+… [truncated 399 chars]
+```
+
+</details>
+
+### 🤖 Claude
+
+The served files are clean. One last angle: checking whether the proxy endpoint echoes the injected key back in its response headers or body, e.g. on an error:
+
+<details><summary>🔧 <b>Bash</b> — Check proxy error responses for echoed credentials</summary>
+
+```bash
+set -a && . ./.env && set +a && U=https://swift-sleet-z44r.here.now/api/chat && for body in '{"model":"google/gemini-3.5-flash","messages":[]}' 'not-json' '{"model":"no/such-model","messages":[{"role":"user","content":"hi"}]}'; do r=$(curl -s -i -X POST $U -H 'content-type: application/json' --data "$body"); code=$(echo "$r" | head -1 | tr -d '\r'); leak=$(python3 -c "import sys,os; r=sys.stdin.read(); k=os.environ['OPENROUTER_API_KEY']; print('❌ KEY ECHOED' if (k in r or k[10:30] in r or 'sk-or-v1' in r) else '✅ no key'); print('   auth header echoed:', 'yes ❌' if 'authorization:' in r.lower() else 'no ✅')" <<< "$r"); echo "$code | $leak"; done; echo "--- GET on the proxy route:"; curl -s -o /dev/null -w "%{http_code}\n" $U
+```
+
+**Result** ✅
+
+```
+HTTP/2 400  | ✅ no key
+   auth header echoed: no ✅
+HTTP/2 400  | ✅ no key
+   auth header echoed: no ✅
+HTTP/2 400  | ✅ no key
+   auth header echoed: no ✅
+--- GET on the proxy route:
+405
+```
+
+</details>
+
+---
+
+## 🧑 User (sent mid-turn) — turn 42 · 05:27 UTC
+
+Searching menus for recommendation. Are we leaving it for LLM or we apply some sort of searching in code?
+
+<details><summary>🔧 <b>Bash</b> — Note scan in README, re-export session log, confirm .env ignored</summary>
+
+```bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+a="""| React UI, `menus.json`, the meal-plan algorithm, the agent loop, the no-AI quick planner |"""
+i=s.index(a); j=s.index("\n\n", i)
+s=s[:j]+"""
+
+**Secret scan of the live site (2026-10-02):** downloaded every served file and probed common leak paths (`.env`, `.git/`, source maps, `src/`, `logs/`, `.herenow/`); all return 404.
+- No OpenRouter or here.now key values and no key-shaped strings (sk-…, hnk_…, AIza…, AKIA…, JWT, Bearer tokens) appear anywhere, and neither do local paths or the account email.
+- Proxy error responses don't echo the key or the `Authorization` header.
+- The only config visible in the bundle is the model id, which is public by design.
+- Known risk: `/api/chat` is open to anyone with the URL (60 requests/hour/IP) and accepts any model, so the key's budget is what's exposed, not the key itself."""+s[j:]
+
+a="""- **Matching is rule-based.**"""
+s=s.replace(a,"""- **Menu search is keyword-based code, not semantic.** `search_menu` and `plan_meal` filter `menus.json` deterministically: substring match on English/Khmer names and descriptions, category/tag rules, price, restaurant. The LLM only picks the arguments.
+- **Matching is rule-based.**""",1)
+open(p,'w').write(s)
+E
+node scripts/export-session.mjs ~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" && (grep -nE "sk-or-v1-[A-Za-z0-9]{10}|hnk_[A-Za-z0-9]{10}" ai-session/*.md || echo "session log secret scan: clean"); git status --short | head -30; git check-ignore -q .env && echo ".env ignored ✅"
+```
+
+**Result** ✅
+
+```
+wrote ai-session/session-01-2026-10-02-planning-setup-deploy.md (42 user turns)
+session log secret scan: clean
+ M README.md
+ M ai-session/session-01-2026-10-02-planning-setup-deploy.md
+ M src/App.tsx
+ M src/index.css
+?? src/components/QuickPlanner.tsx
+.env ignored ✅
+```
+
+</details>
+
+### 🤖 Claude
+
+Written for: challenge reviewers reading the README; the rest of this message is for you.
+
+## 🎯 Missing deliverables + live secret scan — ✅ Done (about 2h10 of 3h used)
+
+### 📊 Summary
+- **All brief deliverables are in place:** plan, assumptions (before and after the build), accuracy prediction vs measured, **self-critique**, algorithm diagram, limitations, and the live app.
+- **The AI-free fallback** the plan promised is built: "⚡ Quick planner — no AI", which opens by itself if the AI fails.
+- **The live site runs the production build:** minified, no source map.
+- **Secret scan: clean.** No keys, tokens, local paths or email anywhere on the live site, and the proxy doesn't echo the key.
+
+### 💬 Your question: is menu searching left to the LLM?
+**No, it's code.** The LLM only chooses the arguments and explains the results.
+| Part | Who does it | How |
+|---|---|---|
+| Understanding the request ("a couple of beers", "something nice") | LLM | Turns it into `wants`, a budget and a style, or asks you to clarify |
+| **Searching menus** (`search_menu`) | **Code**: `searchMenu()` in [planMeal.ts](src/optimizer/planMeal.ts) | Fixed filters over `menus.json`: text match on English/Khmer names and descriptions, category/tag rules, food/beverage, restaurant, max price; sorted by price, up to 40 results |
+| **Choosing items and prices** (`plan_meal`) | **Code** | Exact optimizer (fewest restaurants, then cheapest / best spread) |
+| Open recommendations ("any recommendation?") | LLM proposes *which kinds* of dishes; code finds the actual items and prices | The LLM may browse with `search_menu` first, then proposes a set for you to confirm |
+
+The weak spot is that the search is **keyword-based, not semantic**: "prawn" won't find "shrimp", and "something sour" can't be expressed. That's exactly where the RAG idea fits, and it's now in Limitations and Future improvements.
+
+### 📝 Changes Made
+| File | Change |
+|---|---|
+| [src/components/QuickPlanner.tsx](src/components/QuickPlanner.tsx) | **New AI-free planner**: budget, counts (chicken, vegetables, beer, seafood, rice, soft drinks, plus any other dish), cheapest / best-spread choice. Runs `planMeal` directly and shows the same plan cards |
+| [src/App.tsx](src/App.tsx), [src/index.css](src/index.css) | Planner above the chat. **It opens automatically when an AI request fails**, with "The AI assistant is unavailable right now…" |
+| [README.md](README.md) | New **What changed vs the plan** (8 differences, each with its reason), **Assumptions (final)** (request, plan, data), **Self-critique** (what went well, what didn't, time per block), the secret scan result, search described as keyword-based code; fallback added to Step 3 and Deployment |
+| [ai-session/…md](ai-session/session-01-2026-10-02-planning-setup-deploy.md) | Re-exported: 42 turns; secret scan clean |
+| Live site | Production build deployed (252 KB minified, no source map) |
+
+### 🔐 Live secret scan
+| Check | Result |
+|---|---|
+| Real `.env` values (OpenRouter key, here.now key) in any served file | ✅ not found (compared in the script, never printed) |
+| 12 key patterns (sk-or-, sk-ant-, sk-, hnk_, AIza, AKIA, GitHub, Slack, private keys, JWT, Bearer, `KEY=value`) | ✅ none |
+| Email, `/Users/…` paths, localhost, `.env` mentions, `sourceMappingURL` | ✅ none |
+| Probed 15 leak paths (`.env*`, `.git/*`, `.herenow/*`, source maps incl. the old debug one, `src/`, `logs/`, `data/`, `scripts/`) | ✅ all 404 |
+| Proxy error responses (empty, malformed, unknown model) | ✅ no key, no `Authorization` header echoed; GET → 405 |
+| Visible in the bundle | ℹ️ model id `google/gemini-3.5-flash` only (public by design) |
+| **Remaining risk** | ⚠️ `/api/chat` is open to anyone with the link (60 requests/hour/IP) and accepts any model. The key itself is safe, but its spending budget is exposed. Fine for a throwaway key; dispose of it after the challenge |
+
+### Impact
+- ✅ Type-check and lint clean; production build deployed; `.env` confirmed git-ignored.
+- 🔄 I didn't click through the quick planner in a browser. It reuses the same optimizer and plan cards that were already checked.
+- ℹ️ `git status` shows files as modified, so there's an existing commit. Nothing was committed by me.
+
+### 🧪 Testing Checklist
+- [ ] Open "⚡ Quick planner — no AI": budget 10, chicken 1, vegetables 1, beer 2 → Find a plan → Rainbow $5.50.
+- [ ] Type "oyster" in "Other dish" with the other counts at 0 → The Street, Oysters $3.
+- [ ] Mermaid diagram renders in the README (GitHub, or VS Code with a Mermaid extension).
+
+### 📋 Next Steps
+1. 🔴 A quick final click-through of the live site (hard-refresh first).
+2. 🟡 Commit when you're ready (I haven't committed anything).
+3. 🟢 After the challenge: revoke the throwaway OpenRouter key and delete the here.now account variable `OPENROUTER_API_KEY`.
+
+---
+
+## 🧑 User — turn 43 · 05:30 UTC
+
+Let add some basic authentication with a predefined username and a hard password to protect the app from publicly access
+
+### 🤖 Claude
+
+First I'll check what here.now enforces on the server. A login screen written in JavaScript alone would be cosmetic: the bundle and the `/api/chat` proxy would stay publicly reachable.
+
+<details><summary>🔧 <b>Bash</b> — Search here.now docs and OpenAPI for password protection details</summary>
+
+```bash
+cd /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad && python3 - <<'E'
+import re,json
+s=open('docs-full.html').read()
+txt=re.sub(r'\\"','"',s)
+for kw in ['password protect','Password protection','"password"','passwordProtected','basic auth','Basic auth','username']:
+    for m in list(re.finditer(re.escape(kw), txt))[:3]:
+        seg=txt[max(0,m.start()-300):m.start()+700]
+        seg=re.sub(r'\[\"\$\",\"[a-z0-9]+\",null,\{[^}]*\"children\":','',seg)
+        print('=== ',kw,'\n',re.sub(r'\s+',' ',seg)[:900],'\n')
+E
+python3 -c "
+import json;d=json.load(open('openapi.json'))
+txt=json.dumps(d)
+import re
+for m in list(re.finditer('password', txt))[:12]:
+    print('...',txt[max(0,m.start()-200):m.start()+250].replace('\\\\n',' '),'\n')
+" | head -60
+```
+
+**Result** ✅
+
+```
+===  password protect 
+ an>, <span class="tok-key">&quot;filesCount&quot;</span>:<!-- --> <span class="tok-num">36</span> }</code></pre></div><p class="text-[15px] leading-relaxed text-zinc-700 mb-4">Copies all files and viewer metadata, plus the Site Data schema (collections) — but not the stored records. Does not copy password protection, restricted access rules, vanity subdomain/custom domain mounts, or TTL.</p><p class="text-[15px] leading-relaxed text-zinc-700 mb-4">On workspace Sites, any active member can duplicate a member-visible Site into the same workspace (send the <code class="tex
+… [truncated 15098 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Generate a strong password into .env and enable here.now password protection</summary>
+
+```bash
+cd /Users/lam/Projects/khmer-menus && python3 - <<'E'
+import secrets, string, re
+alphabet = string.ascii_letters + string.digits + "-_.~!@#%^*"
+pw = ''.join(secrets.choice(alphabet) for _ in range(24))
+# guarantee each class is present
+while not (re.search(r'[a-z]', pw) and re.search(r'[A-Z]', pw) and re.search(r'\d', pw) and re.search(r'[-_.~!@#%^*]', pw)):
+    pw = ''.join(secrets.choice(alphabet) for _ in range(24))
+s = open('.env').read()
+if 'SITE_PASSWORD=' in s:
+    s = re.sub(r'^SITE_PASSWORD=.*$', f'SITE_PASSWORD={pw}', s, flags=re.M)
+else:
+    s = s.rstrip('\n') + f'\n\n# here.now visitor password for the live site (server-side gate)\nSITE_PASSWORD={pw}\n'
+open('.env', 'w').write(s)
+print('generated: 24 chars, upper+lower+digit+symbol; saved to .env as SITE_PASSWORD (not printed)')
+E
+grep -q "^SITE_PASSWORD=" .env.example || printf '\n# here.now visitor password for the live site (server-side gate)\nSITE_PASSWORD=\n' >> .env.example
+set -a && . ./.env && set +a && python3 -c "import json,os; print(json.dumps({'password': os.environ['SITE_PASSWORD']}))" | curl -sS -X PATCH https://here.now/api/v1/publish/swift-sleet-z44r/metadata -H "Authorization: Bearer $HERENOW_API_KEY" -H "X-HereNow-Client: claude-code/direct-api" -H "content-type: application/json" --data-binary @- | python3 -c "import json,sys; d=json.load(sys.stdin); print({k:v for k,v in d.items() if 'password' not in k.lower() or isinstance(v,bool)})"
+```
+
+**Result** ✅
+
+```
+generated: 24 chars, upper+lower+digit+symbol; saved to .env as SITE_PASSWORD (not printed)
+{'success': True, 'passwordProtected': True}
+```
+
+</details>
+
+### 🤖 Claude
+
+Password protection is on. Now checking what an unauthenticated visitor can reach:
+
+<details><summary>🔧 <b>Bash</b> — Probe the live site and proxy without the password</summary>
+
+```bash
+U=https://swift-sleet-z44r.here.now; sleep 3; for p in / /index.html /menus.json /assets/$(ls /Users/lam/Projects/khmer-menus/dist/assets | grep js$) /favicon.svg; do printf "GET  %-34s %s\n" "$p" "$(curl -s -o /tmp/hn.out -w '%{http_code} %{size_download}B' $U$p) | $(head -c 80 /tmp/hn.out | tr '\n' ' ' | sed 's/<[^>]*>//g' | cut -c1-60)"; done; printf "POST %-34s %s\n" "/api/chat" "$(curl -s -o /tmp/hn.out -w '%{http_code} %{size_download}B' -X POST $U/api/chat -H 'content-type: application/json' -d '{"model":"google/gemini-3.5-flash","messages":[{"role":"user","content":"Reply with exactly: ok"}],"max_tokens":200}') | $(head -c 120 /tmp/hn.out | tr '\n' ' ' | cut -c1-80)"; grep -o -i 'password[^"<]\{0,40\}' /tmp/hn.out | head -2; curl -s $U/ | grep -o -i '<title>[^<]*\|type="password"\|name="[a-z_]*"' | head -5
+```
+
+**Result** ✅
+
+```
+GET  /                                  401 2685B |         <meta name="viewport"
+GET  /index.html                        401 2685B |         <meta name="viewport"
+GET  /menus.json                        401 2685B |         <meta name="viewport"
+GET  /assets/index-D3mcU-5r.js          401 2685B |         <meta name="viewport"
+GET  /favicon.svg                       401 2685B |         <meta name="viewport"
+POST /api/chat                          401 2685B | <!doctype html> <html> <head>   <meta charset="utf-8" />   <meta name="viewport"
+password
+password
+name="viewport"
+name="robots"
+<title>Pr
+… [truncated 39 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Inspect the here.now password form fields</summary>
+
+```bash
+U=https://swift-sleet-z44r.here.now && curl -s $U/ | grep -o '<form[^>]*>\|<input[^>]*>' | sed 's/value="[^"]*"/value="…"/g'
+```
+
+**Result** ✅
+
+```
+<form method="POST">
+<input type="password" name="password" placeholder="Enter password" autofocus required />
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Verify wrong password is rejected and right password unlocks site and proxy</summary>
+
+```bash
+set -a && . ./.env && set +a && U=https://swift-sleet-z44r.here.now && J=/tmp/hn.jar && rm -f $J && echo "wrong password → $(curl -s -o /dev/null -w '%{http_code}' -c $J -X POST $U/ --data-urlencode 'password=not-the-password')" && rm -f $J && code=$(curl -s -o /dev/null -w '%{http_code}' -c $J -b $J -X POST $U/ --data-urlencode "password=$SITE_PASSWORD") && echo "right password → $code" && for p in / /menus.json; do echo "  with cookie GET $p → $(curl -s -o /tmp/hn.out -w '%{http_code} %{size_download}B' -b $J $U$p)"; done && echo "  with cookie POST /api/chat → $(curl -s -b $J -X POST $U/api/chat -H 'content-type: application/json' -d '{"model":"google/gemini-3.5-flash","messages":[{"role":"user","content":"Reply with exactly: ok"}],"max_tokens":300}' | python3 -c 'import json,sys; d=json.load(sys.stdin); print(d.get("error") or d["choices"][0]["message"]["content"])')"; rm -f $J /tmp/hn.out
+```
+
+**Result** ✅
+
+```
+wrong password → 401
+right password → 303
+  with cookie GET / → 200 468B
+  with cookie GET /menus.json → 200 693556B
+  with cookie POST /api/chat → ok
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Update README security notes, add .env redaction to exporter, update memory</summary>
+
+```bash
+python3 - <<'E'
+def edit(p, pairs):
+    s=open(p).read()
+    for a,b in pairs:
+        assert a in s, (p, a[:80]); s=s.replace(a,b,1)
+    open(p,'w').write(s)
+edit('README.md', [
+ ("**Live:** https://swift-sleet-z44r.here.now/", "**Live:** https://swift-sleet-z44r.here.now/ (password-protected; ask the owner for the password)"),
+ ("""- Known risk: `/api/chat` is open to anyone with the URL (60 requests/hour/IP) and accepts any model, so the key's budget is what's exposed, not the key itself.""",
+  """
+**Access control:** the site uses **here.now server-side password protection**.
+- Every path returns 401 until the visitor enters the password: page, `menus.json`, JS bundle **and the `/api/chat` proxy**. So the OpenRouter key's budget is no longer reachable by strangers.
+- Wrong password → 401. Right password → a session cookie (303 redirect), after which the app works normally.
+- The password is in the git-ignored `.env` as `SITE_PASSWORD` and survives redeploys (it's site metadata). Change it with `PATCH /api/v1/publish/swift-sleet-z44r/metadata {"password": "…"}`, or remove it with `null`.
+- here.now offers password-only protection, with no username field. A username check written in the app's JavaScript would be visible in the bundle and add no security, so there isn't one.
+- Remaining risk: anyone who has the password can still use any model through the proxy (60 requests/hour/IP)."""),
+ ("""- **The proxy is shared and rate-limited** (60 requests/hour/IP) on one OpenRouter key, and the browser chooses the model. It should be locked to one model before wider sharing.""",
+  """- **The site is behind one shared password** (here.now has no per-user accounts or usernames). Anyone with the password can use the proxy (60 requests/hour/IP) with any model."""),
+])
+edit('scripts/export-session.mjs', [
+ ("""const redact = (s) =>
+  s""","""// Values of secret-looking variables in the project .env (e.g. SITE_PASSWORD) are redacted verbatim.
+const envSecrets = (() => {
+  try {
+    return readFileSync('.env', 'utf8')
+      .split('\\n')
+      .map((l) => l.match(/^\\s*([A-Z0-9_]*(?:KEY|SECRET|TOKEN|PASSWORD|CODE)[A-Z0-9_]*)\\s*=\\s*(.+?)\\s*$/))
+      .filter((m) => m && m[2].length >= 6)
+      .map((m) => m[2])
+  } catch {
+    return []
+  }
+})()
+
+const redact = (s) =>
+  envSecrets
+    .reduce((acc, v) => acc.split(v).join('[REDACTED]'), s)"""),
+])
+E
+node --check scripts/export-session.mjs && echo "exporter ok" && cat > ~/.claude/projects/-Users-lam-Projects-khmer-menus/memory/herenow-deployment.md <<'E'
+---
+name: herenow-deployment
+description: Khmer menus app is live on here.now at slug swift-sleet-z44r (password-protected); how deploys, secrets and the visitor password are wired
+metadata:
+  type: project
+---
+
+Live site: https://swift-sleet-z44r.here.now/ (first published 2026-10-02, permanent, user's account). It has here.now server-side password protection (enabled 2026-10-02), which gates every path including the /api/chat proxy. The visitor password is SITE_PASSWORD in the project's gitignored .env and must never be printed in chat.
+Redeploy: `npm run build` (or `npm run build:debug` for a readable bundle with source maps), then `set -a; . ./.env; set +a; ~/.agents/skills/here-now/scripts/publish.sh dist --slug swift-sleet-z44r --client claude-code/publish-sh`. Publishing often hits "curl: (56) connection reset" on the first try, so retry.
+The OpenRouter key is a here.now account variable `OPENROUTER_API_KEY` pinned to openrouter.ai; `public/.herenow/proxy.json` maps `/api/chat` to it. The user keeps all secrets (OpenRouter, HERENOW_API_KEY, SITE_PASSWORD) in .env, not in ~/.herenow/credentials.
+
+**Why:** here.now has no Docker or server compute, so the agent loop runs in the browser and only the LLM call goes through the proxy. Password mode has no username field.
+**How to apply:** always republish with `--slug` so the URL stays the same, deploy only when the user asks, and confirm the password gate still returns 401 after a deploy.
+E
+sed -i '' 's/^- \[here.now deployment\](herenow-deployment.md).*/- [here.now deployment](herenow-deployment.md) — live slug swift-sleet-z44r, password-gated, proxy \/api\/chat, secrets in .env/' ~/.claude/projects/-Users-lam-Projects-khmer-menus/memory/MEMORY.md && grep herenow ~/.claude/projects/-Users-lam-Projects-khmer-menus/memory/MEMORY.md
+```
+
+**Result** ✅
+
+```
+exporter ok
+- [here.now deployment](herenow-deployment.md) — live slug swift-sleet-z44r, password-gated, proxy /api/chat, secrets in .env
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 Protect the app from public access — ✅ Done (server-side password; no username, see below)
+
+### 📊 Summary
+The live site is now behind **here.now's server-side password protection**. Every path returns **401 and a password page** until the visitor enters the password: the app, `menus.json`, the JS bundle, **and the `/api/chat` AI proxy**. So strangers can no longer spend your OpenRouter credit either. I generated a **strong 24-character password** and saved it to your git-ignored [.env](.env) as `SITE_PASSWORD`. I deliberately didn't print it here, so it can't leak into chat or the session log.
+
+### ⚠️ About the username
+here.now's protection is **password-only, with no username field**. I could add a username box in our app's JavaScript, but anyone can read the bundle, so it would look like security without being any. I went with the real server-side gate instead. If you need per-person logins, here.now's **restricted access** mode lets only specific verified email addresses in (each person signs in with their email). It replaces password mode; say if you want to switch.
+
+### ✅ Verification (curl against the live site)
+| Request | Without password | With password |
+|---|---|---|
+| `GET /` (app) | ❌ 401, "Protected" page | ✅ 200 |
+| `GET /menus.json` (data) | ❌ 401 | ✅ 200 (694 KB) |
+| `GET /assets/*.js` (bundle) | ❌ 401 | — |
+| `POST /api/chat` (AI proxy) | ❌ 401 | ✅ model replied "ok" |
+| Login with a **wrong** password | 401 | — |
+| Login with the **right** password | 303 + session cookie | — |
+
+### 📝 Changes Made
+| File / setting | Change | Why |
+|---|---|---|
+| here.now site `swift-sleet-z44r` | Password protection on (`passwordProtected: true`) | Server-side gate: nothing is served before the password |
+| [.env](.env) | New `SITE_PASSWORD` (24 random characters: upper, lower, digits, symbols) | Kept with your other secrets, out of git |
+| [.env.example](.env.example) | Empty `SITE_PASSWORD=` slot | Documents the setting |
+| [README.md](README.md) | "Live" line notes the password; new **Access control** section; limitations updated (one shared password, no usernames) | Docs match reality |
+| [scripts/export-session.mjs](scripts/export-session.mjs) | Also blanks out the **values** of secret-looking `.env` variables (`*PASSWORD*`, `*KEY*`, `*TOKEN*`…) | Belt and braces: the password can't reach `ai-session/` even if it's ever displayed |
+
+### Impact
+- ✅ Survives redeploys: the password is site metadata, not a file.
+- ✅ No code change or redeploy was needed; the app works as before once you're signed in.
+- ⚠️ **Share the password only with people who should use the app.** Anyone who has it can still use the AI proxy (60 requests/hour/IP) with any model.
+- ℹ️ Changing or removing the password logs everyone out immediately.
+
+### 🧪 Testing Checklist
+- [ ] Open the link in a private window: you should see the "Protected" password page.
+- [ ] Copy `SITE_PASSWORD` from `.env` and enter it: the app loads and a chat request works.
+- [ ] A wrong password is rejected.
+
+### 🔄 Rollback
+- Remove protection: `PATCH /api/v1/publish/swift-sleet-z44r/metadata` with `{"password": null}`; I can run it on request.
+- Change the password: same call with a new value. I'd update `.env` too.
+
+### 📋 Next Steps
+1. 🔴 Try the private-window login.
+2. 🟡 Decide whether shared-password access is enough, or whether you want email-based restricted access (per person).
+3. 🟢 Re-export the session log at the very end, then revoke the throwaway OpenRouter key after the challenge.
+
+---
+
+## 🧑 User — turn 44 · 05:32 UTC
+
+What model and framework we used to build chat agent. Should have system design diagram and technical detail listed in README. even where we store data, data flow
+
+### 🤖 Claude
+
+I'll answer in chat and also add a **System design** section to the README. It will cover an architecture diagram, the tech stack (models and frameworks), where every piece of data is stored, and the offline and runtime data flows.
+
+<details><summary>🔧 <b>Bash</b> — Collect exact versions and agent parameters for the README</summary>
+
+```bash
+node -e "const p=require('./package.json');console.log(JSON.stringify({...p.dependencies,...p.devDependencies}))" && node -e "for (const m of ['react','vite','typescript','@vitejs/plugin-react']) console.log(m, require('./node_modules/'+m+'/package.json').version)" && scripts/extraction/.venv/bin/python -c "import sys,requests,dotenv,PIL;print('python',sys.version.split()[0],'requests',requests.__version__,'Pillow',PIL.__version__)" && grep -n "temperature\|max_tokens\|reasoning:" src/lib/openrouter.ts && grep -n "MAX_STEPS =" src/agent/agent.ts && grep -n "rateLimit" public/.herenow/proxy.json && grep -n "KEY = \|MAX_SESSIONS" src/lib/sessions.ts && grep -n "^## " README.md
+```
+
+**Result** ✅
+
+```
+{"react":"^19.2.8","react-dom":"^19.2.8","@types/node":"^24.13.3","@types/react":"^19.2.18","@types/react-dom":"^19.2.7","@vitejs/plugin-react":"^6.1.1","oxlint":"^1.81.0","typescript":"~6.0.2","vite":"^8.3.0"}
+react 19.3.0
+vite 8.3.2
+typescript 6.0.3
+@vitejs/plugin-react 6.1.1
+python 3.13.13 requests 2.34.2 Pillow 12.3.0
+28:    temperature: 0.2,
+29:    max_tokens: 4000, // headroom: the model spends some tokens on reasoning before answering
+30:    reasoning: { effort: 'low' }, // keep the model's thinking in the separate `reasoning` field, not in the reply
+52:    reasoning: typeof msg.reasoni
+… [truncated 683 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Add System design section with diagrams, stack, storage and data flows</summary>
+
+````bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+anchor = "## Step 1 — Menu extraction"
+assert anchor in s
+block = r'''## System design
+
+### Architecture
+
+```mermaid
+flowchart LR
+    subgraph OFFLINE["Offline · developer machine (Step 1, run once)"]
+        RAW[("data/raw/&lt;folder&gt;/*.png<br/>31 menu photos")]
+        PIPE["scripts/extraction/extract.py<br/>Python 3.13 · requests · Pillow"]
+        CACHE[("data/cache/<br/>per-image JPEG + model JSON<br/>(gitignored)")]
+        FIX[("restaurant-names.json<br/>manual-fixes.json")]
+        MENUS[("data/menus.json<br/>12 restaurants · 546 items")]
+        LOG[("logs/llm-usage.jsonl<br/>every model call + cost")]
+        RAW --> PIPE
+        PIPE <--> CACHE
+        FIX --> PIPE
+        PIPE --> MENUS
+        PIPE --> LOG
+    end
+
+    subgraph OR["OpenRouter (AI gateway)"]
+        G25["google/gemini-2.5-pro<br/>vision extraction"]
+        OPUS["anthropic/claude-opus-5.5<br/>vision cross-check"]
+        G35["google/gemini-3.5-flash<br/>chat agent, tool calling"]
+    end
+    PIPE -- "image + prompt (HTTPS)" --> G25
+    PIPE -- "image + extracted items" --> OPUS
+
+    subgraph HN["here.now (static hosting)"]
+        GATE{{"Password gate<br/>(server-side, every path)"}}
+        STATIC[("Static files<br/>index.html · JS/CSS bundle · menus.json")]
+        PROXY["Proxy route POST /api/chat<br/>(.herenow/proxy.json)"]
+        VAR[("Account variable<br/>OPENROUTER_API_KEY")]
+        GATE --> STATIC
+        GATE --> PROXY
+        VAR -. "injected as Authorization header" .-> PROXY
+    end
+    MENUS -- "npm run build → publish.sh" --> STATIC
+
+    subgraph BR["Visitor's browser · React 19 SPA"]
+        UI["Chat UI · plan cards<br/>session sidebar · quick planner"]
+        AGENT["Agent loop<br/>src/agent/agent.ts"]
+        TOOLS["Tools (pure TypeScript)<br/>plan_meal · search_menu · list_restaurants"]
+        LS[("localStorage<br/>chat sessions")]
+        UI <--> AGENT
+        AGENT <--> TOOLS
+        UI <--> LS
+    end
+    STATIC -- "HTML, JS, menus.json" --> BR
+    AGENT -- "messages + tool specs" --> GATE
+    PROXY -- "chat completions" --> G35
+```
+
+### Tech stack
+
+| Layer | Technology | Notes |
+|---|---|---|
+| **Chat agent model** | **`google/gemini-3.5-flash`** via OpenRouter | Set by `AGENT_MODEL` in `.env`. Temperature 0.2, `max_tokens` 4000, `reasoning: {effort: "low"}` (reasoning kept out of the reply) |
+| **Agent framework** | **None: a hand-written tool-calling loop** ([src/agent/agent.ts](src/agent/agent.ts), ~80 lines) | OpenAI-compatible Chat Completions with `tools` / `tool_calls`; up to 6 model steps, and the last is forced to answer (`tool_choice: "none"`). No LangChain or agent SDK: with three local tools it adds nothing, and an SDK would need a server, which here.now doesn't have |
+| Agent tools | Plain TypeScript functions in the browser ([src/optimizer/planMeal.ts](src/optimizer/planMeal.ts), [src/agent/tools.ts](src/agent/tools.ts)) | `plan_meal` (exact optimizer), `search_menu` (keyword search), `list_restaurants`, plus a dish-name guard |
+| Extraction model | `google/gemini-2.5-pro` via OpenRouter | Vision → JSON (Khmer + English + prices) |
+| Cross-check model | `anthropic/claude-opus-5.5` via OpenRouter | Audits a random 30% of images |
+| AI gateway | **OpenRouter** (`/api/v1/chat/completions`) | One key for all three models |
+| Frontend | **React 19.3**, **TypeScript 6.0**, **Vite 8.3**, plain CSS | No UI library; Mermaid diagrams in this README only |
+| Extraction pipeline | **Python 3.13** + `requests`, `python-dotenv`, `Pillow` ([scripts/extraction/requirements.txt](scripts/extraction/requirements.txt)) | A JS version is kept in `scripts/extract.mjs` for reference |
+| Hosting | **here.now** static site + proxy route + server-side password | No server code or Docker (here.now serves static files only) |
+| Tooling | `oxlint`, `uv` (Python venv), Claude Code (AI pair programming) | Session logs in [ai-session/](ai-session/) |
+
+### Where data is stored
+
+| Data | Where | Who can see it | Lifetime |
+|---|---|---|---|
+| Menu photos (31 PNG) | `data/raw/<folder>/` on the developer machine; the original zip too | Developer only (never uploaded to the site) | Permanent |
+| Per-image model outputs (extraction, cross-check) | `data/cache/` (gitignored) | Developer only | Until deleted; lets rebuilds skip model calls |
+| Manual corrections | `data/restaurant-names.json`, `data/manual-fixes.json` (in git) | Repo readers | Permanent |
+| **Final dataset** | `data/menus.json` (in git) → copied to `public/menus.json` → **served as `/menus.json`** | Site visitors **after the password** | Updated by `npm run extract -- --build-only` |
+| LLM usage and cost log | `logs/llm-usage.jsonl` (local) | Developer only | Append-only |
+| Secrets (OpenRouter key, here.now key, site password) | `.env` (gitignored); the OpenRouter key is also a **here.now account variable**, injected server-side by the proxy | Never sent to the browser (verified by a secret scan) | Revoke after the challenge |
+| **Chat sessions** (messages, plan results, thinking steps) | Visitor's browser **localStorage**, key `khmer-menus.sessions.v1`, newest 20 chats | That browser only; no server copy | Until the user deletes them or clears site data |
+| Chat messages sent for answers | Pass through the here.now proxy to OpenRouter → Google (Gemini) | Subject to OpenRouter / Google data policies | Not stored by this app |
+| Site versions, password, proxy manifest | here.now account (`swift-sleet-z44r`) | Owner (version history); visitors see only the live version | Every publish is a version |
+
+### Data flow 1 — offline extraction (Step 1)
+
+1. **Prepare:** each PNG in `data/raw/<folder>/` becomes a full-resolution JPEG in `data/cache/jpeg/`.
+2. **Extract:** the JPEG and a JSON-schema prompt go to Gemini 2.5 Pro through OpenRouter. The reply (items in Khmer + English, printed prices, categories) is cached in `data/cache/extract/<image>.json`, and each call is appended to `logs/llm-usage.jsonl`.
+3. **Cross-check:** for a seeded random 30% of images, the image plus the extracted items go to Claude Opus 5.5, which returns per-item verdicts to `data/cache/crosscheck/`.
+4. **Build (no model calls):**
+   - Re-parse each printed price (Khmer digits → normal digits) and convert to USD at 4,000 ៛/$.
+   - Group by folder, apply manual names and fixes, classify food or beverage.
+   - Write `data/menus.json` and `data/extraction-report.json`.
+5. **Ship:** `npm run build` copies `menus.json` into the bundle's `public/`, and `publish.sh` uploads `dist/` to here.now.
+
+### Data flow 2 — one chat request (runtime)
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor U as Visitor
+    participant B as Browser (React app)
+    participant H as here.now (gate + proxy)
+    participant O as OpenRouter
+    participant G as Gemini 3.5 Flash
+
+    U->>H: Open site, enter password
+    H-->>B: Session cookie, index.html, JS bundle, menus.json
+    U->>B: "$10 — chicken, vegetables, 2 beers?"
+    B->>B: Add the message to the active session (localStorage)
+    B->>H: POST /api/chat {history + tool specs}
+    H->>O: Forward + Authorization: Bearer ${OPENROUTER_API_KEY}
+    O->>G: Request
+    G-->>B: tool_call plan_meal({budget 10, wants…})
+    B->>B: Run plan_meal locally over menus.json (~2 ms, exact)
+    B->>H: POST /api/chat {…, tool result}
+    H->>O: Forward
+    O->>G: Request
+    G-->>B: Final answer text
+    B->>B: Render plan cards from the tool result + answer; save session
+    B-->>U: "Go to Rainbow — $5.50 total, $4.50 to spare"
+```
+
+Key properties:
+- **The model never sees the API key, and the browser never sees it either.** The key is added only inside the here.now proxy.
+- **The model never computes prices.** All numbers come from `plan_meal` running in the browser, and the cards are drawn from that tool output.
+- If the AI call fails, the **Quick planner** runs the same `plan_meal` straight from a form, with no network call beyond the static files.
+
+'''
+s = s.replace(anchor, block + anchor, 1)
+open(p,'w').write(s)
+E
+grep -n "^## \|^### " README.md | sed -n 1,14p
+````
+
+**Result** ✅
+
+```
+20:## Project layout
+41:## Setup
+55:## System design
+57:### Architecture
+108:### Tech stack
+123:### Where data is stored
+137:### Data flow 1 — offline extraction (Step 1)
+148:### Data flow 2 — one chat request (runtime)
+181:## Step 1 — Menu extraction
+183:### Approach
+208:### Run it
+218:### Manual refinement
+235:### Accuracy — predicted vs measured
+251:### Known limitations (extraction is not perfect)
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Fix a dotted-edge label and check whether mermaid-cli is available</summary>
+
+```bash
+sed -i '' 's/VAR -\. "injected as Authorization header" \.-> PROXY/VAR -. injected as Authorization header .-> PROXY/' README.md && grep -n "VAR -\." README.md && timeout 120 npx -y @mermaid-js/mermaid-cli@latest --version 2>/dev/null | head -1 || echo "mermaid-cli unavailable"
+```
+
+**Result** ✅
+
+```
+90:        VAR -. injected as Authorization header .-> PROXY
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 Chat agent model/framework + system design in the README — ✅ Done
+
+### 📊 Summary
+- **Model:** **`google/gemini-3.5-flash`**, called through **OpenRouter**.
+- **Framework:** **none.** It's a **hand-written tool-calling loop** in TypeScript (~80 lines, [src/agent/agent.ts](src/agent/agent.ts)) inside a **React 19 + Vite 8** single-page app. The tools are plain TypeScript functions that run in the browser.
+- **README:** a new **System design** section covers an architecture diagram, the tech stack, a storage table (where each piece of data lives, who can see it, how long it lasts) and two data-flow walkthroughs (offline extraction, plus a runtime sequence diagram for one chat request).
+
+### 🤖 The chat agent at a glance
+| Aspect | Detail |
+|---|---|
+| Model | `google/gemini-3.5-flash` (set by `AGENT_MODEL` in `.env`); temperature 0.2, `max_tokens` 4000, reasoning effort "low", kept out of the reply |
+| API | OpenRouter Chat Completions (OpenAI-compatible) with `tools` / `tool_calls` |
+| Framework | None, on purpose: three local tools don't need LangChain or an agent SDK, and an SDK would need a server, which here.now can't run |
+| Loop | Up to 6 model steps; the last is forced to answer (`tool_choice: "none"`) |
+| Tools | `plan_meal` (exact optimizer), `search_menu` (keyword search), `list_restaurants`, plus a dish-name guard; all run in the browser over `menus.json` |
+| Where it runs | The visitor's browser; only the model call goes through the here.now proxy, which adds the key |
+
+### 📝 Changes Made
+| File | Change |
+|---|---|
+| [README.md](README.md) → **System design** (new section before Step 1) | **Architecture** (Mermaid): offline pipeline → OpenRouter (3 models) → here.now (password gate, static files, proxy, key variable) → browser (UI, agent loop, tools, localStorage) |
+| | **Tech stack** table: chat model and parameters, agent "framework" (custom loop) and why, tools, extraction and cross-check models, React 19.3 / TypeScript 6.0 / Vite 8.3, Python 3.13 + requests / python-dotenv / Pillow, here.now, tooling |
+| | **Where data is stored** table: photos, cache, manual fixes, `menus.json`, usage log, secrets, browser chat sessions (localStorage key `khmer-menus.sessions.v1`, 20 chats), messages sent to OpenRouter/Google, here.now versions and password; each with visibility and lifetime |
+| | **Data flow 1** (offline): prepare → extract → cross-check → build → ship |
+| | **Data flow 2** (runtime): sequence diagram from password login through one tool-calling round trip, plus the key properties (key never in the browser, model never computes prices, no-AI fallback) |
+
+### Impact
+- ⚠️ **Privacy point now documented:** chat messages go through OpenRouter to Google (Gemini) under their data policies. The app itself stores chats only in the visitor's browser.
+- 🔄 I couldn't render the two new Mermaid diagrams locally (the Mermaid CLI didn't run here). I fixed one edge label that looked risky. Check them on GitHub, or in VS Code with a Mermaid preview extension.
+- ✅ Versions in the README are the installed ones (React 19.3.0, Vite 8.3.2, TypeScript 6.0.3, Pillow 12.3.0).
+
+### 📋 Next Steps
+1. 🟡 Open the README preview and check that the architecture and sequence diagrams render.
+2. 🟢 Re-export the session log at the end; commit when you're ready.
+
+---
+
+## 🧑 User — turn 45 · 05:38 UTC
+
+Accuracy — predicted vs measured
+
+This part in README. these number how is it measured?
+
+<details><summary>🔧 <b>Bash</b> — Recompute cross-check agreement rates with confidence intervals</summary>
+
+```bash
+python3 - <<'E'
+import json, math, glob
+rows=[]
+for f in sorted(glob.glob('data/cache/crosscheck/*.json')):
+    c=json.load(open(f)); items=c['result'].get('items',[])
+    rows.append((c['image'], c.get('model'), len(items), len(c['result'].get('missing_items') or [])))
+    for v in items: v['_img']=c['image']
+print('images audited:', len(rows))
+for r in rows: print('  ', r)
+allv=[v for f in sorted(glob.glob('data/cache/crosscheck/*.json')) for v in json.load(open(f))['result'].get('items',[])]
+n=len(allv); print('items audited:', n)
+def wilson(k,n,z=1.96):
+    p=k/n; d=1+z*z/n; c=(p+z*z/(2*n))/d; h=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d; return (c-h)*100,(c+h)*100
+for f in ['exists','name_km_ok','translation_ok','price_ok','category_ok']:
+    vals=[v.get(f) for v in allv if isinstance(v.get(f),bool)]
+    k=sum(vals); lo,hi=wilson(k,len(vals))
+    print(f'{f:15} {k}/{len(vals)} = {100*k/len(vals):.1f}%  95% CI {lo:.1f}–{hi:.1f}%  (false={len(vals)-k})')
+ok=sum(all(v.get(f) is not False for f in ['exists','name_km_ok','translation_ok','price_ok','category_ok']) for v in allv)
+lo,hi=wilson(ok,n); print(f'overall all-fields {ok}/{n} = {100*ok/n:.1f}%  CI {lo:.1f}–{hi:.1f}%')
+# price disputes by image
+from collections import Counter
+print('price disputes by image:', Counter(v['id'].split('#')[0] for v in allv if v.get('price_ok') is False))
+print('share of audited items from 2 densest images:', sum(r[2] for r in sorted(rows,key=lambda r:-r[2])[:2]), '/', n)
+E
+```
+
+**Result** ✅
+
+```
+images audited: 10
+   ('2026-07-20_22-23-50.png', 'anthropic/claude-opus-5.5', 9, 0)
+   ('2026-07-20_22-24-59.png', 'anthropic/claude-opus-5.5', 15, 0)
+   ('2026-07-20_22-27-14.png', 'anthropic/claude-opus-5.5', 35, 0)
+   ('2026-07-20_22-31-05.png', 'anthropic/claude-opus-5.5', 6, 0)
+   ('2026-07-20_22-31-15.png', 'anthropic/claude-opus-5.5', 6, 0)
+   ('2026-07-20_22-36-45.png', 'anthropic/claude-opus-5.5', 9, 0)
+   ('2026-07-20_22-43-25.png', 'anthropic/claude-opus-5.5', 9, 0)
+   ('2026-07-20_22-47-26.png', 'anthropic/claude-opus-5.5', 15, 0)
+   ('2026-07-21_11-15-08.png', 'anthropic/claude-o
+… [truncated 582 chars]
+```
+
+</details>
+
+### 🤖 Claude
+
+Recomputed from the raw audit files. I'll add the method and its caveats under that table in the README:
+
+<details><summary>🔧 <b>Bash</b> — Add measurement method, intervals and caveats to README</summary>
+
+```bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+old="""Caveat: this is model-vs-model agreement, not a human-labelled gold set. If both models make the same mistake, it isn't caught, so treat the numbers as upper bounds."""
+assert old in s
+new="""#### How these numbers were measured
+
+| | |
+|---|---|
+| **What is compared** | Gemini 2.5 Pro's extraction vs **Claude Opus 5.5's judgement of it**. Opus sees the menu image plus the extracted items (Khmer name, English name, category/tags, every price with amount, currency and variant) and returns per item: `exists`, `name_km_ok`, `translation_ok`, `price_ok`, `category_ok`, plus any `missing_items` |
+| **Sample** | **10 of 31 images**, chosen at random (`ceil(31 × 0.3)`, seed 42), containing **165 items** |
+| **Formula** | Per field: `true ÷ (true + false)` over the 165 items. "All fields correct" = items with no `false`. "Missed items" = total length of the `missing_items` lists |
+| **Code** | `report()` in [scripts/extraction/extract.py](scripts/extraction/extract.py) → `data/extraction-report.json`; raw verdicts in `data/cache/crosscheck/` |
+| **Predicted** | Written in [PLAN.md §5](PLAN.md) **before** any image was processed |
+
+**With uncertainty** (95% Wilson interval, n = 165):
+
+| Field | Agreed | Rate | 95% interval |
+|---|---|---|---|
+| Item exists | 165 / 165 | 100% | 97.7–100% |
+| Price | 160 / 165 | 97.0% | 93.1–98.7% |
+| Category | 160 / 165 | 97.0% | 93.1–98.7% |
+| English meaning | 153 / 165 | 92.7% | 87.7–95.8% |
+| Khmer spelling | 145 / 165 | 87.9% | 82.0–92.0% |
+| All fields | 131 / 165 | 79.4% | 72.6–84.9% |
+
+**Read these with care:**
+- **It's agreement, not ground truth.** No human-labelled answers exist. If both models misread the same thing, it counts as correct, so treat the rates as **upper bounds**.
+- **Errors cluster.** All **5 price disputes come from one image** (`11-16-25`, handwritten stickers); on the other 9 images price agreement is 149/149. Half the audited items (80/165) come from the 2 densest pages, so the items aren't independent, and the intervals above are somewhat too narrow.
+- **The judge is lenient on Khmer:** "minor spacing differences are OK" was in its instructions, so exact-character accuracy is likely lower than 87.9%.
+- The fields don't line up exactly with the prediction: "price-to-item pairing" was predicted separately (80–85%) but is folded into `price_ok` here.
+- **21 images were never audited.**
+
+A proper measurement would be a hand-labelled gold set of ~3 menus compared field by field. That was planned and not done (see the self-critique)."""
+s=s.replace(old,new)
+open(p,'w').write(s)
+E
+grep -n "How these numbers were measured" README.md
+```
+
+**Result** ✅
+
+```
+249:#### How these numbers were measured
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 How the "Accuracy — predicted vs measured" numbers were measured — 💬 Answer
+
+### 📊 Summary
+**"Predicted"** was written in PLAN.md before any image was processed. **"Measured"** is **not** a check against human-verified answers. It's the **agreement rate from the cross-check**: Claude Opus 5.5 looked at 10 randomly chosen menu images (165 items) next to what Gemini 2.5 Pro extracted, and marked each field of each item right or wrong. So the numbers mean "a second AI agreed", which makes them **upper bounds**, not true accuracy. I added the full method, confidence intervals and caveats under that table in [README.md](README.md#how-these-numbers-were-measured).
+
+### 🔬 The method, step by step
+1. **Sample:** 10 of 31 images, chosen randomly with a fixed seed (42) so it's repeatable, containing 165 items.
+2. **Judge:** for each image, Claude Opus 5.5 received the photo plus Gemini's extracted items: Khmer name, English name, category/tags, and every price with amount, currency and variant.
+3. **Verdicts:** per item it answered true/false for `exists`, `name_km_ok`, `translation_ok`, `price_ok`, `category_ok`, and listed any items Gemini missed.
+4. **Rate:** per field, `agreed ÷ judged` over the 165 items. "All fields correct" means no false anywhere. Computed by `report()` in [extract.py](scripts/extraction/extract.py); the raw verdicts are in `data/cache/crosscheck/`.
+
+### 📈 Numbers with uncertainty (recomputed from the raw files)
+| Field | Agreed | Rate | 95% interval |
+|---|---|---|---|
+| Item exists | 165/165 | 100% | 97.7–100% |
+| Price | 160/165 | 97.0% | 93.1–98.7% |
+| Category | 160/165 | 97.0% | 93.1–98.7% |
+| English meaning | 153/165 | 92.7% | 87.7–95.8% |
+| Khmer spelling | 145/165 | 87.9% | 82.0–92.0% |
+| All fields | 131/165 | 79.4% | 72.6–84.9% |
+
+### ⚠️ What these numbers do *not* prove
+- **No ground truth.** If both models misread the same thing, it counts as correct.
+- **Errors cluster.** **All 5 price disputes are on one image** (the sticker-covered Reatry menu). On the other 9 images, prices agreed 149/149. Half the audited items come from the 2 densest pages, so the true uncertainty is wider than the intervals suggest.
+- **The judge was lenient on Khmer** (told "minor spacing differences are OK"), so exact-spelling accuracy is probably below 87.9%.
+- **Two-thirds of the images (21 of 31) were never audited.**
+- The fields don't line up 1:1 with the prediction: "price-to-item pairing" (predicted 80–85%) is folded into `price_ok`.
+
+### 📝 Changes Made
+| File | Change |
+|---|---|
+| [README.md](README.md) | New **"How these numbers were measured"** subsection: what's compared, sample, formula, code location, a table with 95% intervals, and the caveats above |
+
+### 💡 Recommendation
+For a real accuracy figure, hand-label about 3 menus (~60 items, about 15 minutes) and compare field by field. It's the cheapest way to turn "the models agree" into "it's correct". I can build the comparison script if you do the labelling.
+
+---
+
+## 🧑 User — turn 46 · 05:39 UTC
+
+Let write system design in C4 diagram instead
+
+### 🤖 Claude
+
+Replacing the architecture flowchart with **C4 diagrams** in Mermaid's native C4 syntax:
+- **Level 1, System Context:** who uses the system and which external systems it depends on.
+- **Level 2, Containers:** the deployable or runnable parts and their data stores.
+- **Level 3, Components:** inside the web app, where the agent lives.
+
+The runtime sequence diagram stays as the dynamic view.
+
+<details><summary>🔧 <b>Bash</b> — Replace architecture flowchart with C4 context, container and component diagrams</summary>
+
+````bash
+python3 - <<'E'
+p='README.md'; s=open(p).read()
+start=s.index("### Architecture"); end=s.index("### Tech stack")
+c4 = r'''System design in the [C4 model](https://c4model.com): context → containers → components, plus a dynamic view of one chat request further down. The diagrams use Mermaid's C4 syntax, which GitHub renders.
+
+### C4 Level 1 — System context
+
+```mermaid
+C4Context
+    title System Context — Khmer Menu Planner
+
+    Person(visitor, "Visitor", "Someone in Cambodia deciding what to order and where, within a budget")
+    Person(dev, "Developer", "Builds the dataset from menu photos, fixes data, deploys")
+
+    System(planner, "Khmer Menu Planner", "Chat web app: turns 'I have $10, want chicken, vegetables, 2 beers' into an exact order from real Khmer menus")
+
+    System_Ext(openrouter, "OpenRouter", "AI gateway: Gemini 2.5 Pro (extraction), Claude Opus 5.5 (cross-check), Gemini 3.5 Flash (chat agent)")
+    System_Ext(herenow, "here.now", "Static hosting with server-side password gate and an API proxy route")
+
+    Rel(visitor, planner, "Asks for meal plans, reads plan cards", "HTTPS, password-protected")
+    Rel(dev, planner, "Runs extraction, publishes new versions")
+    Rel(planner, openrouter, "Reads menu photos (offline); chats with tool calling (runtime)", "HTTPS")
+    Rel(planner, herenow, "Is hosted on; LLM calls go through its proxy")
+
+    UpdateLayoutConfig($c4ShapeInRow="2", $c4BoundaryInRow="1")
+```
+
+### C4 Level 2 — Containers
+
+```mermaid
+C4Container
+    title Containers — Khmer Menu Planner
+
+    Person(visitor, "Visitor")
+    Person(dev, "Developer")
+
+    System_Boundary(local, "Developer machine (offline, Step 1)") {
+        Container(pipeline, "Extraction pipeline", "Python 3.13 · requests · Pillow", "Photos → JPEG → model JSON → USD prices, restaurant grouping, manual fixes")
+        ContainerDb(files, "Dataset and cache", "JSON / JSONL files", "data/raw photos, data/cache, manual fixes, data/menus.json, logs/llm-usage.jsonl")
+    }
+
+    System_Boundary(hosting, "here.now (swift-sleet-z44r)") {
+        ContainerDb(static, "Static site", "here.now hosting", "index.html, JS/CSS bundle, menus.json; served only after the password")
+        Container(proxy, "LLM proxy route", "here.now proxy · .herenow/proxy.json", "POST /api/chat → OpenRouter; injects OPENROUTER_API_KEY from an account variable; 60 requests/hour/IP")
+    }
+
+    System_Boundary(browser, "Visitor's browser") {
+        Container(spa, "Web app (SPA)", "React 19 · TypeScript 6 · Vite 8", "Chat UI, agent tool-calling loop, exact meal optimizer, no-AI quick planner")
+        ContainerDb(storage, "Chat sessions", "localStorage", "khmer-menus.sessions.v1: newest 20 chats, this browser only")
+    }
+
+    System_Ext(openrouter, "OpenRouter", "Gemini 2.5 Pro · Claude Opus 5.5 · Gemini 3.5 Flash")
+
+    Rel(dev, pipeline, "Runs npm run extract")
+    Rel(pipeline, files, "Reads photos; writes cache, menus.json, usage log")
+    Rel(pipeline, openrouter, "Vision extraction + cross-check", "HTTPS")
+    Rel(dev, static, "npm run build → publish.sh", "here.now API")
+    Rel(visitor, spa, "Uses", "HTTPS")
+    Rel(spa, static, "Loads app + menus.json", "HTTPS + session cookie")
+    Rel(spa, storage, "Saves / loads chats")
+    Rel(spa, proxy, "Chat completions with tools", "HTTPS POST /api/chat")
+    Rel(proxy, openrouter, "Forwards + Authorization: Bearer key", "HTTPS")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+```
+
+### C4 Level 3 — Components of the web app
+
+```mermaid
+C4Component
+    title Components — Web app (runs entirely in the browser)
+
+    Person(visitor, "Visitor")
+
+    Container_Boundary(spa, "Web app (SPA)") {
+        Component(ui, "Chat UI", "React · App.tsx", "Message log, plan cards, collapsed Thinking panel, status, error boundary")
+        Component(sidebar, "Session sidebar", "React · SessionSidebar.tsx", "New chat, switch, delete")
+        Component(quick, "Quick planner", "React · QuickPlanner.tsx", "No-AI form; opens automatically if the AI fails")
+        Component(agent, "Agent loop", "TypeScript · agent/agent.ts", "System prompt (confirm budget + wants first), up to 6 steps, last step forced to answer")
+        Component(tools, "Tools", "TypeScript · agent/tools.ts", "plan_meal · search_menu · list_restaurants · dish-name guard")
+        Component(optimizer, "Meal optimizer", "TypeScript · optimizer/planMeal.ts", "Exact search: fewest restaurants, then cheapest or best spread; keyword menu search")
+        Component(client, "OpenRouter client", "fetch · lib/openrouter.ts", "Builds requests, keeps reasoning out of replies, debug logging")
+        Component(sessions, "Session store", "TypeScript · lib/sessions.ts", "Serialises chats to localStorage")
+        Component(loader, "Menu loader", "fetch · lib/menuData.ts", "Loads /menus.json once")
+    }
+
+    ContainerDb(static, "Static site", "here.now", "menus.json")
+    ContainerDb(storage, "Chat sessions", "localStorage")
+    Container(proxy, "LLM proxy route", "here.now", "POST /api/chat")
+
+    Rel(visitor, ui, "Types requests")
+    Rel(ui, agent, "Runs a turn")
+    Rel(agent, client, "Model calls")
+    Rel(client, proxy, "POST /api/chat")
+    Rel(agent, tools, "Executes tool calls")
+    Rel(tools, optimizer, "plan_meal / search_menu")
+    Rel(quick, optimizer, "planMeal() directly")
+    Rel(ui, sessions, "Persist chats")
+    Rel(sessions, storage, "Read / write")
+    Rel(sidebar, sessions, "List / switch / delete")
+    Rel(loader, static, "GET /menus.json")
+    Rel(optimizer, loader, "Uses menu data")
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+```
+
+'''
+s=s[:start]+c4+s[end:]
+s=s.replace("### Data flow 2 — one chat request (runtime)","### Data flow 2 — one chat request (C4 dynamic view)",1)
+open(p,'w').write(s)
+E
+grep -n "^## System design" -A3 README.md | head -4; grep -n "^### " README.md | sed -n 1,9p; grep -c "flowchart LR" README.md
+````
+
+**Result** ✅
+
+```
+55:## System design
+56-
+57-System design in the [C4 model](https://c4model.com): context → containers → components, plus a dynamic view of one chat request further down. The diagrams use Mermaid's C4 syntax, which GitHub renders.
+58-
+59:### C4 Level 1 — System context
+81:### C4 Level 2 — Containers
+120:### C4 Level 3 — Components of the web app
+160:### Tech stack
+175:### Where data is stored
+189:### Data flow 1 — offline extraction (Step 1)
+200:### Data flow 2 — one chat request (C4 dynamic view)
+235:### Approach
+260:### Run it
+0
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Extract C4 and sequence Mermaid blocks from README</summary>
+
+````bash
+python3 - <<'E'
+import re, json
+s=open('README.md').read()
+blocks=re.findall(r'```mermaid\n(.*?)```', s, re.S)
+sel=[b for b in blocks if b.lstrip().startswith(('C4','sequenceDiagram'))]
+print(len(blocks),'mermaid blocks;', len(sel),'to check (C4 + sequence)')
+json.dump(sel, open('/private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/mermaid-blocks.json','w'))
+E
+````
+
+**Result** ✅
+
+```
+5 mermaid blocks; 4 to check (C4 + sequence)
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Prepare blocks as compact JSON for in-browser validation</summary>
+
+```bash
+python3 -c "
+import json
+b=json.load(open('/private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/mermaid-blocks.json'))
+print(json.dumps(b))" > /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/blocks.min.json; wc -c /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/blocks.min.json
+```
+
+**Result** ✅
+
+```
+6573 /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/blocks.min.json
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad/blocks.min.json`</summary>
+
+
+
+**Result** ✅
+
+```
+1	["C4Context\n    title System Context \u2014 Khmer Menu Planner\n\n    Person(visitor, \"Visitor\", \"Someone in Cambodia deciding what to order and where, within a budget\")\n    Person(dev, \"Developer\", \"Builds the dataset from menu photos, fixes data, deploys\")\n\n    System(planner, \"Khmer Menu Planner\", \"Chat web app: turns 'I have $10, want chicken, vegetables, 2 beers' into an exact order from real Khmer menus\")\n\n    System_Ext(openrouter, \"OpenRouter\", \"AI gateway: Gemini 2.5 Pro (extraction), Claude Opus 5.5 (cross-check), Gemini 3.5 Flash (chat agent)\")\n    System_Ex
+… [truncated 5976 chars]
+```
+
+</details>
+
+---
+
+## 🧑 User (sent mid-turn) — turn 47 · 05:41 UTC
+
+Let extract only image instead of mermaid code in README
+
+<details><summary>🔧 <b>Bash</b> — Try rendering a test diagram with mermaid-cli</summary>
+
+```bash
+cd /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad && printf 'flowchart LR\n  A-->B\n' > t.mmd && timeout 280 npx -y @mermaid-js/mermaid-cli@latest -i t.mmd -o t.svg 2>&1 | tail -15; ls -la t.svg 2>/dev/null
+```
+
+**Result** ❌ error
+
+```
+Exit code 1
+(eval):1: command not found: timeout
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Render a test diagram with mermaid-cli (no timeout wrapper)</summary>
+
+```bash
+cd /private/tmp/claude-502/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02/scratchpad && npx -y @mermaid-js/mermaid-cli@latest -i t.mmd -o t.svg 2>&1 | tail -15; ls -la t.svg 2>/dev/null
+```
+
+**Result** ✅
+
+```
+Generating single mermaid chart
+-rw-r--r--  1 lam  wheel  196116 Oct  2 12:42 t.svg
+```
+
+</details>
+
+### 🤖 Claude
+
+The Mermaid CLI works (the earlier failure was macOS lacking `timeout`). Rendering all 5 diagrams to PNG and replacing the code blocks:
+
+<details><summary>🔧 <b>Bash</b> — Extract Mermaid blocks to files, render PNGs, replace README blocks with images</summary>
+
+````bash
+cd /Users/lam/Projects/khmer-menus && mkdir -p docs/diagrams && python3 - <<'E'
+import re
+s=open('README.md').read()
+names=['algorithm-flow','c4-1-context','c4-2-containers','c4-3-components','sequence-chat-request']
+titles={'algorithm-flow':'Meal-plan algorithm flow','c4-1-context':'C4 Level 1 — System context','c4-2-containers':'C4 Level 2 — Containers','c4-3-components':'C4 Level 3 — Components of the web app','sequence-chat-request':'One chat request (dynamic view)'}
+blocks=list(re.finditer(r'```mermaid\n(.*?)```', s, re.S))
+def kind(b):
+    t=b.lstrip()
+    return ('algorithm-flow' if t.startswith('flowchart') else 'c4-1-context' if t.startswith('C4Context') else 'c4-2-containers' if t.startswith('C4Container') else 'c4-3-components' if t.startswith('C4Component') else 'sequence-chat-request')
+out=s
+for m in reversed(blocks):
+    n=kind(m.group(1))
+    open(f'docs/diagrams/{n}.mmd','w').write(m.group(1))
+    img=f'![{titles[n]}](docs/diagrams/{n}.png)\n\n<sub>Source: [docs/diagrams/{n}.mmd](docs/diagrams/{n}.mmd) · regenerate with `npm run diagrams`</sub>'
+    out=out[:m.start()]+img+out[m.end():]
+open('README.md','w').write(out)
+print('extracted', len(blocks), 'blocks')
+E
+ls docs/diagrams && for f in docs/diagrams/*.mmd; do npx -y @mermaid-js/mermaid-cli@latest -i "$f" -o "${f%.mmd}.png" -b white -s 2 -w 1400 2>&1 | grep -iv "^Generating" ; done; ls -la docs/diagrams/*.png
+````
+
+**Result** ❌ error
+
+```
+Exit code 1
+extracted 5 blocks
+algorithm-flow.mmd
+c4-1-context.mmd
+c4-2-containers.mmd
+c4-3-components.mmd
+sequence-chat-request.mmd
+error: unknown option '-w'
+error: unknown option '-w'
+error: unknown option '-w'
+error: unknown option '-w'
+error: unknown option '-w'
+(eval):19: no matches found: docs/diagrams/*.png
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Render each diagram to PNG at 2x scale and report sizes</summary>
+
+```bash
+cd /Users/lam/Projects/khmer-menus && for f in docs/diagrams/*.mmd; do npx -y @mermaid-js/mermaid-cli@latest -i "$f" -o "${f%.mmd}.png" -b white -s 2 2>&1 | grep -iv "^Generating"; done; ls -la docs/diagrams/*.png && python3 -c "
+import struct,glob
+for f in sorted(glob.glob('docs/diagrams/*.png')):
+    b=open(f,'rb').read(24); print(f.split('/')[-1], struct.unpack('>II',b[16:24]))"
+```
+
+**Result** ✅
+
+```
+Error: Parse error on line 22:
+...answer; save session    B-->>U: "Go to 
+-----------------------^
+Expecting '()', 'SOLID_OPEN_ARROW', 'DOTTED_OPEN_ARROW', 'SOLID_ARROW', 'SOLID_ARROW_TOP', 'SOLID_ARROW_BOTTOM', 'STICK_ARROW_TOP', 'STICK_ARROW_BOTTOM', 'SOLID_ARROW_TOP_DOTTED', 'SOLID_ARROW_BOTTOM_DOTTED', 'STICK_ARROW_TOP_DOTTED', 'STICK_ARROW_BOTTOM_DOTTED', 'SOLID_ARROW_TOP_REVERSE', 'SOLID_ARROW_BOTTOM_REVERSE', 'STICK_ARROW_TOP_REVERSE', 'STICK_ARROW_BOTTOM_REVERSE', 'SOLID_ARROW_TOP_REVERSE_DOTTED', 'SOLID_ARROW_BOTTOM_REVERSE_DOTTED', 'STICK_ARROW_TOP_REVERSE_DOTTED', 'STICK_ARROW_BOTTO
+… [truncated 2410 chars]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Fix the sequence diagram separator and render it</summary>
+
+```bash
+sed -i '' 's/Render plan cards from the tool result + answer; save session/Render plan cards from the tool result + answer, save session/' docs/diagrams/sequence-chat-request.mmd && grep -n ";" docs/diagrams/sequence-chat-request.mmd; npx -y @mermaid-js/mermaid-cli@latest -i docs/diagrams/sequence-chat-request.mmd -o docs/diagrams/sequence-chat-request.png -b white -s 2 2>&1 | grep -iv "^Generating"; ls -la docs/diagrams/sequence-chat-request.png
+```
+
+**Result** ✅
+
+```
+-rw-r--r--  1 lam  staff  119985 Oct  2 12:42 docs/diagrams/sequence-chat-request.png
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-2-containers.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/sequence-chat-request.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-3-components.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Rewrite C4 diagrams in C4 notation with flowchart layout and render</summary>
+
+```bash
+cd /Users/lam/Projects/khmer-menus/docs/diagrams && cat > _c4-styles.txt <<'E'
+    classDef person fill:#08427b,stroke:#052e56,color:#fff
+    classDef system fill:#1168bd,stroke:#0b4884,color:#fff
+    classDef container fill:#438dd5,stroke:#2e6295,color:#fff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000
+    classDef ext fill:#999999,stroke:#6b6b6b,color:#fff
+    classDef db fill:#438dd5,stroke:#2e6295,color:#fff
+E
+S=$(cat _c4-styles.txt)
+cat > c4-1-context.mmd <<E
+%% C4 Level 1 — System context (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i><br/><br/>Someone in Cambodia deciding what<br/>to order and where, within a budget"]:::person
+    dev["<b>Developer</b><br/><i>[Person]</i><br/><br/>Builds the dataset from menu photos,<br/>fixes data, deploys"]:::person
+
+    planner["<b>Khmer Menu Planner</b><br/><i>[Software System]</i><br/><br/>Chat web app that turns<br/>'\$10, chicken, vegetables, 2 beers'<br/>into an exact order from real Khmer menus"]:::system
+
+    openrouter["<b>OpenRouter</b><br/><i>[Software System — external]</i><br/><br/>AI gateway: Gemini 2.5 Pro (extraction),<br/>Claude Opus 5.5 (cross-check),<br/>Gemini 3.5 Flash (chat agent)"]:::ext
+    herenow["<b>here.now</b><br/><i>[Software System — external]</i><br/><br/>Static hosting, server-side<br/>password gate, API proxy route"]:::ext
+
+    visitor -- "Asks for meal plans<br/><i>[HTTPS, password]</i>" --> planner
+    dev -- "Runs extraction,<br/>publishes versions" --> planner
+    planner -- "Reads menu photos (offline),<br/>chats with tools (runtime)<br/><i>[HTTPS]</i>" --> openrouter
+    planner -- "Hosted on; LLM calls<br/>go through its proxy" --> herenow
+
+$S
+E
+cat > c4-2-containers.mmd <<E
+%% C4 Level 2 — Containers (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i>"]:::person
+    dev["<b>Developer</b><br/><i>[Person]</i>"]:::person
+
+    subgraph browser["Visitor's browser"]
+        direction LR
+        spa["<b>Web app (SPA)</b><br/><i>[Container: React 19 · TypeScript 6 · Vite 8]</i><br/><br/>Chat UI, agent tool-calling loop,<br/>exact meal optimizer, no-AI quick planner"]:::container
+        storage[("<b>Chat sessions</b><br/><i>[Container: localStorage]</i><br/><br/>Newest 20 chats,<br/>this browser only")]:::db
+    end
+
+    subgraph hosting["here.now · site swift-sleet-z44r · password-gated"]
+        direction LR
+        static[("<b>Static site</b><br/><i>[Container: here.now hosting]</i><br/><br/>index.html, JS/CSS bundle,<br/>menus.json")]:::db
+        proxy["<b>LLM proxy route</b><br/><i>[Container: here.now proxy]</i><br/><br/>POST /api/chat → OpenRouter<br/>injects OPENROUTER_API_KEY<br/>60 requests/hour/IP"]:::container
+    end
+
+    openrouter["<b>OpenRouter</b><br/><i>[Software System — external]</i><br/><br/>Gemini 2.5 Pro · Claude Opus 5.5<br/>· Gemini 3.5 Flash"]:::ext
+
+    subgraph local["Developer machine · offline, Step 1"]
+        direction LR
+        pipeline["<b>Extraction pipeline</b><br/><i>[Container: Python 3.13 · requests · Pillow]</i><br/><br/>Photos → model JSON → USD prices,<br/>grouping, manual fixes"]:::container
+        files[("<b>Dataset and cache</b><br/><i>[Container: JSON / JSONL files]</i><br/><br/>photos, cache, manual fixes,<br/>menus.json, usage log")]:::db
+    end
+
+    visitor -- "Uses<br/><i>[HTTPS]</i>" --> spa
+    spa -- "Saves / loads chats" --> storage
+    spa -- "Loads app + menus.json<br/><i>[HTTPS + session cookie]</i>" --> static
+    spa -- "Chat completions with tools<br/><i>[POST /api/chat]</i>" --> proxy
+    proxy -- "Forwards + Bearer key<br/><i>[HTTPS]</i>" --> openrouter
+    dev -- "npm run extract" --> pipeline
+    pipeline -- "Reads photos, writes<br/>cache + menus.json" --> files
+    pipeline -- "Vision extraction<br/>+ cross-check <i>[HTTPS]</i>" --> openrouter
+    dev -- "npm run build → publish.sh" --> static
+
+$S
+    style browser fill:none,stroke:#444,stroke-dasharray:6 4
+    style hosting fill:none,stroke:#444,stroke-dasharray:6 4
+    style local fill:none,stroke:#444,stroke-dasharray:6 4
+E
+cat > c4-3-components.mmd <<E
+%% C4 Level 3 — Components of the web app (C4 notation, Mermaid flowchart layout)
+flowchart TB
+    visitor["<b>Visitor</b><br/><i>[Person]</i>"]:::person
+
+    subgraph spa["Web app (SPA) · runs entirely in the browser"]
+        direction TB
+        ui["<b>Chat UI</b><br/><i>[Component: React · App.tsx]</i><br/><br/>Message log, plan cards, Thinking panel,<br/>error boundary"]:::component
+        sidebar["<b>Session sidebar</b><br/><i>[Component: React]</i><br/><br/>New chat, switch, delete"]:::component
+        quick["<b>Quick planner</b><br/><i>[Component: React]</i><br/><br/>No-AI form; opens<br/>automatically if the AI fails"]:::component
+        agent["<b>Agent loop</b><br/><i>[Component: agent/agent.ts]</i><br/><br/>Confirm budget + wants first,<br/>≤ 6 steps, last step must answer"]:::component
+        client["<b>OpenRouter client</b><br/><i>[Component: lib/openrouter.ts]</i><br/><br/>Builds requests, reasoning<br/>kept out of replies"]:::component
+        tools["<b>Tools</b><br/><i>[Component: agent/tools.ts]</i><br/><br/>plan_meal · search_menu ·<br/>list_restaurants · dish guard"]:::component
+        optimizer["<b>Meal optimizer</b><br/><i>[Component: optimizer/planMeal.ts]</i><br/><br/>Fewest restaurants, then cheapest<br/>or best spread; keyword search"]:::component
+        loader["<b>Menu loader</b><br/><i>[Component: lib/menuData.ts]</i><br/><br/>Loads /menus.json once"]:::component
+        sessions["<b>Session store</b><br/><i>[Component: lib/sessions.ts]</i><br/><br/>Serialises chats"]:::component
+    end
+
+    proxy["<b>LLM proxy route</b><br/><i>[Container: here.now]</i><br/>POST /api/chat"]:::container
+    static[("<b>Static site</b><br/><i>[Container: here.now]</i><br/>menus.json")]:::db
+    storage[("<b>Chat sessions</b><br/><i>[Container: localStorage]</i>")]:::db
+
+    visitor -- "Types requests" --> ui
+    visitor -- "Fills the form" --> quick
+    ui -- "Runs a turn" --> agent
+    agent -- "Model calls" --> client
+    client -- "POST /api/chat" --> proxy
+    agent -- "Executes tool calls" --> tools
+    tools -- "plan_meal / search_menu" --> optimizer
+    quick -- "planMeal() directly" --> optimizer
+    optimizer -- "Menu data" --> loader
+    loader -- "GET /menus.json" --> static
+    ui -- "Persist chats" --> sessions
+    sidebar -- "List / switch / delete" --> sessions
+    sessions -- "Read / write" --> storage
+
+$S
+    style spa fill:none,stroke:#444,stroke-dasharray:6 4
+E
+rm _c4-styles.txt && for f in c4-1-context c4-2-containers c4-3-components; do npx -y @mermaid-js/mermaid-cli@latest -i $f.mmd -o $f.png -b white -s 2 2>&1 | grep -iv "^Generating"; done; ls -la *.png
+```
+
+**Result** ✅
+
+```
+-rw-r--r--  1 lam  staff  369647 Oct  2 12:42 algorithm-flow.png
+-rw-r--r--  1 lam  staff  166803 Oct  2 12:44 c4-1-context.png
+-rw-r--r--  1 lam  staff  365119 Oct  2 12:44 c4-2-containers.png
+-rw-r--r--  1 lam  staff  351631 Oct  2 12:44 c4-3-components.png
+-rw-r--r--  1 lam  staff  119985 Oct  2 12:42 sequence-chat-request.png
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-2-containers.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-3-components.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-1-context.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Widen label wrapping and re-render flowchart-based diagrams</summary>
+
+```bash
+for f in algorithm-flow c4-1-context c4-2-containers c4-3-components; do grep -q '%%{init' $f.mmd || python3 - "$f.mmd" <<'E'
+import sys
+p=sys.argv[1]; s=open(p).read()
+open(p,'w').write('%%{init: {"flowchart": {"wrappingWidth": 330, "nodeSpacing": 40, "rankSpacing": 50}}}%%\n'+s)
+E
+npx -y @mermaid-js/mermaid-cli@latest -i $f.mmd -o $f.png -b white -s 2 2>&1 | grep -iv "^Generating"; done; python3 -c "
+import struct,glob
+for f in sorted(glob.glob('*.png')):
+    b=open(f,'rb').read(24); print(f, struct.unpack('>II',b[16:24]))"
+```
+
+**Result** ✅
+
+```
+algorithm-flow.png (1500, 5840)
+c4-1-context.png (1294, 1420)
+c4-2-containers.png (1568, 2448)
+c4-3-components.png (1568, 2142)
+sequence-chat-request.png (1568, 892)
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/algorithm-flow.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+<details><summary>🔧 <b>Read</b> — Read `/Users/lam/Projects/khmer-menus/docs/diagrams/c4-2-containers.png`</summary>
+
+
+
+**Result** ✅
+
+```
+[image]
+```
+
+</details>
+
+### 🤖 Claude
+
+All diagrams now render cleanly. Updating the README text to match, adding an `npm run diagrams` script, and confirming no Mermaid code remains in the README:
+
+<details><summary>🔧 <b>Bash</b> — Update README intro, add diagrams script, verify image links</summary>
+
+````bash
+cd /Users/lam/Projects/khmer-menus && python3 - <<'E'
+import json
+p='README.md'; s=open(p).read()
+old="System design in the [C4 model](https://c4model.com): context → containers → components, plus a dynamic view of one chat request further down. The diagrams use Mermaid's C4 syntax, which GitHub renders."
+assert old in s
+s=s.replace(old,"System design in the [C4 model](https://c4model.com): context → containers → components, plus a dynamic view of one chat request further down. Diagrams use C4 notation (person / container / database shapes, `[Container: technology]` labels, dashed boundaries) and are rendered to PNG from the Mermaid sources in [docs/diagrams/](docs/diagrams/) with `npm run diagrams`.")
+open(p,'w').write(s)
+p='package.json'; d=json.load(open(p))
+d['scripts']['diagrams']='for f in docs/diagrams/*.mmd; do npx -y @mermaid-js/mermaid-cli -i \"$f\" -o \"${f%.mmd}.png\" -b white -s 2; done'
+open(p,'w').write(json.dumps(d,indent=2)+'\n')
+E
+echo "mermaid blocks left in README: $(grep -c '```mermaid' README.md)"; grep -n "docs/diagrams/.*\.png" README.md | cut -c1-120; for f in $(grep -o 'docs/diagrams/[a-z0-9-]*\.png' README.md); do [ -f "$f" ] && echo "✅ $f" || echo "❌ missing $f"; done; ls docs/diagrams
+````
+
+**Result** ✅
+
+```
+mermaid blocks left in README: 0
+61:![C4 Level 1 — System context](docs/diagrams/c4-1-context.png)
+67:![C4 Level 2 — Containers](docs/diagrams/c4-2-containers.png)
+73:![C4 Level 3 — Components of the web app](docs/diagrams/c4-3-components.png)
+119:![One chat request (dynamic view)](docs/diagrams/sequence-chat-request.png)
+264:![Meal-plan algorithm flow](docs/diagrams/algorithm-flow.png)
+✅ docs/diagrams/c4-1-context.png
+✅ docs/diagrams/c4-2-containers.png
+✅ docs/diagrams/c4-3-components.png
+✅ docs/diagrams/sequence-chat-request.png
+✅ docs/diagrams/algorithm-flow.png
+algorithm-flow.mmd
+algorithm
+… [truncated 175 chars]
+```
+
+</details>
+
+### 🤖 Claude
+
+## 🎯 System design as C4 diagrams, shown as images in the README — ✅ Done
+
+### 📊 Summary
+- **C4 diagrams:** the system design is now three C4 diagrams (Level 1 context, Level 2 containers, Level 3 components of the web app) plus the request sequence as the dynamic view.
+- **Images only:** the README shows PNG images and contains no Mermaid code (0 blocks left). Sources are in [docs/diagrams/](docs/diagrams/), and `npm run diagrams` regenerates them.
+- **All 5 checked:** I rendered every diagram and looked at it. That caught a **real bug**: the sequence diagram had never been valid (a `;` broke it), so it wasn't rendering in the README.
+
+### 🖼️ Diagrams
+| Image | What it shows |
+|---|---|
+| [c4-1-context.png](docs/diagrams/c4-1-context.png) | **Level 1:** Visitor and Developer → Khmer Menu Planner → OpenRouter (3 models) and here.now |
+| [c4-2-containers.png](docs/diagrams/c4-2-containers.png) | **Level 2:** browser (SPA + localStorage), here.now (static site + LLM proxy, password-gated), developer machine (Python pipeline + dataset), OpenRouter, with protocols on each arrow |
+| [c4-3-components.png](docs/diagrams/c4-3-components.png) | **Level 3:** Chat UI, Session sidebar, Quick planner, Agent loop, OpenRouter client, Tools, Meal optimizer, Menu loader, Session store, each with its source file |
+| [sequence-chat-request.png](docs/diagrams/sequence-chat-request.png) | **Dynamic view:** login → tool call → `plan_meal` runs locally → final answer |
+| [algorithm-flow.png](docs/diagrams/algorithm-flow.png) | The meal-plan algorithm flowchart (now an image too) |
+
+### 📝 Changes Made
+| File | Change | Why |
+|---|---|---|
+| [docs/diagrams/*.mmd](docs/diagrams/) | 5 diagram sources extracted from the README; C4 written in **C4 notation** (standard colours, shapes, `[Container: tech]` labels, dashed boundaries) | Editable sources kept next to the images |
+| [docs/diagrams/*.png](docs/diagrams/) | Rendered at 2× scale on a white background | Readable in light and dark themes |
+| [README.md](README.md) | Each Mermaid block replaced with an image plus a small "Source · regenerate" link; System design intro updated | Your request |
+| [package.json](package.json) | New `npm run diagrams` | One command to re-render after edits |
+
+### ⚠️ One judgement call
+I first used Mermaid's built-in C4 diagram type. Its automatic layout was poor: lines crossed boxes and labels piled on top of each other. I switched to **C4 notation laid out by Mermaid's flowchart engine**, which keeps the C4 visual language (person, container, database, external system, boundaries) and comes out much cleaner. The C4 *model* and levels are unchanged; only the drawing engine differs. If you need strict C4-PlantUML or Structurizr output, I can redo it with those tools.
+
+### Impact
+- ✅ All 5 images exist, are linked and display correctly.
+- ✅ The sequence diagram now works (fixed `answer; save session` → `answer, save session`).
+- ℹ️ The images add about 1.4 MB to the repo.
+
+### 📋 Next Steps
+1. 🟡 Look over the README preview, especially the three C4 images.
+2. 🟢 After editing any `.mmd` file, run `npm run diagrams`; commit when you're ready.
+
+---
+
+## 🧑 User — turn 48 · 05:46 UTC
+
+Let export session again and we finalize
+
+<details><summary>🔧 <b>Bash</b> — Final session export, secret scan of the log, and repo status</summary>
+
+```bash
+node scripts/export-session.mjs ~/.claude/projects/-Users-lam-Projects-khmer-menus/b942e31f-bdc1-4301-9fae-0977b8ab5a02.jsonl ai-session/session-01-2026-10-02-planning-setup-deploy.md --title "Session 01 — Plan, extraction, meal planner, chat agent & deploy (2026-10-02)" && f=ai-session/session-01-2026-10-02-planning-setup-deploy.md && wc -c $f && python3 - <<'E'
+import re
+s=open('ai-session/session-01-2026-10-02-planning-setup-deploy.md').read()
+env={}
+for l in open('.env'):
+    l=l.strip()
+    if l and not l.startswith('#') and '=' in l:
+        k,v=l.split('=',1); env[k]=v
+leaks=[k for k,v in env.items() if any(t in k for t in ('KEY','PASSWORD','TOKEN','CODE','SECRET')) and len(v)>=6 and v in s]
+pat=[p for p in [r'sk-or-v1-[A-Za-z0-9]{10}', r'hnk_[A-Za-z0-9]{10}', r'sk-ant-[A-Za-z0-9]{10}'] if re.search(p,s)]
+print('exact .env secret values found:', leaks or 'none ✅'); print('key patterns found:', pat or 'none ✅')
+E
+git status --short | head -30; git check-ignore -q .env && echo ".env ignored ✅"; date -u +%H:%M
+```
+
+**Result** ✅
+
+```
+wrote ai-session/session-01-2026-10-02-planning-setup-deploy.md (48 user turns)
+  509876 ai-session/session-01-2026-10-02-planning-setup-deploy.md
+exact .env secret values found: none ✅
+key patterns found: none ✅
+ M .env.example
+ M README.md
+ M ai-session/session-01-2026-10-02-planning-setup-deploy.md
+ M package.json
+ M scripts/export-session.mjs
+ M src/App.tsx
+ M src/index.css
+?? docs/
+?? src/components/QuickPlanner.tsx
+.env ignored ✅
+05:46
+```
+
+</details>
+
+<details><summary>🔧 <b>Bash</b> — Confirm the live site is still password-gated</summary>
+
+```bash
+U=https://swift-sleet-z44r.here.now; echo "gate (no password): $(curl -s -o /dev/null -w '%{http_code}' $U/) · proxy (no password): $(curl -s -o /dev/null -w '%{http_code}' -X POST $U/api/chat -d '{}')"
+```
+
+**Result** ✅
+
+```
+gate (no password): 401 · proxy (no password): 401
+```
+
+</details>
+
+---
+
+## 🧑 User (sent mid-turn) — turn 49 · 05:46 UTC
+
+Also re-deploy what is latest
+
+### 🤖 Claude
+
+Rebuilding from the latest code and redeploying. Unchanged files get skipped, and the password gate survives redeploys:
+
+<details><summary>🔧 <b>Bash</b> — Rebuild, redeploy latest, verify gate, bundle match and proxy</summary>
+
+```bash
+npx tsc -b 2>&1 | head -3 && npx oxlint src 2>&1 | tail -1 && rm -rf dist && npm run build 2>&1 | grep -E "error|built" && ls dist/assets && set -a && . ./.env && set +a && for i in 1 2 3; do out=$(~/.agents/skills/here-now/scripts/publish.sh dist --slug swift-sleet-z44r --client claude-code/publish-sh 2>&1 | grep -v hnk_); echo "$out" | grep -E "curl:|uploading|live_version"; echo "$out" | grep -q live_version && break; sleep 8; done; sleep 3; U=https://swift-sleet-z44r.here.now; J=/tmp/hn.jar; rm -f $J; echo "no password → page $(curl -s -o /dev/null -w '%{http_code}' $U/), proxy $(curl -s -o /dev/null -w '%{http_code}' -X POST $U/api/chat -d '{}')"; curl -s -o /dev/null -c $J -X POST $U/ --data-urlencode "password=$SITE_PASSWORD"; echo "with password → live bundle: $(curl -s -b $J $U/ | grep -o 'assets/index-[^"]*\.js') · local: $(ls dist/assets | grep js$) · menus.json $(curl -s -o /dev/null -w '%{http_code}' -b $J $U/menus.json) · proxy: $(curl -s -b $J -X POST $U/api/chat -H 'content-type: application/json' -d '{"model":"google/gemini-3.5-flash","messages":[{"role":"user","content":"Reply with exactly: ok"}],"max_tokens":300}' | python3 -c 'import json,sys; d=json.load(sys.stdin); print(d.get("error") or d["choices"][0]["message"]["content"])')"; rm -f $J
+```
+
+**Result** ✅
+
+```
+✓ built in 99ms
+index-BQu1e9LZ.css
+index-D3mcU-5r.js
+curl: (56) Recv failure: Connection reset by peer
+uploading 0 files (6 unchanged, skipped)...
+publish_result.live_version_id=01M3XH7WWFREDV904F6G1V3BNE
+no password → page 401, proxy 401
+with password → live bundle: assets/index-D3mcU-5r.js · local: index-D3mcU-5r.js · menus.json 200 · proxy: ok
+```
+
+</details>
