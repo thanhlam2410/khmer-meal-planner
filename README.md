@@ -17,6 +17,31 @@ using ~30 restaurant menus from Cambodia, written in Khmer.
 
 ---
 
+## Where to find everything (submission map)
+
+| Item | Where |
+|---|---|
+| **Live app** | https://swift-sleet-z44r.here.now/ (password-protected; password supplied separately) |
+| **GitHub repo** | https://github.com/thanhlam2410/khmer-meal-planner, committed step by step |
+| **Plan**: approach, fallback, what's out of scope, how it goes live | [PLAN.md](PLAN.md) / [PLAN.txt](PLAN.txt), written before any processing |
+| **Accuracy prediction** (before processing) | [PLAN.md §5](PLAN.md) |
+| **Assumptions**: before the build / final | [PLAN.md §6](PLAN.md) / [Assumptions (final)](#assumptions-final) |
+| **Two extra requirements** for the brief | [PLAN.md §7](PLAN.md) |
+| **Self-critique** | [Self-critique](#self-critique) |
+| **What changed vs the plan** | [What changed vs the plan](#what-changed-vs-the-plan) |
+| **Limitations / future work** | [Limitations](#limitations), [Future improvements](#future-improvements-if-time-allows) |
+| **System design** (C4, tech stack, storage, data flows) | [System design](#system-design); diagram sources in [docs/diagrams/](docs/diagrams/) |
+| **Benchmarks: scripts** | [benchmarks/](benchmarks/): `extraction_accuracy.py`, `llm_usage.py`, `solver_bench.ts` (`npm run bench`) |
+| **Benchmarks: raw numbers** | [benchmarks/results/](benchmarks/results/) (`*.json` raw, `*.md` summaries) |
+| **Raw model outputs** (benchmark inputs) | [data/cache/extract/](data/cache/extract/) (Gemini), [data/cache/crosscheck/](data/cache/crosscheck/) (Claude judge) |
+| **Final dataset** | [data/menus.json](data/menus.json) + [data/extraction-report.json](data/extraction-report.json); manual fixes in [data/restaurant-names.json](data/restaurant-names.json), [data/manual-fixes.json](data/manual-fixes.json) |
+| **AI usage trail** (index) | [ai-session/README.md](ai-session/README.md) |
+| ↳ Full Claude Code session history | [ai-session/raw/*.jsonl](ai-session/raw/) (complete, redacted) + [readable transcript](ai-session/session-01-2026-10-02-planning-setup-deploy.md) |
+| ↳ Prompts | Extraction + judge: [scripts/extraction/prompts.py](scripts/extraction/prompts.py) · chat agent: [src/agent/agent.ts](src/agent/agent.ts), tools: [src/agent/tools.ts](src/agent/tools.ts) |
+| ↳ Tool and model logs | [logs/llm-usage.jsonl](logs/llm-usage.jsonl) (every LLM call: tokens, cost, latency), [logs/run-*.log](logs/) |
+| ↳ Agent memory | [ai-session/claude-memory/](ai-session/claude-memory/) |
+| Source code | Pipeline [scripts/extraction/](scripts/extraction/) · optimizer [src/optimizer/](src/optimizer/) · agent [src/agent/](src/agent/) · UI [src/components/](src/components/) |
+
 ## Project layout
 
 ```
@@ -24,17 +49,20 @@ data/
   raw/<folder>/*.png        menu screenshots, one folder per restaurant (manual grouping)
   raw/_original_names.json  original screenshot file names
   restaurant-names.json     manual restaurant names (with evidence)
+  manual-fixes.json         hand corrections to items (with reasons)
   menus.json                ⭐ final dataset used by the app
   extraction-report.json    accuracy, cost, items needing review
-  cache/                    per-image model outputs (gitignored)
+  cache/                    raw per-image model outputs (extract/, crosscheck/; JPEGs gitignored)
 scripts/
   extraction/               step 1 pipeline (Python) + requirements.txt
   extract.mjs, lib/         first JS version of the same pipeline (kept for reference)
   export-session.mjs        exports Claude Code chat logs to ai-session/
 src/                        React chat app (Vite)
 public/.herenow/proxy.json  here.now proxy route: /api/chat -> OpenRouter
-logs/llm-usage.jsonl        every LLM call: model, tokens, cost, latency
-ai-session/                 readable logs of the AI-assisted working sessions
+logs/llm-usage.jsonl        every LLM call: model, tokens, cost, latency (+ run-*.log)
+benchmarks/                 benchmark scripts + raw results (npm run bench)
+docs/diagrams/              C4 / algorithm / sequence diagrams (.mmd sources + .png)
+ai-session/                 AI usage trail: full Claude Code session (raw JSONL + readable), memory, index
 PLAN.md / PLAN.txt          the plan, accuracy prediction and assumptions (written before processing)
 ```
 
