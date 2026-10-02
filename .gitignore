@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Secrets — OpenRouter key + here.now credentials live here, never commit
+.env
+.env.*
+!.env.example
+
+# here.now publish script local state (root only; public/.herenow/proxy.json IS committed)
+/.herenow/
+
+# Raw dataset archive + extraction cache
+khmer-menus.zip
+data/cache/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated copy of data/menus.json for the app
+public/menus.json

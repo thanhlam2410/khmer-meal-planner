@@ -1,0 +1,903 @@
+{
+  "generated_at": "2026-10-02T04:49:53.089Z",
+  "models": {
+    "extract": "google/gemini-2.5-pro",
+    "crosscheck": "anthropic/claude-opus-5.5"
+  },
+  "cost_usd": {
+    "extract": 2.6396,
+    "crosscheck": 0.8951
+  },
+  "images": [
+    {
+      "file": "2026-07-20_22-23-50.png",
+      "restaurant": "vimean-ekareach-rice-shop-late-night-rice",
+      "items": 9,
+      "image_quality": "fair",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-24-28.png",
+      "restaurant": "vimean-ekareach-rice-shop-late-night-rice",
+      "items": 31,
+      "image_quality": "fair",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-24-43.png",
+      "restaurant": "the-street",
+      "items": 18,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-24-59.png",
+      "restaurant": "the-street",
+      "items": 15,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-27-14.png",
+      "restaurant": "tbal-khmer",
+      "items": 35,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-30-11.png",
+      "restaurant": "the-street-cambodia-tk-branch",
+      "items": 70,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-30-44.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-31-05.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-31-15.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-31-25.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-31-36.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-32-14.png",
+      "restaurant": "restaurant-5",
+      "items": 6,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-32-49.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-32-57.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-33-07.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-33-16.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-33-37.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-33-49.png",
+      "restaurant": "mhoub-bopha",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-35-39.png",
+      "restaurant": "rachana-papaya-salad",
+      "items": 15,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-35-49.png",
+      "restaurant": "rachana-papaya-salad",
+      "items": 15,
+      "image_quality": "fair",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-36-45.png",
+      "restaurant": "vimean-ekareach-rice-shop-late-night-rice",
+      "items": 9,
+      "image_quality": "fair",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-43-25.png",
+      "restaurant": "lok-ov-pok-restaurant",
+      "items": 9,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-43-56.png",
+      "restaurant": "tream-khmer",
+      "items": 12,
+      "image_quality": "good",
+      "rotation_degrees": 270,
+      "audited": false
+    },
+    {
+      "file": "2026-07-20_22-47-26.png",
+      "restaurant": "bayon",
+      "items": 15,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-20_22-47-35.png",
+      "restaurant": "bayon",
+      "items": 23,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-21_11-15-08.png",
+      "restaurant": "rainbow",
+      "items": 45,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-21_11-15-15.png",
+      "restaurant": "rainbow",
+      "items": 72,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-21_11-15-26.png",
+      "restaurant": "rainbow",
+      "items": 7,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-21_11-15-35.png",
+      "restaurant": "rainbow",
+      "items": 9,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    },
+    {
+      "file": "2026-07-21_11-16-25.png",
+      "restaurant": "reatry-battambong-restaurant",
+      "items": 16,
+      "image_quality": "fair",
+      "rotation_degrees": 0,
+      "audited": true
+    },
+    {
+      "file": "2026-07-21_11-16-46.png",
+      "restaurant": "reatry-battambong-restaurant",
+      "items": 13,
+      "image_quality": "good",
+      "rotation_degrees": 0,
+      "audited": false
+    }
+  ],
+  "crosscheck": {
+    "images_audited": 10,
+    "items_audited": 165,
+    "agreement_pct": {
+      "overall": 79.4,
+      "exists": 100.0,
+      "name_km": 87.9,
+      "translation": 92.7,
+      "price": 97.0,
+      "category": 97.0
+    },
+    "missing_items_reported": 2,
+    "missing_items": [
+      {
+        "image": "2026-07-21_11-15-08.png",
+        "name_km": "បាយឆាក់ (reading uncertain)",
+        "name_en": "Fried rice (6th item in the fried rice section, between pineapple fried rice and shrimp paste fried rice)",
+        "price_text": "8500៛"
+      },
+      {
+        "image": "2026-07-21_11-16-25.png",
+        "name_km": "ឆា... (row 6, between ឆាក្តៅ and ឆាកែង; text largely illegible)",
+        "name_en": "Unidentified stir-fry dish (row 6)",
+        "price_text": "handwritten sticker, approx ៤$ / ៦$"
+      }
+    ]
+  },
+  "restaurants": [
+    {
+      "id": "vimean-ekareach-rice-shop-late-night-rice",
+      "folder": "1",
+      "name_en": "Vimean Ekareach Rice Shop (Late Night Rice)",
+      "name_source": "manual",
+      "name_candidates": [
+        "Vimean Eakareach Rice Shop (Late Night Rice)",
+        "Hang Bay Vimean Ekareach (Late Night Rice)"
+      ],
+      "images": [
+        "2026-07-20_22-23-50.png",
+        "2026-07-20_22-24-28.png",
+        "2026-07-20_22-36-45.png"
+      ],
+      "items": 49
+    },
+    {
+      "id": "the-street",
+      "folder": "2",
+      "name_en": "The Street",
+      "name_source": "folder",
+      "name_candidates": [
+        "The Street"
+      ],
+      "images": [
+        "2026-07-20_22-24-43.png",
+        "2026-07-20_22-24-59.png"
+      ],
+      "items": 33
+    },
+    {
+      "id": "tbal-khmer",
+      "folder": "3",
+      "name_en": "Tbal Khmer",
+      "name_source": "manual",
+      "name_candidates": [],
+      "images": [
+        "2026-07-20_22-27-14.png"
+      ],
+      "items": 35
+    },
+    {
+      "id": "the-street-cambodia-tk-branch",
+      "folder": "4",
+      "name_en": "The Street Cambodia TK branch",
+      "name_source": "folder",
+      "name_candidates": [
+        "The Street Cambodia TK branch"
+      ],
+      "images": [
+        "2026-07-20_22-30-11.png"
+      ],
+      "items": 70
+    },
+    {
+      "id": "restaurant-5",
+      "folder": "5",
+      "name_en": "Unnamed restaurant #5",
+      "name_source": "none",
+      "name_candidates": [],
+      "images": [
+        "2026-07-20_22-30-44.png",
+        "2026-07-20_22-31-05.png",
+        "2026-07-20_22-31-15.png",
+        "2026-07-20_22-31-25.png",
+        "2026-07-20_22-31-36.png",
+        "2026-07-20_22-32-14.png"
+      ],
+      "items": 36
+    },
+    {
+      "id": "mhoub-bopha",
+      "folder": "6",
+      "name_en": "Mhoub Bopha",
+      "name_source": "manual",
+      "name_candidates": [
+        "Mhoub Bopha",
+        "Mok Mhoup",
+        "Mukh Mhoub Chha"
+      ],
+      "images": [
+        "2026-07-20_22-32-49.png",
+        "2026-07-20_22-32-57.png",
+        "2026-07-20_22-33-07.png",
+        "2026-07-20_22-33-16.png",
+        "2026-07-20_22-33-37.png",
+        "2026-07-20_22-33-49.png"
+      ],
+      "items": 72
+    },
+    {
+      "id": "rachana-papaya-salad",
+      "folder": "7",
+      "name_en": "Rachana Papaya Salad",
+      "name_source": "folder",
+      "name_candidates": [
+        "Rachana Papaya Salad"
+      ],
+      "images": [
+        "2026-07-20_22-35-39.png",
+        "2026-07-20_22-35-49.png"
+      ],
+      "items": 30
+    },
+    {
+      "id": "lok-ov-pok-restaurant",
+      "folder": "8",
+      "name_en": "LOK OV POK RESTAURANT",
+      "name_source": "folder",
+      "name_candidates": [
+        "LOK OV POK RESTAURANT"
+      ],
+      "images": [
+        "2026-07-20_22-43-25.png"
+      ],
+      "items": 9
+    },
+    {
+      "id": "tream-khmer",
+      "folder": "9",
+      "name_en": "TREAM KHMER",
+      "name_source": "folder",
+      "name_candidates": [
+        "TREAM KHMER"
+      ],
+      "images": [
+        "2026-07-20_22-43-56.png"
+      ],
+      "items": 12
+    },
+    {
+      "id": "bayon",
+      "folder": "10",
+      "name_en": "Bayon",
+      "name_source": "manual",
+      "name_candidates": [
+        "Lilis",
+        "Bayon"
+      ],
+      "images": [
+        "2026-07-20_22-47-26.png",
+        "2026-07-20_22-47-35.png"
+      ],
+      "items": 38
+    },
+    {
+      "id": "rainbow",
+      "folder": "11",
+      "name_en": "Rainbow",
+      "name_source": "manual",
+      "name_candidates": [
+        "RAINBOW"
+      ],
+      "images": [
+        "2026-07-21_11-15-08.png",
+        "2026-07-21_11-15-15.png",
+        "2026-07-21_11-15-26.png",
+        "2026-07-21_11-15-35.png"
+      ],
+      "items": 133
+    },
+    {
+      "id": "reatry-battambong-restaurant",
+      "folder": "15",
+      "name_en": "Reatry Battambong Restaurant",
+      "name_source": "folder",
+      "name_candidates": [
+        "Reatry Battambong Restaurant",
+        "Reatry Battambong Restaurant"
+      ],
+      "images": [
+        "2026-07-21_11-16-25.png",
+        "2026-07-21_11-16-46.png"
+      ],
+      "items": 29
+    }
+  ],
+  "items_needing_review": [
+    {
+      "id": "2026-07-20_22-23-50#003",
+      "name_en": "Rice with Pak Lov",
+      "name_km": "បាយផាក់ឡូវ",
+      "prices": [],
+      "crosscheck": {
+        "note": "The label reads បាយផាក់ឡូ, with no final វ. Pak lov is braised five-spice pork, so the pork category fits; the egg/soup tags are plausible. No price is printed.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-23-50#006",
+      "name_en": "Shaken Duck Egg (Balut)",
+      "name_km": "ពងទាក្រឡុក",
+      "prices": [],
+      "crosscheck": {
+        "note": "ក្រឡុក here means beaten or scrambled, so this is a scrambled duck egg (omelette), as the photo shows. It is not balut, which is ពងទាកូន. Suggested name_en: 'Scrambled Duck Egg'. The category should be 'egg', not 'snack'. No price is printed.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-36-45#003",
+      "name_en": "Rice with Phak Lov",
+      "name_km": "បាយផាក់ឡូវ",
+      "prices": [],
+      "crosscheck": {
+        "note": "The label reads បាយផាក់ឡូ, with no final វ. The extraction added វ (ផាក់ឡូវ). Pha lo is braised pork with egg, so 'Rice with Braised Pork & Egg (Pha Lo)' would be a clearer English name. No price is printed.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-36-45#006",
+      "name_en": "Shaken Duck Egg (Balut)",
+      "name_km": "ពងទាក្រឡុក",
+      "prices": [],
+      "crosscheck": {
+        "note": "ពងទាក្រឡុក is scrambled/shaken duck egg, and the photo shows a scrambled egg dish. It is not balut, which would be ពងទាកូន. Suggested English name: 'Scrambled Duck Egg'. No price is printed.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-24-59#003",
+      "name_en": "Grilled Clams",
+      "name_km": "គ្រំអាំង",
+      "prices": [
+        "1ចាន/6000៛ -> $1.5"
+      ],
+      "crosscheck": {
+        "note": "Printed as គ្រុំអាំង. The extraction dropped the ុ vowel.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-24-59#008",
+      "name_en": "Oysters",
+      "name_km": "អ័យស្ទួយ",
+      "prices": [
+        "1ចាន/12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "Printed as អ័យស្ទ័យ (Oyster). The extraction wrote the second syllable as ស្ទួយ instead of ស្ទ័យ.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-24-59#009",
+      "name_en": "Grilled Oysters",
+      "name_km": "អ័យស្ទួយអាំង",
+      "prices": [
+        "1ចាន/12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "Printed as អ័យស្ទ័យអាំង (Oyster). The extraction wrote ស្ទួយ instead of ស្ទ័យ.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-24-59#010",
+      "name_en": "Oysters on Ice",
+      "name_km": "អ័យស្វ័យទឹកកក",
+      "prices": [
+        "1ចាន/12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "Printed as អ័យស្ទ័យទឹកកក. The extraction used subscript វ (ស្វ័យ) instead of ទ (ស្ទ័យ).",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-24-59#015",
+      "name_en": "Buttered Bread",
+      "name_km": "នំប៉័ងប៊រ",
+      "prices": [
+        "/1000៛ -> $0.25"
+      ],
+      "crosscheck": {
+        "note": "Printed as នំប៉័ងប៊ឺ (butter = ប៊ឺ), not ប៊រ.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-27-14#003",
+      "name_en": "White Rice",
+      "name_km": "បាយស",
+      "prices": [
+        "2,000៛ -> $0.5"
+      ],
+      "crosscheck": {
+        "note": "D-3 Khmer is partly hidden by glare. It appears to read 'បាយស ១ចាន' (one plate of rice), not just 'បាយស'. The extraction dropped the quantity word.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-27-14#007",
+      "name_en": "Sweet and Sour Fried Shrimp",
+      "name_km": "បង្គាឆាជូរហឹរ",
+      "prices": [
+        "26,000៛ -> $6.5"
+      ],
+      "crosscheck": {
+        "note": "ជូរហឹរ means sour and spicy, not sweet and sour. Better: 'Stir-fried Shrimp, Sour and Spicy'.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-27-14#035",
+      "name_en": "Khmer Dessert with Sticky Rice",
+      "name_km": "បង្អែមខ្មែរបាយដំណើប",
+      "prices": [
+        "6,000៛ -> $1.5"
+      ],
+      "crosscheck": {
+        "note": "Printed Khmer is 'បង្អែមខ្នុរបាយដំណើប', where ខ្នុរ means jackfruit; it is not ខ្មែរ (Khmer). The English should be 'Jackfruit Dessert with Sticky Rice'.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-31-05#002",
+      "name_en": "Water Spinach Stem and Pork Soup",
+      "name_km": "ស្ងោរស្ពៃចង្កឹះសាច់ជ្រូក",
+      "prices": [
+        "2 $ -> $2.0",
+        "(8000៛) -> $2.0"
+      ],
+      "crosscheck": {
+        "note": "ស្ពៃចង្កឹះ is choy sum/bok choy stems, not water spinach (ត្រកួន). A better name is 'Choy Sum Soup with Pork'.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-31-25#002",
+      "name_en": "Stir-fried Kailan with Beef",
+      "name_km": "ឆាខាត់ណាសាច់គោ",
+      "prices": [
+        "2.25$ $ -> $2.25",
+        "(9000$) -> $9000.0 [currency_differs_from_model, suspect_high_usd]"
+      ],
+      "crosscheck": null
+    },
+    {
+      "id": "2026-07-20_22-43-25#002",
+      "name_en": "Chicken with Pickled Lime Soup (with Rice)",
+      "name_km": "ស្ងោរជ្រក់ក្រូចឆ្មាមាន់ (បាយ)",
+      "prices": [
+        "ចាន $5.25 -> $5.25",
+        "ឆ្នាំង $12.50 -> $12.5"
+      ],
+      "crosscheck": {
+        "note": "The printed Khmer is shorter than the extraction. It reads roughly 'ស្ងោរ…មាន់ (បាយ)', and 'ក្រូចឆ្មា' does not appear to be printed. The extracted Khmer looks reconstructed from the English rather than transcribed. Re-check the middle word.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-43-25#003",
+      "name_en": "Spicy Sour Soup with Prawn (with Rice)",
+      "name_km": "សម្លម្ជូរគ្រឿងសមុទ្រ(បាយ)",
+      "prices": [
+        "ចាន $5.75 -> $5.75",
+        "ឆ្នាំង $12.50 -> $12.5"
+      ],
+      "crosscheck": {
+        "note": "This name is handwritten on a pasted-over label. The handwriting appears to include 'ហឹរ' (spicy), and the item likely refers to prawn rather than generic 'គ្រឿងសមុទ្រ'. The extracted 'សម្លម្ជូរគ្រឿងសមុទ្រ' does not match the handwriting exactly. Prices $5.75 / $12.50 match.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-47-26#001",
+      "name_en": "Special Beef Offal",
+      "name_km": "ហ្វីពិសេសគ្រឿងក្នុងគោ",
+      "prices": [
+        "15.000៛ -> $3.75"
+      ],
+      "crosscheck": {
+        "note": "The first word is printed as ហ៊ូ, the same glyph as the next line. It is not ហ្វី. The name should be ហ៊ូពិសេសគ្រឿងក្នុងគោ, which means 'Special Hu (noodle soup) with Beef Offal'. Category 'noodle' would also fit.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-47-26#002",
+      "name_en": "Hu",
+      "name_km": "ហ៊ូ",
+      "prices": [
+        "10.000៛ -> $2.5"
+      ],
+      "crosscheck": {
+        "note": "Hu (hu tieu) is a noodle soup. The category should be 'noodle' with the tag 'soup', not 'other'. 'Hu Tieu Noodle Soup' would be a clearer English name.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-47-26#009",
+      "name_en": "Grilled or Fried Baby Horseshoe Crab",
+      "name_km": "ពង់ក្រចកូនដុត ឬបំពងម្សៅ",
+      "prices": [
+        "5.000៛ -> $1.25"
+      ],
+      "crosscheck": {
+        "note": "The print reads ពងក្រចកូនដុត ឬបំពងម្សៅ, with no bantoc on ពង. The extraction added a spurious ់.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-20_22-47-26#014",
+      "name_en": "Bong Coffee",
+      "name_km": "កាហ្វេបូង",
+      "prices": [
+        "4.500៛ -> $1.13"
+      ],
+      "crosscheck": {
+        "note": "The print reads កាហ្វេដូង, which means Coconut Coffee. It does not read កាហ្វេបូង.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#001",
+      "name_en": "Rainbow Fried Rice",
+      "name_km": "បាយឥន្ធធនូ",
+      "prices": [
+        "10,000៛ -> $2.5"
+      ],
+      "crosscheck": {
+        "note": "Printed as បាយឥន្ទធនូ, with ទ rather than ធ before ធនូ.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#005",
+      "name_en": "Sour Fried Rice",
+      "name_km": "បាយឆាម្ចូរ",
+      "prices": [
+        "8500៛ -> $2.13"
+      ],
+      "crosscheck": {
+        "note": "Printed as បាយឆាម្នាស, which is Pineapple Fried Rice, not បាយឆាម្ជូរ/Sour Fried Rice.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#008",
+      "name_en": "Fried Rice with Egg Yolk",
+      "name_km": "បាយខួបពង",
+      "prices": [
+        "8500៛ -> $2.13"
+      ],
+      "crosscheck": {
+        "note": "Likely egg-wrapped rice rather than 'with egg yolk'.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#024",
+      "name_en": "Spicy Stir-fry with Holy Basil",
+      "name_km": "ឆាក្តៅ",
+      "prices": [
+        "12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "ឆាក្តៅ means 'hot stir-fry'; holy basil is not printed.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#027",
+      "name_en": "Stir-fry (house style; name partly unreadable)",
+      "name_km": "ឆាងាវ",
+      "prices": [
+        "12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "The printed name is not ឆាងាវ; it looks like ឆាហាំង្ស/ឆាម៉ាំង… (unclear). It sits in the chicken/duck/frog/eel section, so the dish is not clams and not seafood.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#028",
+      "name_en": "Roti",
+      "name_km": "រ៉ូទី",
+      "prices": [
+        "12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "Listed in the chicken/duck/frog/eel section, so this is likely a meat preparation rather than a snack.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#029",
+      "name_en": "Krat",
+      "name_km": "ក្រាត",
+      "prices": [
+        "12000៛ -> $3.0"
+      ],
+      "crosscheck": {
+        "note": "Listed in the chicken/duck/frog/eel section, not seafood.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-15-08#035",
+      "name_en": "Spicy Instant Noodles",
+      "name_km": "មីកខ្លាំង",
+      "prices": [
+        "8500៛ -> $2.13"
+      ],
+      "crosscheck": {
+        "note": "Printed as មីកន្ទាំង, which is Mee Kantang (stir-fried flat noodles), not spicy instant noodles.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#001",
+      "name_en": "Stir-fried Chicken, Fish, Pork, or Beef with Ginger",
+      "name_km": "សាច់មាន់, សាច់ត្រី, សាច់ជ្រូក, សាច់គោឆាខ្ញី",
+      "prices": [],
+      "crosscheck": {
+        "note": "Row 1 exists. Its price cells are obscured by a handwritten sticker that seems to sit between rows 1 and 2, so the price cannot be confirmed. Leaving prices empty may be wrong, but the correct values cannot be read reliably.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#002",
+      "name_en": "Stir-fried Fresh Squid with Light Peppers",
+      "name_km": "ឆាមឹកស្រស់",
+      "prices": [
+        "2.50$ -> $2.5 [handwritten_sticker]",
+        "4.50$ -> $4.5 [handwritten_sticker]"
+      ],
+      "crosscheck": {
+        "note": "The printed small-plate price under the sticker reads 2.00$, not 2.50$. Handwritten stickers with Khmer numerals (apparently ៤$ / ៦$) cover these cells and may be updated prices. Uncertain.",
+        "correct_prices": [
+          {
+            "price_text": "2.00$",
+            "amount": 2.0,
+            "currency": "USD",
+            "variant_en": "small plate"
+          },
+          {
+            "price_text": "4.50$",
+            "amount": 4.5,
+            "currency": "USD",
+            "variant_en": "large plate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#004",
+      "name_en": "Lok Lak with Beef, Pork, Chicken, or Fish",
+      "name_km": "ឡុកឡាក់សាច់គោ, សាច់ជ្រូក, សាច់មាន់, សាច់ត្រី",
+      "prices": [
+        "6.00$ -> $6.0 [handwritten_sticker]"
+      ],
+      "crosscheck": {
+        "note": "The large plate shows 6.00$, but the small-plate cell has a handwritten sticker (looks like ៤$) that the extraction omitted. The exact value is uncertain.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#005",
+      "name_en": "Spicy Stir-fry (Kroeung or Wild Style) with Beef, Pork, Chicken, Duck, Eel, or Frog",
+      "name_km": "ឆាក្តៅ (គ្រឿង, ព្រៃ) សាច់គោ, សាច់ជ្រូក, សាច់មាន់, សាច់ទា, អន្ទង់, កង្កែប",
+      "prices": [
+        "6.00$ -> $6.0 [handwritten_sticker]"
+      ],
+      "crosscheck": {
+        "note": "The price cells for this row and the next are covered by handwritten stickers (about ៤$ / ៦$), so the assignment of 6.00$ is not clearly supported. The 'seafood' tag for eel/frog is loose but acceptable.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#009",
+      "name_en": "Stir-fried Beef or Pork with Tomatoes",
+      "name_km": "សាច់គោ, សាច់ជ្រូកឆាប៉េងប៉ោះ",
+      "prices": [],
+      "crosscheck": {
+        "note": "The price cells are covered by a handwritten sticker (looks like ៤$ / ៦$ in Khmer numerals). Prices should not be empty, but the exact values are uncertain.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#010",
+      "name_en": "Stir-fried Beef or Pork with Cauliflower and Chili",
+      "name_km": "សាច់គោ, សាច់ជ្រូក, ឆាផ្កាខាត់ណា",
+      "prices": [
+        "4.00$ -> $4.0 [handwritten_sticker]",
+        "6.00$ -> $6.0 [handwritten_sticker]"
+      ],
+      "crosscheck": null
+    },
+    {
+      "id": "2026-07-21_11-16-25#014",
+      "name_en": "Stir-fried Pork Intestine with Green Peppercorns",
+      "name_km": "ពោះតាន់ឆាម្រេចខ្ចី",
+      "prices": [
+        "5.00$ -> $5.0",
+        "7.00$ -> $7.0"
+      ],
+      "crosscheck": {
+        "note": "The printed Khmer for this row does not clearly read ពោះតាន់ឆាម្រេចខ្ចី. It may be a different cooking method, or swapped with the next row. Low legibility.",
+        "correct_prices": null
+      }
+    },
+    {
+      "id": "2026-07-21_11-16-25#015",
+      "name_en": "Salty and Sweet Stir-fried Pork Intestine",
+      "name_km": "ពោះតាន់ឆាប្រៃផ្អែម",
+      "prices": [
+        "5.00$ -> $5.0",
+        "7.00$ -> $7.0"
+      ],
+      "crosscheck": {
+        "note": "This last intestine row appears to end in ...ឆាម្រេចខ្ចី rather than ...ឆាប្រៃផ្អែម, which suggests a misread or a swap with #014. Uncertain.",
+        "correct_prices": null
+      }
+    }
+  ]
+}

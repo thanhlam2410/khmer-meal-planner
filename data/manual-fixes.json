@@ -1,0 +1,28 @@
+{
+  "_comment": "Hand corrections applied by scripts/extraction/extract.py at build time (no model call). Each fix lists item ids, what changes and why; the item keeps a 'manual_fix' note.",
+  "fixes": [
+    {
+      "items": ["2026-07-21_11-16-25#002", "2026-07-21_11-16-25#004", "2026-07-21_11-16-25#005", "2026-07-21_11-16-25#010"],
+      "add_price_flags": ["handwritten_sticker"],
+      "reason": "Reatry Battambong: handwritten stickers (about ៤$ small / ៦$ large) cover the printed price cells on these rows, so the printed prices may no longer apply. Flagged so the planner never recommends them."
+    },
+    {
+      "items": [
+        "2026-07-21_11-15-08#021", "2026-07-21_11-15-08#022", "2026-07-21_11-15-08#023",
+        "2026-07-21_11-15-08#024", "2026-07-21_11-15-08#025", "2026-07-21_11-15-08#026",
+        "2026-07-21_11-15-08#027", "2026-07-21_11-15-08#028", "2026-07-21_11-15-08#029"
+      ],
+      "set": {
+        "category": "chicken",
+        "section_en": "Drinking snacks — choice of chicken feet, chicken, duck, frog or eel"
+      },
+      "add_tags": ["chicken"],
+      "reason": "Rainbow: the section heading's subtitle ជើងមាន់•មាន់•ទា•កង្កែប•អន្ទង់ means each dish is a preparation of chicken feet / chicken / duck / frog / eel. The model tagged some as seafood/snack/other (cross-checker flagged #027-#029)."
+    },
+    {
+      "items": ["2026-07-21_11-15-08#027"],
+      "set": { "name_en": "Stir-fry (house style; name partly unreadable)" },
+      "reason": "Cross-checker: printed name is not ឆាងាវ (stir-fried clams); the actual word is unclear."
+    }
+  ]
+}

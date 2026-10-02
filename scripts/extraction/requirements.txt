@@ -1,0 +1,4 @@
+# Offline menu extraction pipeline (python3 scripts/extraction/extract.py)
+requests>=2.32
+python-dotenv>=1.0
+Pillow>=11.0

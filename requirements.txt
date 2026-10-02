@@ -1,0 +1,5 @@
+Khmer Menu Intelligence Challenge  |  Time limit: 3 hours
+The task
+You have a dataset of about 30 restaurant menus from Cambodia, all in Khmer. Using it, build a web app, live at a here.now link, that answers this question:
+“I have a budget of $10. I want chicken, some vegetables, and a couple of beers. What should I order, and from where?”
+Use any models, tools, APIs, or libraries you like. There are no restrictions on approach.

@@ -1,0 +1,28 @@
+{
+  "_comment": "Manual restaurant names per data/raw/<folder>. Applied by scripts/extraction/extract.py at build time (no model call). Folders not listed keep the name printed on the menu, or 'Unnamed restaurant #N'.",
+  "1": {
+    "name_en": "Vimean Ekareach Rice Shop (Late Night Rice)",
+    "name_km": "ហាងបាយ វិមានឯករាជ្យ (បាយដាច់យប់)",
+    "evidence": "Two spellings of the same printed name merged"
+  },
+  "3": {
+    "name_en": "Tbal Khmer",
+    "name_km": "ត្បាល់ខ្មែរ",
+    "evidence": "Mortar logo printed on both edges of the menu; model did not detect it"
+  },
+  "6": {
+    "name_en": "Mhoub Bopha",
+    "name_km": "ម្ហូប បុប្ផា",
+    "evidence": "Other candidates (មុខម្ហូប, មុខម្ហូបឆា) are section headings ('dishes', 'stir-fried dishes'), not names"
+  },
+  "10": {
+    "name_en": "Bayon",
+    "name_km": "បាយ័ន",
+    "evidence": "Bayon-face logo with stylised បាយ័ន on both pages; 'Lilis' was a misreading of the logo"
+  },
+  "11": {
+    "name_en": "Rainbow",
+    "name_km": "ឥន្ទធនូ",
+    "evidence": "Merged folders 11-14 (photos taken 11:15:08-11:15:35): Rainbow logo on 11-15-26; Rainbow-branded dishes on 11-15-08/26/35; shared wood background, yellow 'large plate x2' badge, title style. 11-15-15 (drinks) has no logo; grouped by sequence and design."
+  }
+}

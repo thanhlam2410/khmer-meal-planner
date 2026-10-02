@@ -1,0 +1,106 @@
+KHMER MENU INTELLIGENCE - PLAN
+
+GOAL
+- Build a web app, live at a here.now link, that answers: "I have a budget of $10. I want chicken, some vegetables, and a couple of beers. What should I order, and from where?"
+- All AI calls go through OpenRouter: one API key, endpoint https://openrouter.ai/api/v1/chat/completions
+- Time limit: 3 hours
+
+1. APPROACH
+- Extraction (once, offline, not at runtime)
+  - Send each of the 31 screenshots to a vision model on OpenRouter with a strict JSON schema
+  - Fields per item: restaurant, item_km, item_en, category, price, currency, unit, variant, confidence
+  - Primary model: google/gemini-2.5-pro (strong on Khmer script and dense layouts)
+  - Cross-check model: anthropic/claude-sonnet-4.5 or openai/gpt-5 (check exact slugs on openrouter.ai/models on the day)
+  - When the two models disagree on price or category, flag the row for a human to check
+  - Before sending: auto-rotate sideways photos; split very tall images into overlapping tiles
+  - A Node script converts Khmer digits (0-9 written as ០-៩) to normal digits, converts prices to USD at 4,000 riel = $1, and writes menus.json
+  - menus.json is the whole database
+- Optimizer (plain code, not the LLM)
+  - Problem type: multiple-choice knapsack
+  - Constraints: at least 1 chicken dish, at least 1 vegetable dish, 2 beers, all from ONE restaurant, total within budget
+  - Ranking: more food first, then more money left over
+  - Method: try every combination per restaurant (menus are small, so this takes milliseconds and always finds the best answer)
+  - Returns the top 3 restaurants
+  - Alternatives if the constraints get more general: ILP (javascript-lp-solver), 0/1 knapsack dynamic programming, greedy (cheapest item per category, kept as a test baseline)
+- Agent (thin tool-use loop through OpenRouter)
+  - Default model: google/gemini-2.5-flash (fast, cheap, supports tool calling); a Claude model is the alternative
+  - The model turns the user's free text into constraints
+  - It calls one tool: plan_meal({budget_usd, wants:[{category, qty}], restaurant?})
+  - It explains the result: what to order (Khmer + English names), where, total cost, money left over
+  - The model never does the arithmetic
+
+2. FALLBACK
+- Primary model misreads Khmer or prices -> use the cross-check model, then hand-check every chicken / vegetable / beer row (about 15 min; only these rows affect the demo question)
+- Both models fail on an image (glare, blur) -> leave it out and mark it "excluded" in menus.json
+- OpenRouter rate-limits or the proxy fails at runtime -> a structured form (budget + category checkboxes) calls the same optimizer directly, so the main question still gets answered with no AI
+- Agent sends wrong tool arguments -> a regex parser fills in defaults (budget, chicken, vegetables, N beers); the model can only override them
+
+3. NOT DOING
+- No live OCR or image upload in the app
+- No OCR fine-tuning
+- No backend database or vector store
+- No LangChain-style agent framework
+- No user accounts
+- No orders split across several restaurants (one meal = one place)
+- No delivery fees or taxes
+
+4. GETTING IT LIVE ON HERE.NOW
+- Runs in the browser (static files)
+  - index.html, the UI, menus.json, the optimizer (JS), the fallback form
+  - The plan_meal tool runs in the browser when the model asks for it; the result is sent back to the model
+- Goes through the proxy route
+  - POST /api/chat -> OpenRouter chat completions
+  - OPENROUTER_API_KEY is stored as a server-side secret and never reaches the browser
+  - Only messages and tool results pass through; nothing is stored
+- Steps
+  - Claude Code deploys the local folder to a free here.now account
+  - Add the OpenRouter key as a proxy secret
+  - Test the live URL with the exact question from the brief, on desktop and mobile
+
+5. ACCURACY PREDICTION (written before processing anything)
+- Each figure is per item, from automated extraction before the human check
+- How it will be measured: against a hand-labelled set of 3 menus (about 60 items)
+- Restaurant identification: ~85% (some screenshots have no name or logo)
+- Item name in Khmer, exact to the character: 60-75% (stylised fonts, glare, rotated photos, stacked consonants)
+- Item meaning (English translation correct): 85-90%
+- Category tag (chicken / vegetable / beer / other): 90-95% (chicken depends on finding មាន់; "vegetable" is vague)
+- Price digits: 88-93% (Khmer digits like ១២,០០០, thousand separators, glare)
+- Currency (riel vs $): 95%+ (sometimes the symbol is only in a column header)
+- Matching each price to the right item and size: 80-85% (BIGGEST RISK: can vs bottle columns, small vs large, per plate vs per kg, e.g. "1ចាន/6000៛" = 1 plate / 6,000 riel, "កន្លះគីឡូ" = half kg)
+- Beer items (name + price): ~95% (brand names are in Latin script)
+- Rows the demo question uses, after the human check: ~99%
+
+6. ASSUMPTIONS
+- Task
+  - "A couple of beers" = exactly 2; the cheapest format (can or small bottle) is fine unless the user says otherwise
+  - "Chicken" = at least one dish where chicken (មាន់) is the main protein; chicken soup and chicken feet count
+  - "Some vegetables" = at least one mostly-vegetable dish (stir-fried greens, salad, vegetable soup) or a chicken dish cooked with vegetables; garnish alone does not count
+  - The whole order comes from one restaurant ("from where?" is singular)
+  - The $10 covers menu prices only: no tax, tip, service charge or delivery
+  - Exchange rate is a flat 4,000 riel = $1; if a menu prints both $ and riel, the $ price is used
+  - Rice is not added automatically; it is suggested only if money is left over
+  - Answers are in English, with Khmer dish names kept so the user can point at the menu
+  - Other budgets and food wishes should work too; the brief's question is the main test case
+- Data
+  - ~31 screenshots = about 30 menus, but some restaurants span several screenshots; group by logo or name, then by nearby timestamps
+  - Printed prices are treated as current, although the photos are from around 2024 and real prices may have changed
+  - Items without a readable price are left out, not guessed
+  - Per-kg or half-kg items are priced as printed, as one order
+  - Not every menu has beer or chicken; restaurants missing a required category are skipped for that query
+  - Images are photos and screenshots of printed menus (some rotated, glared or cropped); none are handwritten
+  - Food photos are not used to decide categories; the menu text is the source of truth
+- Platform
+  - OpenRouter offers vision and tool-calling models with one key; exact model slugs are checked on the day
+  - The here.now free plan supports static hosting plus a proxy route with a stored secret (NOT YET VERIFIED; if it does not, ship with only the no-AI form)
+
+7. TWO EXTRA REQUIREMENTS FOR THE BRIEF
+- Every recommendation shows its evidence: Khmer name, English translation, original printed price (riel or $), USD conversion and source screenshot, so the user can check it against the real menu; items with low extraction confidence are labelled "verify price"
+- Honest "no answer" handling: if no restaurant meets every constraint within budget, the app says so, shows the closest option and what to change (e.g. "nearest is $11.25 at X" or "drop to 1 beer to fit at Y"), and never invents an item or a price
+
+8. TIMELINE (3 HOURS)
+- 0:00-0:15  Check here.now proxy docs and OpenRouter model slugs; group screenshots by restaurant
+- 0:15-1:15  Extraction script; run both models; compare with the hand-labelled set; hand-check demo rows
+- 1:15-1:45  Optimizer + unit tests against hand-solved answers
+- 1:45-2:15  Agent loop through the proxy + fallback form
+- 2:15-2:45  UI, deploy to here.now, live test
+- 2:45-3:00  Buffer + write-up (measured accuracy vs prediction)
