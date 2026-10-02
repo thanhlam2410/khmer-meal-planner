@@ -1,0 +1,2202 @@
+{
+  "image": "2026-07-21_11-15-15.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:24:36.646Z",
+  "seconds": 179.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 25273,
+    "total_tokens": 28048,
+    "cost": 0.25619875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.25619875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.25273
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7619,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "យូហ្គីតរស់ជាតិទឹកឃ្មុំក្រឡុក",
+        "name_printed_latin": "Honey Yogurt Frappe",
+        "name_en": "Honey Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីតរស់ជាតិគូលែនក្រឡុក",
+        "name_printed_latin": "Litchi Yogurt Frappe",
+        "name_en": "Litchi Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីតរស់ជាតិត្របែកក្រឡុក",
+        "name_printed_latin": "Guava Yogurt Frappe",
+        "name_en": "Guava Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីតរស់ជាតិក្រូចផ្លិចក្រឡុក",
+        "name_printed_latin": "Orange Yogurt Frappe",
+        "name_en": "Orange Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីករស់ជាតិផ្លែប៉ោមក្រឡុក",
+        "name_printed_latin": "Apple Yogurt Frappe",
+        "name_en": "Apple Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីករស់ជាតិស្ត្របឺរីក្រឡុក",
+        "name_printed_latin": "Strawberry Yogurt Frappe",
+        "name_en": "Strawberry Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គីករស់ជាតិទំពាំងបាយជូក្រឡុក",
+        "name_printed_latin": "Grape Yogurt Frappe",
+        "name_en": "Grape Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យូហ្គិតរស់ជាតិម្ចាស់ក្រឡុក",
+        "name_printed_latin": "Pineapple Yogurt Frappe",
+        "name_en": "Pineapple Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The Khmer word 'ម្ចាស់' (mjah) means 'owner', which is likely a typo for 'ម្នាស់' (mnoah), meaning 'pineapple'."
+      },
+      {
+        "name_km": "យូហ្គិតរស់ជាតិក្រូចឆ្មាក្រឡុក",
+        "name_printed_latin": "Lemon Yogurt Frappe",
+        "name_en": "Lemon Yogurt Frappe",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Corona Sunrise",
+        "name_en": "Corona Sunrise",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក & BEER",
+        "section_en": "Cocktail & Beer",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "16$",
+            "amount": 16,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "This item and the following two 'Sunrise' drinks may refer to the drink tower pictured, which has 3 flavor options listed below them (Sunrise, Kiwi, Passion)."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Heineken Sunrise",
+        "name_en": "Heineken Sunrise",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក & BEER",
+        "section_en": "Cocktail & Beer",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "15$",
+            "amount": 15,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger Sunrise",
+        "name_en": "Tiger Sunrise",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក & BEER",
+        "section_en": "Cocktail & Beer",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "15$",
+            "amount": 15,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Lamborghini (ដុតកែវ)",
+        "name_printed_latin": null,
+        "name_en": "Lamborghini (Flaming)",
+        "description_en": "A flaming cocktail. The Khmer 'ដុតកែវ' means 'burn the glass'.",
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "9$",
+            "amount": 9,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Magarita",
+        "name_en": "Blue Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Margiita",
+        "name_en": "Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Margarita'."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Maithai",
+        "name_en": "Mai Tai",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Mai Tai'."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Pine Colada",
+        "name_en": "Pina Colada",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Pina Colada'."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiguila Sunrise",
+        "name_en": "Tequila Sunrise",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Tequila Sunrise'."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Long Island Ice Tea",
+        "name_en": "Long Island Iced Tea",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Mojito",
+        "name_en": "Mojito",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Singapour Sling",
+        "name_en": "Singapore Sling",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "B52",
+        "name_en": "B52",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក កែវ",
+        "section_en": "Cocktail by the Glass",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.5$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "«Rainbow Mix (មាន២រសជាតិ)»",
+        "name_printed_latin": null,
+        "name_en": "Rainbow Mix",
+        "description_en": "Has 2 flavors.",
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "18$",
+            "amount": 18,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is listed under the 'ថ្មពិល' (Stone bowl/tower) column."
+      },
+      {
+        "name_km": "«Orange Wine (Red Wine 1 bottle)»",
+        "name_printed_latin": null,
+        "name_en": "Orange Wine (Red Wine 1 bottle)",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "20$",
+            "amount": 20,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The name 'Orange Wine' contradicts the parenthetical '(Red Wine 1 bottle)'. Price is listed under the 'ថ្មពិល' (Stone bowl/tower) column."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Red Bull Rainbow",
+        "name_en": "Red Bull Rainbow",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is listed under the 'ថ្មពិល' (Stone bowl/tower) column."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Bahama",
+        "name_en": "Bahama",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Capital Win",
+        "name_en": "Capital Win",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Possibly a typo for a brand like Captain Morgan."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "R.I",
+        "name_en": "R.I",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "R.II",
+        "name_en": "R.II",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Hawaii",
+        "name_en": "Blue Hawaii",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "14$",
+            "amount": 14,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Pinacolada",
+        "name_en": "Pina Colada",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Magarita",
+        "name_en": "Blue Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Sex on the beach",
+        "name_en": "Sex on the Beach",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Green blander",
+        "name_en": "Green Blender",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Green Blender'."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Singapour Sling",
+        "name_en": "Singapore Sling",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "13$",
+            "amount": 13,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Long Island",
+        "name_en": "Long Island",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "13$",
+            "amount": 13,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Pink Lady",
+        "name_en": "Pink Lady",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "7$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "13$",
+            "amount": 13,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Kiwi (គីវី)",
+        "name_printed_latin": null,
+        "name_en": "Kiwi Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Passion (ផាសិន)",
+        "name_printed_latin": null,
+        "name_en": "Passion Fruit Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Methe (ជីអង្គាម)",
+        "name_printed_latin": null,
+        "name_en": "Mint Cocktail",
+        "description_en": "ជីអង្គាម (chi angkam) is mint.",
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Orange (ក្រូច)",
+        "name_printed_latin": null,
+        "name_en": "Orange Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Grape (ទំពាំងបាយជូ)",
+        "name_printed_latin": null,
+        "name_en": "Grape Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Strawberry (ស្ត្របឺរី)",
+        "name_printed_latin": null,
+        "name_en": "Strawberry Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Pineapple (ម្នាស់)",
+        "name_printed_latin": null,
+        "name_en": "Pineapple Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Litchi (គូលែន)",
+        "name_printed_latin": null,
+        "name_en": "Litchi Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Guava (ត្របែក)",
+        "name_printed_latin": null,
+        "name_en": "Guava Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Apple (ប៉ោម)",
+        "name_printed_latin": null,
+        "name_en": "Apple Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Lemon (ក្រូចឆ្មា)",
+        "name_printed_latin": null,
+        "name_en": "Lemon Cocktail",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក Cocktail",
+        "section_en": "Cocktail",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ថ្មពិល",
+            "variant_en": "Stone bowl/tower",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "12$",
+            "amount": 12,
+            "currency": "USD",
+            "variant_km": "ពាងត្រី",
+            "variant_en": "Fish bowl",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Anchor",
+        "name_en": "Anchor Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "ABC",
+        "name_en": "ABC Stout",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "7.000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "8.500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "Bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger",
+        "name_en": "Tiger Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5.000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "5.500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "Bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger Christa",
+        "name_en": "Tiger Crystal",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8.000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for Tiger Crystal."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Angkor",
+        "name_en": "Angkor Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "4.000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "Bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tuborg",
+        "name_en": "Tuborg Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Leo",
+        "name_en": "Leo Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "4.000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "Bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Cambodia",
+        "name_en": "Cambodia Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "4.000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "Bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Heineken",
+        "name_en": "Heineken Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6.500៛",
+            "amount": 6500,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Leo (ថៃ ដបធំ)",
+        "name_printed_latin": null,
+        "name_en": "Leo (Thai large bottle)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": "Thai large bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Change thai (ធំ)",
+        "name_printed_latin": null,
+        "name_en": "Chang Thai (large)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ធំ",
+            "variant_en": "Large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for Chang beer."
+      },
+      {
+        "name_km": "Singha (តូច)",
+        "name_printed_latin": null,
+        "name_en": "Singha (small)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "5.500៛",
+            "amount": 5500,
+            "currency": "KHR",
+            "variant_km": "តូច",
+            "variant_en": "Small",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Singha (ថៃ ដបធំ)",
+        "name_printed_latin": null,
+        "name_en": "Singha (Thai large bottle)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "12.000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": "Thai large bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Singha (ថៃដបកណ្តាល)",
+        "name_printed_latin": null,
+        "name_en": "Singha (Thai medium bottle)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": "Thai medium bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Corona",
+        "name_en": "Corona Beer",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8.000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Brunty",
+        "name_en": "Bruntys Cider",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6.500៛",
+            "amount": 6500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely refers to Bruntys Cider."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Chruser",
+        "name_en": "Cruiser",
+        "description_en": "An alcopop beverage.",
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6.500៛",
+            "amount": 6500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Likely a typo for 'Cruiser'."
+      },
+      {
+        "name_km": "ទឹកក្រូច ទឹកផ្លែឈើ",
+        "name_printed_latin": null,
+        "name_en": "Orange Juice / Fruit Juice",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.500៛",
+            "amount": 2500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ទឹកសុទ្ធ",
+        "name_printed_latin": null,
+        "name_en": "Purified Water",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "water",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "1.500៛",
+            "amount": 1500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "Chang ថៃ ដបធំ",
+        "name_printed_latin": null,
+        "name_en": "Chang Thai Large Bottle",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": "Can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ដបធំ",
+            "variant_en": "Large bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "Two prices are listed. The first (3,000៛) likely corresponds to a can, while the second (10,000៛) corresponds to the 'large bottle' mentioned in the name."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Spy",
+        "name_en": "Spy Wine Cooler",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "alcohol",
+        "tags": [
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6.500៛",
+            "amount": 6500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "គោជល់ បាកាស/ Viger",
+        "name_printed_latin": null,
+        "name_en": "Red Bull, Bacchus / Viger",
+        "description_en": "Energy drinks.",
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3.000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កែរព្រិល",
+        "name_printed_latin": null,
+        "name_en": "Snow Glass",
+        "description_en": "Literal translation is 'snow glass', likely a shaved ice or slushie drink.",
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2.000៛",
+            "amount": 2000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": null
+      },
+      {
+        "name_km": "ស្រាបៀរថៃ",
+        "name_printed_latin": null,
+        "name_en": "Thai Beer",
+        "description_en": "A generic listing for Thai beer.",
+        "section_km": "ភេសជ្ជៈផ្សេងៗ",
+        "section_en": "Other Drinks",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "alcoholic",
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "7.000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

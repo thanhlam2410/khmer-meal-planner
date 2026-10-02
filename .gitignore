@@ -1,6 +1,6 @@
-# Logs
-logs
+# Logs (logs/ IS committed: LLM usage log + pipeline run logs are part of the AI usage trail)
 *.log
+!logs/*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -31,9 +31,9 @@ dist-ssr
 # here.now publish script local state (root only; public/.herenow/proxy.json IS committed)
 /.herenow/
 
-# Raw dataset archive + extraction cache
+# Raw dataset archive + re-encoded JPEGs (raw model outputs in data/cache/extract + crosscheck ARE committed)
 khmer-menus.zip
-data/cache/
+data/cache/jpeg/
 
 # Python
 .venv/

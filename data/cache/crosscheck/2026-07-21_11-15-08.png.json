@@ -1,0 +1,491 @@
+{
+  "image": "2026-07-21_11-15-08.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:27:31.163Z",
+  "seconds": 59.0,
+  "usage": {
+    "prompt_tokens": 11175,
+    "completion_tokens": 6280,
+    "total_tokens": 17455,
+    "cost": 0.1703,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.1703,
+      "upstream_inference_prompt_cost": 0.0447,
+      "upstream_inference_completions_cost": 0.1256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1963,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-21_11-15-08#001",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as បាយឥន្ទធនូ, with ទ rather than ធ before ធនូ."
+      },
+      {
+        "id": "2026-07-21_11-15-08#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#003",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The 'vegetarian' tag is not stated on the menu."
+      },
+      {
+        "id": "2026-07-21_11-15-08#005",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as បាយឆាម្នាស, which is Pineapple Fried Rice, not បាយឆាម្ជូរ/Sour Fried Rice."
+      },
+      {
+        "id": "2026-07-21_11-15-08#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Likely egg-wrapped rice rather than 'with egg yolk'."
+      },
+      {
+        "id": "2026-07-21_11-15-08#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#010",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef, pork or chicken."
+      },
+      {
+        "id": "2026-07-21_11-15-08#011",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef, pork or chicken."
+      },
+      {
+        "id": "2026-07-21_11-15-08#012",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#013",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#014",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#015",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#016",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef or crab (ក្តាម)."
+      },
+      {
+        "id": "2026-07-21_11-15-08#017",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#018",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#019",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#020",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#021",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Section header lists the meat choices: chicken feet, chicken, duck, frog, eel."
+      },
+      {
+        "id": "2026-07-21_11-15-08#022",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#023",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#024",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ឆាក្តៅ means 'hot stir-fry'; holy basil is not printed."
+      },
+      {
+        "id": "2026-07-21_11-15-08#025",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#026",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#027",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": false,
+        "correct_prices": null,
+        "note": "The printed name is not ឆាងាវ; it looks like ឆាហាំង្ស/ឆាម៉ាំង… (unclear). It sits in the chicken/duck/frog/eel section, so the dish is not clams and not seafood."
+      },
+      {
+        "id": "2026-07-21_11-15-08#028",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": false,
+        "correct_prices": null,
+        "note": "Listed in the chicken/duck/frog/eel section, so this is likely a meat preparation rather than a snack."
+      },
+      {
+        "id": "2026-07-21_11-15-08#029",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": false,
+        "correct_prices": null,
+        "note": "Listed in the chicken/duck/frog/eel section, not seafood."
+      },
+      {
+        "id": "2026-07-21_11-15-08#030",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef, pork or chicken."
+      },
+      {
+        "id": "2026-07-21_11-15-08#031",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#032",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#033",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef, pork or chicken."
+      },
+      {
+        "id": "2026-07-21_11-15-08#034",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#035",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as មីកន្ទាំង, which is Mee Kantang (stir-fried flat noodles), not spicy instant noodles."
+      },
+      {
+        "id": "2026-07-21_11-15-08#036",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#037",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Menu offers a choice of beef, pork or chicken."
+      },
+      {
+        "id": "2026-07-21_11-15-08#038",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#039",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#040",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#041",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#042",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#043",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#044",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-15-08#045",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      }
+    ],
+    "missing_items": [
+      {
+        "name_km": "បាយឆាក់ (reading uncertain)",
+        "name_en": "Fried rice (6th item in the fried rice section, between pineapple fried rice and shrimp paste fried rice)",
+        "price_text": "8500៛"
+      }
+    ],
+    "overall_comment": "All 45 extracted prices match the image. The main problems are in names and translations: pineapple fried rice was misread as sour fried rice, Mee Kantang as spicy instant noodles, and one dish in the chicken/duck/frog/eel section was misread as clams. One fried-rice item at 8500៛ was missed. The items in the 'ប្រភេទគ្រឿងក្លែម' section are meat dishes (chicken feet, chicken, duck, frog, eel), so the seafood categories on #027 and #029 and the snack category on #028 are wrong. The menu also notes that a large plate (ចានធំ) costs double (x2); this was not captured as a price variant."
+  }
+}

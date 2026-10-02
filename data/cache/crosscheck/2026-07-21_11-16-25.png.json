@@ -1,0 +1,214 @@
+{
+  "image": "2026-07-21_11-16-25.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:27:40.930Z",
+  "seconds": 64.5,
+  "usage": {
+    "prompt_tokens": 6247,
+    "completion_tokens": 5687,
+    "total_tokens": 11934,
+    "cost": 0.138728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.138728,
+      "upstream_inference_prompt_cost": 0.024988,
+      "upstream_inference_completions_cost": 0.11374
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-21_11-16-25#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": false,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Row 1 exists. Its price cells are obscured by a handwritten sticker that seems to sit between rows 1 and 2, so the price cannot be confirmed. Leaving prices empty may be wrong, but the correct values cannot be read reliably."
+      },
+      {
+        "id": "2026-07-21_11-16-25#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": false,
+        "category_ok": true,
+        "correct_prices": [
+          {
+            "price_text": "2.00$",
+            "amount": 2.0,
+            "currency": "USD",
+            "variant_en": "small plate"
+          },
+          {
+            "price_text": "4.50$",
+            "amount": 4.5,
+            "currency": "USD",
+            "variant_en": "large plate"
+          }
+        ],
+        "note": "The printed small-plate price under the sticker reads 2.00$, not 2.50$. Handwritten stickers with Khmer numerals (apparently ៤$ / ៦$) cover these cells and may be updated prices. Uncertain."
+      },
+      {
+        "id": "2026-07-21_11-16-25#003",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-16-25#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": false,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The large plate shows 6.00$, but the small-plate cell has a handwritten sticker (looks like ៤$) that the extraction omitted. The exact value is uncertain."
+      },
+      {
+        "id": "2026-07-21_11-16-25#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": false,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The price cells for this row and the next are covered by handwritten stickers (about ៤$ / ៦$), so the assignment of 6.00$ is not clearly supported. The 'seafood' tag for eel/frog is loose but acceptable."
+      },
+      {
+        "id": "2026-07-21_11-16-25#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed prices are 4.5$ and 6.00$."
+      },
+      {
+        "id": "2026-07-21_11-16-25#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-16-25#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ក្រវ៉ាញ is cardamom; the translation is fine."
+      },
+      {
+        "id": "2026-07-21_11-16-25#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": false,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The price cells are covered by a handwritten sticker (looks like ៤$ / ៦$ in Khmer numerals). Prices should not be empty, but the exact values are uncertain."
+      },
+      {
+        "id": "2026-07-21_11-16-25#010",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The prices are partly under the sticker. 4.00$ / 6.00$ is plausible but only partially legible."
+      },
+      {
+        "id": "2026-07-21_11-16-25#011",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-16-25#012",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-16-25#013",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-21_11-16-25#014",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The printed Khmer for this row does not clearly read ពោះតាន់ឆាម្រេចខ្ចី. It may be a different cooking method, or swapped with the next row. Low legibility."
+      },
+      {
+        "id": "2026-07-21_11-16-25#015",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "This last intestine row appears to end in ...ឆាម្រេចខ្ចី rather than ...ឆាប្រៃផ្អែម, which suggests a misread or a swap with #014. Uncertain."
+      },
+      {
+        "id": "2026-07-21_11-16-25#016",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The printed name may have a leading ឆា (ឆាបន្លែពិសេស), which is cut off at the edge. The single price 8.00$ spans both columns."
+      }
+    ],
+    "missing_items": [
+      {
+        "name_km": "ឆា... (row 6, between ឆាក្តៅ and ឆាកែង; text largely illegible)",
+        "name_en": "Unidentified stir-fry dish (row 6)",
+        "price_text": "handwritten sticker, approx ៤$ / ៦$"
+      }
+    ],
+    "overall_comment": "The extraction covers most rows but skips row 6, the short Khmer-only line between the spicy stir-fry and ឆាកែង. Several price cells are covered by handwritten Khmer-numeral stickers (rows 1–2, 4–6, 10–11), which makes those prices unreliable. Errors and doubts by row: the squid small-plate price is printed 2.00$, not 2.50$; the lok lak small price is missing; the tomato row's prices are left empty; and the Khmer names for #014 and #015 may be misread or swapped."
+  }
+}

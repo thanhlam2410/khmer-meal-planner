@@ -1,0 +1,14 @@
+[extract] images: 31/31 · extract=google/gemini-2.5-pro · crosscheck=anthropic/claude-opus-5.5 · 4000៛/$
+[extract] cross-checking 10/31 images: 2026-07-20_22-23-50.png, 2026-07-20_22-24-59.png, 2026-07-20_22-27-14.png, 2026-07-20_22-31-05.png, 2026-07-20_22-31-15.png, 2026-07-20_22-36-45.png, 2026-07-20_22-43-25.png, 2026-07-20_22-47-26.png, 2026-07-21_11-15-08.png, 2026-07-21_11-16-25.png
+[extract] ✓ crosscheck 2026-07-20_22-31-15.png: 0/6 disputed, 0 missing (16.3s, $0.0495)
+[extract] ✓ crosscheck 2026-07-20_22-31-05.png: 1/6 disputed, 0 missing (17.7s, $0.0511)
+[extract] ✓ crosscheck 2026-07-20_22-23-50.png: 2/9 disputed, 0 missing (22.7s, $0.0583)
+[extract] ✓ crosscheck 2026-07-20_22-36-45.png: 2/9 disputed, 0 missing (21.5s, $0.0619)
+[extract] ✓ crosscheck 2026-07-20_22-43-25.png: 2/9 disputed, 0 missing (24.4s, $0.0648)
+[extract] ✓ crosscheck 2026-07-20_22-27-14.png: 3/35 disputed, 0 missing (49.9s, $0.1352)
+[extract] ✓ crosscheck 2026-07-20_22-47-26.png: 4/15 disputed, 0 missing (35.7s, $0.0926)
+[extract] ✓ crosscheck 2026-07-21_11-15-08.png: 8/45 disputed, 1 missing (59.0s, $0.1703)
+[extract] ✓ crosscheck 2026-07-21_11-16-25.png: 7/16 disputed, 1 missing (64.5s, $0.1387)
+[extract] built data/menus.json: 16 restaurants, 546 items from 31 images
+[extract] usage crosscheck · anthropic/claude-opus-5.5: 9 calls (0 failed), 91243 tokens, $0.8225
+[extract] usage total this run: $0.8225 → logs/llm-usage.jsonl

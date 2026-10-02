@@ -1,0 +1,184 @@
+{
+  "image": "2026-07-20_22-36-45.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:20:28.719Z",
+  "seconds": 26.3,
+  "usage": {
+    "prompt_tokens": 3291,
+    "completion_tokens": 3088,
+    "total_tokens": 6379,
+    "cost": 0.03499375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.03499375,
+      "upstream_inference_prompt_cost": 0.00411375,
+      "upstream_inference_completions_cost": 0.03088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1674,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ហាងបាយ វិមានឯករាជ្យ (បាយដាច់យប់)",
+      "name_en": "Hang Bay Vimean Ekareach (Late Night Rice)",
+      "visible": true
+    },
+    "image_quality": "fair",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "បាយភ្លៅមាន់",
+        "name_printed_latin": null,
+        "name_en": "Rice with Chicken Thigh",
+        "description_en": "A dish of steamed rice served with a fried or roasted chicken thigh.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "rice"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "បាយឆ្អឹងជំនីជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Rice with Pork Ribs",
+        "description_en": "A dish of steamed rice served with pork ribs, often braised or grilled.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "rice"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "បាយផាក់ឡូវ",
+        "name_printed_latin": null,
+        "name_en": "Rice with Phak Lov",
+        "description_en": "A dish of pork and sometimes eggs braised in a soy sauce and five-spice broth, served with rice.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "egg",
+          "rice"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "បាយស្លាបមាន់",
+        "name_printed_latin": null,
+        "name_en": "Rice with Chicken Wings",
+        "description_en": "A dish of steamed rice served with fried chicken wings.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "rice",
+          "fried"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "បាយសាច់ជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Rice with Pork",
+        "description_en": "A dish of steamed rice served with cooked pork, often grilled or stir-fried.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "rice"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "ពងទាក្រឡុក",
+        "name_printed_latin": null,
+        "name_en": "Shaken Duck Egg (Balut)",
+        "description_en": "Fertilized developing duck embryo that is boiled and eaten from the shell, often seasoned with salt, pepper, and lime.",
+        "section_km": null,
+        "section_en": null,
+        "category": "egg",
+        "tags": [
+          "egg",
+          "snack"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "ពងទាចៀន",
+        "name_printed_latin": null,
+        "name_en": "Fried Duck Egg",
+        "description_en": "A simple dish of a pan-fried duck egg.",
+        "section_km": null,
+        "section_en": null,
+        "category": "egg",
+        "tags": [
+          "egg",
+          "fried"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "ពងទាខ",
+        "name_printed_latin": null,
+        "name_en": "Braised Duck Egg",
+        "description_en": "Hard-boiled duck egg braised in a caramelized soy sauce broth (Khor).",
+        "section_km": null,
+        "section_en": null,
+        "category": "egg",
+        "tags": [
+          "egg"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      },
+      {
+        "name_km": "ទឹកអំពៅ",
+        "name_printed_latin": null,
+        "name_en": "Sugarcane Juice",
+        "description_en": "Freshly pressed sugarcane juice, served chilled.",
+        "section_km": null,
+        "section_en": null,
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [],
+        "confidence": 0.95,
+        "notes": "No price is visible for this item."
+      }
+    ]
+  }
+}

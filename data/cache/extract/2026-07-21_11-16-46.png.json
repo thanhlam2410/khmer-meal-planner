@@ -1,0 +1,448 @@
+{
+  "image": "2026-07-21_11-16-46.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:24:01.054Z",
+  "seconds": 47.1,
+  "usage": {
+    "prompt_tokens": 2259,
+    "completion_tokens": 7198,
+    "total_tokens": 9457,
+    "cost": 0.07480375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.07480375,
+      "upstream_inference_prompt_cost": 0.00282375,
+      "upstream_inference_completions_cost": 0.07198
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3533,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "រាត្រីបាត់ដំបង",
+      "name_en": "Reatry Battambong Restaurant",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ព្រុយត្រីសាម៉ុង អាំងអំបិលម្ទេស",
+        "name_printed_latin": "Grilled salmon dorsal fin with salt",
+        "name_en": "Grilled salmon fin with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "fish",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.50$",
+            "amount": 6.5,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The printed English translation omits 'chili' which is present in the Khmer name."
+      },
+      {
+        "name_km": "កន្ទាទូកអាំង, អំបិលម្ទេស, រ៉តឌី",
+        "name_printed_latin": "Kan Teatauk grilled with salt",
+        "name_en": "Grilled Kan Teatauk fish with salt, chili, and Roth D seasoning",
+        "description_en": "Kan Teatauk is a type of fish. Roth D is a brand of seasoning powder.",
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "fish",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "10.0$",
+            "amount": 10,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវឆាំង អំបិលម្ទេស",
+        "name_printed_latin": "Grilled Bivalve with chili salt",
+        "name_en": "Grilled bivalve with chili salt",
+        "description_en": "Although 'ឆាំង' typically means stir-fried, the section and English translation indicate this is a grilled dish.",
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មឹក បង្គា, អាំង, អំបិលម្ទេស",
+        "name_printed_latin": "Grilled squid with salt Chili",
+        "name_en": "Grilled squid and shrimp with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The printed English translation omits 'shrimp' (បង្គា), which is present in the Khmer name."
+      },
+      {
+        "name_km": "សាច់គោ អាំង",
+        "name_printed_latin": "Beef Grilled",
+        "name_en": "Grilled beef",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "beef",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹងជំនីជ្រូកអាំងអំបិលម្ទេស",
+        "name_printed_latin": "Pork rips grilled with salt chili",
+        "name_en": "Grilled pork ribs with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "pork",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "យីហ៊ីអាំង",
+        "name_printed_latin": "Grilled squid with salt chili",
+        "name_en": "Grilled yee-hee (preserved squid)",
+        "description_en": "Yee-hee is a type of dried or preserved squid.",
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.50$",
+            "amount": 7.5,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The printed English translation is generic; the Khmer name specifies 'yee-hee'."
+      },
+      {
+        "name_km": "កង្កែបអាំង អំបិលម្ទេស",
+        "name_printed_latin": "Grilled frog with salt chili",
+        "name_en": "Grilled frog with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "other",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ផ្សិតចំបើងអាំងអំបិលម្ទេស",
+        "name_printed_latin": "Grilled Mushroom with salt chili",
+        "name_en": "Grilled straw mushroom with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "vegetable",
+        "tags": [
+          "grilled",
+          "spicy",
+          "vegetarian",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "អណ្តាតគោអាំង",
+        "name_printed_latin": "Tonge Grilled",
+        "name_en": "Grilled beef tongue",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "beef",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "4-6$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "Small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "4-6$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.8,
+        "notes": "Price is handwritten as '4-6$' and is ambiguous. It has been interpreted as $4 for small and $6 for large."
+      },
+      {
+        "name_km": "លិង្គគោអាំង",
+        "name_printed_latin": "Buil Penis Grilled",
+        "name_en": "Grilled bull penis",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "beef",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មាន់អាំងអំបិលម្ទេស",
+        "name_printed_latin": "Grilled chicken with Chili salt",
+        "name_en": "Grilled chicken with salt and chili",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.00$",
+            "amount": 10,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រីក្រហមដុតអំបិល",
+        "name_printed_latin": "Grilled red fish chili salt",
+        "name_en": "Salt-grilled red fish",
+        "description_en": null,
+        "section_km": "ប្រភេទ អាំង",
+        "section_en": "Grilled",
+        "category": "fish",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "7.50$",
+            "amount": 7.5,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "Large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The printed English translation includes 'chili', which is not in the Khmer name 'ដុតអំបិល' (salt-grilled)."
+      }
+    ]
+  }
+}

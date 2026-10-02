@@ -1,0 +1,245 @@
+{
+  "image": "2026-07-20_22-31-25.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:18:42.259Z",
+  "seconds": 53.7,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6468,
+    "total_tokens": 9243,
+    "cost": 0.06814875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06814875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06468
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4597,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ឆាប៉េងបោះសាច់ជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Pickled Lemon with Pork",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2$",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាខាត់ណាសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Kailan with Beef",
+        "description_en": "Kailan is also known as Chinese broccoli.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2.25$ $",
+            "amount": 2.25,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(9000$)",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The USD price text '2.25$ $' has a likely typo with an extra '$' sign. The KHR price is written with a '$' sign '(9000$)' instead of '៛', but the amount corresponds to the USD price, so KHR is assumed."
+      },
+      {
+        "name_km": "ឆាសណ្តែកគួរសាច់ចិញ្ច្រាំ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Long Beans with Minced Meat",
+        "description_en": "The minced meat is typically pork.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ម្ជូរគ្រឿងសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Sour Kroeung Soup with Beef",
+        "description_en": "A classic Cambodian sour soup made with a 'kroeung' spice paste.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "soup",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រីចៀនជួន",
+        "name_printed_latin": null,
+        "name_en": "Fried Fish with Ginger",
+        "description_en": "The dish in the photo is fried fish with shredded ginger. The Khmer text 'ជួន' (choun) is likely a typo for 'ខ្ញី' (khnhei), which means ginger.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "2.25 $",
+            "amount": 2.25,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(9000 ៛)",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The Khmer word 'ជួន' (choun) is unclear in this context and may be a typo for 'ខ្ញី' (khnhei), meaning ginger, which matches the photo."
+      },
+      {
+        "name_km": "កង្កែបបំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Frog",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "other",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "2.50 $",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(10000 ៛)",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

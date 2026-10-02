@@ -1,0 +1,343 @@
+{
+  "image": "2026-07-20_22-43-56.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:21:22.191Z",
+  "seconds": 53.5,
+  "usage": {
+    "prompt_tokens": 3549,
+    "completion_tokens": 6139,
+    "total_tokens": 9688,
+    "cost": 0.06582625,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06582625,
+      "upstream_inference_prompt_cost": 0.00443625,
+      "upstream_inference_completions_cost": 0.06139
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3341,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ត្រៀមខ្មែរ",
+      "name_en": "TREAM KHMER",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 270,
+    "items": [
+      {
+        "name_km": "ទាដើមចេក",
+        "name_printed_latin": null,
+        "name_en": "Duck with Banana Stem",
+        "description_en": "A soup or stew made with duck and banana stem, served in a clay pot.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "duck",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១៥,០០០",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ក្រវ៉ាញឆាជ្រូកព្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Wild Boar with Cardamom",
+        "description_en": "Wild boar stir-fried with kravanh (cardamom shoots).",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "pork",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១៨,០០០",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់គោបំពងល្ង",
+        "name_printed_latin": null,
+        "name_en": "Deep-fried Beef with Sesame",
+        "description_en": "Pieces of beef deep-fried and coated with sesame seeds.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "beef",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១២,០០០",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ពោតលីងពងទាប្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Fried Corn with Salted Duck Egg",
+        "description_en": "Corn kernels stir-fried with salted duck egg yolk.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "snack",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១២,០០០",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "សយជូ",
+        "name_printed_latin": null,
+        "name_en": "Soju Set",
+        "description_en": "A platter of food, likely served to accompany Soju. Includes various meats, vegetables, and dipping sauce.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "other",
+        "tags": [
+          "shared_platter",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ២៥,០០០",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ពោះគោឦសាន",
+        "name_printed_latin": null,
+        "name_en": "Isan-style Beef Tripe",
+        "description_en": "Beef tripe prepared in a style from the Isan region of Thailand, served with fresh vegetables and a dipping sauce.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "beef",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ២៥,០០០",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រីសាបាក់អាំងទឹកអំពិលទុំ នំបញ្ចុក",
+        "name_printed_latin": null,
+        "name_en": "Grilled Saba Fish with Tamarind Sauce and Rice Noodles",
+        "description_en": "Grilled saba fish (mackerel) served with a ripe tamarind dipping sauce and fresh Cambodian rice noodles (nom banhchok).",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "fish",
+        "tags": [
+          "grilled",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ២៥,០០០",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ទាលីងស្ពៃហាង",
+        "name_printed_latin": null,
+        "name_en": "Fried Duck with Restaurant-style Cabbage",
+        "description_en": "Duck stir-fried with cabbage.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "duck",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ២៥,០០០",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ភីភាពោះគោ",
+        "name_printed_latin": null,
+        "name_en": "Pheaphea Beef Tripe",
+        "description_en": "A dish featuring beef tripe, served in a coconut shell with dipping sauce. 'Pheaphea' may refer to a specific preparation style.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "beef",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "រ១៥,០០០",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបពើជើងមាន់",
+        "name_printed_latin": null,
+        "name_en": "Super Chicken Feet Soup",
+        "description_en": "A spicy and sour soup with chicken feet, often called 'Super' in Thai/Khmer cuisine.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "chicken",
+        "tags": [
+          "soup",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១២,០០០",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់គោក្រសាំងទាប",
+        "name_printed_latin": null,
+        "name_en": "Beef with Santol",
+        "description_en": "A sour soup or stew made with beef and krasang teap (santol fruit).",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "beef",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "រ១៥,០០០",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "សាមសម្រស់",
+        "name_printed_latin": null,
+        "name_en": "Three Beauties Salad",
+        "description_en": "A mixed salad, the name translates to 'Three Beauties'.",
+        "section_km": "មុខម្ហូប",
+        "section_en": "Dishes",
+        "category": "salad",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "រ២០,០០០",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      }
+    ]
+  }
+}

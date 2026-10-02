@@ -1,0 +1,95 @@
+{
+  "image": "2026-07-20_22-31-05.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:12.057Z",
+  "seconds": 17.7,
+  "usage": {
+    "prompt_tokens": 5229,
+    "completion_tokens": 1509,
+    "total_tokens": 6738,
+    "cost": 0.051096,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.051096,
+      "upstream_inference_prompt_cost": 0.020916,
+      "upstream_inference_completions_cost": 0.03018
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 668,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-31-05#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-31-05#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ស្ពៃចង្កឹះ is choy sum/bok choy stems, not water spinach (ត្រកួន). A better name is 'Choy Sum Soup with Pork'."
+      },
+      {
+        "id": "2026-07-20_22-31-05#003",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The meat type is not specified in the printed name. The 'pork' tag is a reasonable assumption."
+      },
+      {
+        "id": "2026-07-20_22-31-05#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ក្រអៅឈូក is more precisely lotus stem/shoot than lotus root, but the translation is acceptable."
+      },
+      {
+        "id": "2026-07-20_22-31-05#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The riel price is partially obscured by a navigation overlay. It reads as 10000៛, which is consistent with 2.50$."
+      },
+      {
+        "id": "2026-07-20_22-31-05#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All six items are present and correctly transcribed with correct prices. The only issue is the translation of item 2: ស្ពៃចង្កឹះ is choy sum, not water spinach."
+  }
+}

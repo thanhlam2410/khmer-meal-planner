@@ -1,0 +1,680 @@
+{
+  "image": "2026-07-20_22-47-35.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:22:22.573Z",
+  "seconds": 77.2,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 9898,
+    "total_tokens": 12673,
+    "cost": 0.10244875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.10244875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.09898
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3783,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "បាយ័ន",
+      "name_en": "Bayon",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ឆាក្តៅ កន្សោមមាន់",
+        "name_printed_latin": null,
+        "name_en": "Spicy Stir-fried Chicken Gizzards",
+        "description_en": "Chicken gizzards stir-fried with chili and holy basil.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "spicy",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាគ្រឿងពោះគោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Beef Tripe with Lemongrass Paste",
+        "description_en": "Beef tripe stir-fried with 'kroeung', a Khmer lemongrass paste.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាជូរអែម សាច់មាន់-ត្រី-ឆ្អឹងជំនី",
+        "name_printed_latin": null,
+        "name_en": "Sweet and Sour Stir-fry with Chicken, Fish, or Ribs",
+        "description_en": "A sweet and sour stir-fry, available with chicken, fish, or pork ribs.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "other",
+        "tags": [
+          "chicken",
+          "fish",
+          "pork",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ទឹកគ្រឿងបាត់ដំបង",
+        "name_printed_latin": null,
+        "name_en": "Battambang-style Fish Dip",
+        "description_en": "A classic Khmer fish-based dipping sauce served with fresh and blanched vegetables.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "fish",
+        "tags": [
+          "fish",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហុកខ្ទិះ",
+        "name_printed_latin": null,
+        "name_en": "Prahok Ktis",
+        "description_en": "A dip made from fermented fish (prahok), minced pork, and coconut milk, served with fresh vegetables.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fish",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហុកលីង",
+        "name_printed_latin": null,
+        "name_en": "Roasted Prahok",
+        "description_en": "Roasted or fried fermented fish (prahok) dip, often with pork, served with vegetables.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "fish",
+        "tags": [
+          "fish",
+          "pork",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ម្ជូរព្រៃឆ្អឹងជំនី ឬសាច់មាន់",
+        "name_printed_latin": null,
+        "name_en": "Jungle Sour Soup with Ribs or Chicken",
+        "description_en": "A rustic sour soup, available with pork ribs or chicken.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "pork",
+          "chicken",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សម្លរខកូរ សាច់មាន់ ឬឆ្អឹងជំនី",
+        "name_printed_latin": null,
+        "name_en": "Samlor Kako with Chicken or Ribs",
+        "description_en": "A traditional Khmer vegetable stew, available with chicken or pork ribs.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "chicken",
+          "pork",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរជ្រក់ មាន់ស្រែ",
+        "name_printed_latin": null,
+        "name_en": "Sour Soup with Free-range Chicken",
+        "description_en": "A clear, tangy soup with free-range chicken, lemongrass, and herbs.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "25.000៛",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរជ្រក់ មាន់ស្រែតូច",
+        "name_printed_latin": null,
+        "name_en": "Sour Soup with Small Free-range Chicken",
+        "description_en": "A clear, tangy soup with a small free-range chicken, lemongrass, and herbs. Available in two sizes.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "តូច",
+            "variant_en": "Small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "25.000៛",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": "ធំ",
+            "variant_en": "Large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "This item is listed with two prices, likely for small and large sizes. The name specifies 'small free-range chicken' (មាន់ស្រែតូច)."
+      },
+      {
+        "name_km": "ស្ងោរជ្រក់ មាន់ - ត្រី - គោ",
+        "name_printed_latin": null,
+        "name_en": "Sour Soup with Chicken, Fish, or Beef",
+        "description_en": "A clear, tangy soup, available with chicken, fish, or beef.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "chicken",
+          "fish",
+          "beef"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មាន់លីងអំបិលម្ទេស ឬឆ្អឹងជំនី",
+        "name_printed_latin": null,
+        "name_en": "Roasted Chicken with Salt and Chili or Ribs",
+        "description_en": "Chicken or pork ribs roasted or pan-fried with salt and chili.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "pork",
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ម្ជូរគ្រឿងសាច់គោ ឬត្រី",
+        "name_printed_latin": null,
+        "name_en": "Sour Lemongrass Soup with Beef or Fish",
+        "description_en": "A classic sour soup (M'chu Kroeung) with Khmer lemongrass paste, available with beef or fish.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "beef",
+          "fish",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ថ្ងូរស្រែ ត្រីឆ្អើរ លាយកូនត្រី",
+        "name_printed_latin": null,
+        "name_en": "Thngor Srae Soup with Smoked Fish and Small Fish",
+        "description_en": "A rural-style soup with smoked fish mixed with small whole fish.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "fish"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ម្ជូរគ្រឿងសាច់គោ លាយពោះគោ",
+        "name_printed_latin": null,
+        "name_en": "Sour Lemongrass Soup with Beef and Tripe",
+        "description_en": "A classic sour soup (M'chu Kroeung) with beef and beef tripe.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "beef",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "តុងយ៉ាំ សាច់មាន់",
+        "name_printed_latin": null,
+        "name_en": "Tom Yum with Chicken",
+        "description_en": "Thai-style hot and sour soup with chicken.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "chicken",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "តុងយ៉ាំ គ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Tom Yum with Seafood",
+        "description_en": "Thai-style hot and sour soup with mixed seafood.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "seafood",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "20.000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "តុងយ៉ាំ បង្កង",
+        "name_printed_latin": null,
+        "name_en": "Tom Yum with Crayfish",
+        "description_en": "Thai-style hot and sour soup with crayfish or river lobster.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "seafood",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "37.000៛",
+            "amount": 37000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្កងឆាម្រេច",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Crayfish with Pepper",
+        "description_en": "Crayfish or river lobster stir-fried with Kampot pepper.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "37.000៛",
+            "amount": 37000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្កងខ្ទិះ",
+        "name_printed_latin": null,
+        "name_en": "Crayfish with Coconut Milk",
+        "description_en": "Crayfish or river lobster cooked in a coconut milk-based sauce.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "37.000៛",
+            "amount": 37000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ញាំពោះគោ",
+        "name_printed_latin": null,
+        "name_en": "Beef Tripe Salad",
+        "description_en": "A Khmer-style salad with beef tripe, herbs, and a tangy dressing.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "salad",
+        "tags": [
+          "beef",
+          "salad",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "19.000៛",
+            "amount": 19000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ញាំត្រី (សាច់មាន់ សាច់គោ)",
+        "name_printed_latin": null,
+        "name_en": "Fish Salad (or Chicken, or Beef)",
+        "description_en": "A Khmer-style salad, available with fish, chicken, or beef.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "salad",
+        "tags": [
+          "salad",
+          "fish",
+          "chicken",
+          "beef",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The text in parentheses indicates protein options."
+      },
+      {
+        "name_km": "ភ្លាត្រី ( សាច់ត្រី សាច់មាន់ សាច់ជ្រូក )",
+        "name_printed_latin": null,
+        "name_en": "Fish 'Plea' Salad (with fish, chicken, or pork)",
+        "description_en": "A Khmer ceviche-style salad with herbs and a tangy dressing. The main protein is fish, but chicken or pork are also offered as options.",
+        "section_km": "ប្រភេទអាហារកម្មង់ ( អាហារខ្មែរ )",
+        "section_en": "A La Carte Food (Khmer Food)",
+        "category": "salad",
+        "tags": [
+          "salad",
+          "fish",
+          "chicken",
+          "pork",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The text in parentheses '(fish meat, chicken meat, pork meat)' clarifies the available protein choices."
+      }
+    ]
+  }
+}

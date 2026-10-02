@@ -1,0 +1,385 @@
+{
+  "image": "2026-07-20_22-27-14.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:44.296Z",
+  "seconds": 49.9,
+  "usage": {
+    "prompt_tokens": 11683,
+    "completion_tokens": 4423,
+    "total_tokens": 16106,
+    "cost": 0.135192,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.135192,
+      "upstream_inference_prompt_cost": 0.046732,
+      "upstream_inference_completions_cost": 0.08846
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1258,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-27-14#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#003",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "D-3 Khmer is partly hidden by glare. It appears to read 'បាយស ១ចាន' (one plate of rice), not just 'បាយស'. The extraction dropped the quantity word."
+      },
+      {
+        "id": "2026-07-20_22-27-14#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ជូរហឹរ means sour and spicy, not sweet and sour. Better: 'Stir-fried Shrimp, Sour and Spicy'."
+      },
+      {
+        "id": "2026-07-20_22-27-14#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#010",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#011",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#012",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#013",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#014",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#015",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ម្រេចខ្ចី is green (fresh) peppercorn, not green bell pepper. The translation is acceptable."
+      },
+      {
+        "id": "2026-07-20_22-27-14#016",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#017",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#018",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#019",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#020",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#021",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed spelling looks like ស្ទីង; this is a minor difference."
+      },
+      {
+        "id": "2026-07-20_22-27-14#022",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#023",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#024",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#025",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#026",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#027",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#028",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#029",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#030",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#031",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#032",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No Khmer is printed for Somersby, so the empty name_km is correct."
+      },
+      {
+        "id": "2026-07-20_22-27-14#033",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#034",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-27-14#035",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed Khmer is 'បង្អែមខ្នុរបាយដំណើប', where ខ្នុរ means jackfruit; it is not ខ្មែរ (Khmer). The English should be 'Jackfruit Dessert with Sticky Rice'."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All 35 printed items (D-1 to D-18, F-1 to F-16, E-1) were extracted, and every price is correct. There are three issues: D-3's Khmer likely omits '១ចាន', D-7's English wrongly says 'sweet and sour' instead of sour and spicy, and E-1 misreads ខ្នុរ (jackfruit) as ខ្មែរ."
+  }
+}

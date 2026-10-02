@@ -1,0 +1,1044 @@
+{
+  "image": "2026-07-20_22-24-28.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:18:07.583Z",
+  "seconds": 149.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 19127,
+    "total_tokens": 21902,
+    "cost": 0.19473875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.19473875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.19127
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10294,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "fair",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ប្រហិតឆ្នាំងភ្លើង",
+        "name_printed_latin": null,
+        "name_en": "Meatball Hot Pot",
+        "description_en": "Assorted meatballs served in a simmering hot pot.",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "soup",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតអប់ឆ្នាំងដែក",
+        "name_printed_latin": null,
+        "name_en": "Steamed Meatballs in an Iron Pot",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "snack",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតបំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Meatballs",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "snack",
+        "tags": [
+          "fried",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Feet with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជង្គង់មាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Knees with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ចុងស្លាបមាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Wing Tips with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 24000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹងជំនីបំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Pork Ribs with Garlic",
+        "description_en": "Pork is assumed, as it's the most common type of ribs.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken Feet",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជង្គង់មាន់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken Knees",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ចុងស្លាបមាន់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken Wing Tips",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់ជ្រូកអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Pork",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Meatballs",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "snack",
+        "tags": [
+          "grilled",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ព្រុយត្រីអាំងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Fish Fin with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "fish",
+        "tags": [
+          "fish",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមថ្មអាំងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Stone Crab with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 18000៛",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 36000៛",
+            "amount": 36000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមថ្មចំហ៊ុយ",
+        "name_printed_latin": null,
+        "name_en": "Steamed Stone Crab",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 18000៛",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 36000៛",
+            "amount": 36000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវអប់អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Clams with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវស្រុស",
+        "name_printed_latin": null,
+        "name_en": "Blanched Clams",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "លៀសហួអប់អំបិល",
+        "name_printed_latin": null,
+        "name_en": "Steamed 'Lieh Hua' Clams with Salt",
+        "description_en": "'Lieh Hua' is a type of cockle.",
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The second price is slightly obscured by glare but appears to be 30000៛."
+      },
+      {
+        "name_km": "ត្បូងសែលអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Scallops",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "អយស្ទ័រអាំងឈីស 8-10/គ្រាប់",
+        "name_printed_latin": null,
+        "name_en": "Grilled Oysters with Cheese (8-10 pcs)",
+        "description_en": "The Khmer name includes a transliteration of 'Oyster'.",
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 40000៛",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 80000៛",
+            "amount": 80000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមថ្ម ដុតអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Stone Crab with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 18000៛",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 36000៛",
+            "amount": 36000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមថ្មពង ដុតអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Stone Crab with Roe with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "Size S 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "Size S",
+            "variant_en": "Size S"
+          },
+          {
+            "price_text": "Size M 25000៛",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": "Size M",
+            "variant_en": "Size M"
+          },
+          {
+            "price_text": "Size L 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "Size L",
+            "variant_en": "Size L"
+          },
+          {
+            "price_text": "Size XL 35000៛",
+            "amount": 35000,
+            "currency": "KHR",
+            "variant_km": "Size XL",
+            "variant_en": "Size XL"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ខ្យងប៉ារ៉ាលីងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried 'Para' Snails with Salt and Chili",
+        "description_en": "'Para' is a type of snail.",
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "spicy",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 40000៛",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមថ្មពង ចំហ៊ុយទឹកដោះគោ",
+        "name_printed_latin": null,
+        "name_en": "Steamed Stone Crab with Roe in Milk",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "Size S 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "Size S",
+            "variant_en": "Size S"
+          },
+          {
+            "price_text": "Size M 25000៛",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": "Size M",
+            "variant_en": "Size M"
+          },
+          {
+            "price_text": "Size L 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "Size L",
+            "variant_en": "Size L"
+          },
+          {
+            "price_text": "Size XL 35000៛",
+            "amount": 35000,
+            "currency": "KHR",
+            "variant_km": "Size XL",
+            "variant_en": "Size XL"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវយក្សអាំងអំបិល...",
+        "name_printed_latin": null,
+        "name_en": "Grilled Giant Clam with Salt and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបអាំង",
+        "section_en": "Grilled Food",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 60000៛",
+            "amount": 60000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The last word of the Khmer name is cut off, likely 'ម្ទេស' (chili)."
+      },
+      {
+        "name_km": "ត្រកួនឆាប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Spinach with Oyster Sauce",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កញ្ឆោតឆាប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Oyster Sauce",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោតបារាំងឆាប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Baby Corn with Oyster Sauce",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រកួនឆាគ្រឿងក្នុង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Spinach with Offal",
+        "description_en": "Offal is typically pork or chicken.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 14000៛",
+            "amount": 14000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 28000៛",
+            "amount": 28000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កញ្ឆោតឆាគ្រឿងក្នុង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Offal",
+        "description_en": "Offal is typically pork or chicken.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 14000៛",
+            "amount": 14000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 28000៛",
+            "amount": 28000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោតបារាំងឆាគ្រឿងក្នុង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Baby Corn with Offal",
+        "description_en": "Offal is typically pork or chicken.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "ត. 14000៛",
+            "amount": 14000,
+            "currency": "KHR",
+            "variant_km": "ត.",
+            "variant_en": "small"
+          },
+          {
+            "price_text": "ធ. 28000៛",
+            "amount": 28000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

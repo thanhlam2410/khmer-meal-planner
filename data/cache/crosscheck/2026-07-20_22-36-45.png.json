@@ -1,0 +1,125 @@
+{
+  "image": "2026-07-20_22-36-45.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:32.211Z",
+  "seconds": 21.5,
+  "usage": {
+    "prompt_tokens": 5971,
+    "completion_tokens": 1900,
+    "total_tokens": 7871,
+    "cost": 0.061884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.061884,
+      "upstream_inference_prompt_cost": 0.023884,
+      "upstream_inference_completions_cost": 0.038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 615,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-36-45#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as បាយភ្លៅមាន់ (bottom left, under the large chicken thigh photo). No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#003",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The label reads បាយផាក់ឡូ, with no final វ. The extraction added វ (ផាក់ឡូវ). Pha lo is braised pork with egg, so 'Rice with Braised Pork & Egg (Pha Lo)' would be a clearer English name. No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The 'fried' tag is an assumption; the image does not state the cooking method. No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ពងទាក្រឡុក is scrambled/shaken duck egg, and the photo shows a scrambled egg dish. It is not balut, which would be ពងទាកូន. Suggested English name: 'Scrambled Duck Egg'. No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-36-45#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All 9 printed dishes were captured. The menu shows no prices, so the empty price arrays are correct. Two fixes are needed: item 003 has an extra វ in the Khmer name (printed ផាក់ឡូ), and item 006 is wrongly translated as balut when it is scrambled duck egg."
+  }
+}

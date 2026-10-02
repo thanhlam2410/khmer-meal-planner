@@ -1,0 +1,500 @@
+{
+  "image": "2026-07-20_22-24-43.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:16:51.022Z",
+  "seconds": 72.7,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 9238,
+    "total_tokens": 12013,
+    "cost": 0.09584875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.09584875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.09238
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5334,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": "The Street",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ប្រហិតបំពងឆ្នាំងភ្លើង",
+        "name_printed_latin": null,
+        "name_en": "Fried Meatball Hot Pot",
+        "description_en": "Fried meatballs served in a small tabletop hot pot.",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "fried",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "2000៛",
+            "amount": 2000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចង្កាក់",
+            "unit_en": "per skewer"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតអប់(អំបិលម្ទេស)",
+        "name_printed_latin": null,
+        "name_en": "Steamed Meatballs (with salt and chili)",
+        "description_en": "Steamed meatballs served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "snack",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "2000៛",
+            "amount": 2000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចង្កាក់",
+            "unit_en": "per skewer"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតត្រីបំពងស្លឹកក្រូចសើច",
+        "name_printed_latin": null,
+        "name_en": "Fried Fish Balls with Kaffir Lime Leaves",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតត្រីរុំគល់ស្លឹកគ្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Fish Paste Wrapped on Lemongrass Skewers",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ផ្សិតខ្មៅបំពង The Street",
+        "name_printed_latin": "The Street",
+        "name_en": "The Street Fried Black Mushrooms",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "fried",
+          "vegetarian",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Feet with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "fried",
+          "chicken"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ចុងស្លាបមាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Wing Tips with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "fried",
+          "chicken"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹងជំនីជ្រូកបំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Pork Ribs with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "អណ្តាតទាបំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Duck Tongue with Garlic",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "duck",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ព្រុយត្រីសាម៉ុងបំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Salmon Fins",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កោះមាន់ក្រឡុកផ្អែមប្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Sweet and Salty Stir-fried Chicken Gizzards",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken"
+        ],
+        "prices": [
+          {
+            "price_text": "7000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កង្កែបបំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Frog",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "other",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "3500៛",
+            "amount": 3500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ក្បាល",
+            "unit_en": "per piece"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោតបារាំងអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Baby Corn",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "grilled",
+          "vegetarian",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "4500៛",
+            "amount": 4500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ផ្សិតភ្លៅមាន់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled King Oyster Mushrooms",
+        "description_en": "King oyster mushrooms are known as 'chicken thigh mushrooms' in Khmer.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "grilled",
+          "vegetarian",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "4500៛",
+            "amount": 4500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken Feet",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "grilled",
+          "chicken"
+        ],
+        "prices": [
+          {
+            "price_text": "4500៛",
+            "amount": 4500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់ជ្រូកអាំង The Street",
+        "name_printed_latin": "The Street",
+        "name_en": "The Street Grilled Pork",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "2500៛",
+            "amount": 2500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចង្កាក់",
+            "unit_en": "per skewer"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតអាំង The Street",
+        "name_printed_latin": "The Street",
+        "name_en": "The Street Grilled Meatballs",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "snack",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "2000៛",
+            "amount": 2000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចង្កាក់",
+            "unit_en": "per skewer"
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The price is partially cut off at the bottom of the image, but appears to be 1ចង្កាក់/2000៛."
+      },
+      {
+        "name_km": "កង្កែបអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Frog",
+        "description_en": null,
+        "section_km": null,
+        "section_en": null,
+        "category": "other",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "3500៛",
+            "amount": 3500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ក្បាល",
+            "unit_en": "per piece"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

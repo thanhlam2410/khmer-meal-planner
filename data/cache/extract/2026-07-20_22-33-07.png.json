@@ -1,0 +1,345 @@
+{
+  "image": "2026-07-20_22-33-07.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:19:29.330Z",
+  "seconds": 47.1,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 5738,
+    "total_tokens": 8513,
+    "cost": 0.06084875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06084875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.05738
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2892,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "កង្កែប អាំង អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Frog with Salt and Chili",
+        "description_en": "Whole frogs grilled with a salt and chili seasoning.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "other",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ផ្សិត អប់ អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Mushroom with Salt and Chili",
+        "description_en": "Mushrooms steamed in a pot with salt and chili.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពងទា អប់ ផ្សិត",
+        "name_printed_latin": null,
+        "name_en": "Steamed Duck Egg with Mushroom",
+        "description_en": "Duck eggs steamed in a pot with mushrooms.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "egg",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ហ៊ុន អាំងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Hun Grilled with Salt and Chili",
+        "description_en": "Grilled meat, likely pork, seasoned with salt and chili.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The first word 'ហ៊ុន' (Hun) is unusual and its meaning is unclear. Based on the image, the dish appears to be grilled pork ribs."
+      },
+      {
+        "name_km": "មឹកអប់",
+        "name_printed_latin": null,
+        "name_en": "Steamed Octopus",
+        "description_en": "Small octopus steamed in a broth.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់អប់អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Chicken Feet with Salt and Chili",
+        "description_en": "Chicken feet steamed in a pot with salt and chili seasoning.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កង្កែប អប់ អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Frog with Salt and Chili",
+        "description_en": "Chopped frog steamed in a pot with salt and chili.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "other",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ដៃមឹកអាំងរីអប់អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Octopus Tentacles Grilled or Steamed with Salt and Chili",
+        "description_en": "Octopus tentacles prepared either grilled or steamed with a salt and chili seasoning.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជង្គង់មាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Knees with Garlic",
+        "description_en": "Crispy fried chicken knee joints with garlic.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Shrimp",
+        "description_en": "Shrimp grilled on skewers.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ភ្លាក្តាមសេះពិសេស",
+        "name_printed_latin": null,
+        "name_en": "Special Blue Crab Salad",
+        "description_en": "A spicy and sour Khmer-style salad (Phlea) made with fresh blue crab and herbs.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "salad",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មាន់ស្ពៃខៀវ",
+        "name_printed_latin": null,
+        "name_en": "Chicken with Green Mustard",
+        "description_en": "A dish of chicken served with green mustard leaves, presented similarly to a sandwich or burger.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Roasted / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

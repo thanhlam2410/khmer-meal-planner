@@ -1,0 +1,429 @@
+{
+  "image": "2026-07-20_22-35-49.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:20:41.054Z",
+  "seconds": 58.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 7529,
+    "total_tokens": 10304,
+    "cost": 0.07875875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.07875875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.07529
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3925,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "រចនា បុកល្ហុង",
+      "name_en": "Rachana Papaya Salad",
+      "visible": true
+    },
+    "image_quality": "fair",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "បុកល្ហុងថៃប្រៃ",
+        "name_printed_latin": "Thai Papaya Salad",
+        "name_en": "Salty Thai Papaya Salad",
+        "description_en": "Thai-style green papaya salad. The Khmer name specifies 'ប្រៃ' (prai), meaning salty.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "7500",
+            "amount": 7500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "បុកល្ហុងឥសាន្ត",
+        "name_printed_latin": "Northeast green papaya salad",
+        "name_en": "Northeast Green Papaya Salad",
+        "description_en": "Isan-style (Northeastern Thai/Lao) green papaya salad, typically with fermented fish sauce.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "8000",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "បុកល្ហុងឡាវ",
+        "name_printed_latin": "Hit the Lav papaya",
+        "name_en": "Lao Style Papaya Salad",
+        "description_en": "Lao-style green papaya salad. 'Hit the papaya' is a literal translation of 'បុកល្ហុង'.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "8500",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "បុកល្ហុងពងទាប្រៃ",
+        "name_printed_latin": "Beat the papaya with salted duck egg",
+        "name_en": "Papaya Salad with Salted Duck Egg",
+        "description_en": "Green papaya salad with salted duck egg. 'Beat the papaya' is a literal translation of 'បុកល្ហុង'.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "egg",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "7500",
+            "amount": 7500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "បុកល្ហុងពងទាកូន",
+        "name_printed_latin": "Beat the papaya duck eggs",
+        "name_en": "Papaya Salad with Balut",
+        "description_en": "Green papaya salad with balut (fertilized duck embryo). 'Beat the papaya' is a literal translation of 'បុកល្ហុង'.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "egg",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(8000R)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងបាត់តេ",
+        "name_printed_latin": "Pate Green papaya salad",
+        "name_en": "Green Papaya Salad with Pate",
+        "description_en": "Green papaya salad served with pâté.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "salad",
+        "tags": [
+          "vegetables",
+          "pork",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "8500",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "បុកល្ហុងងាវ",
+        "name_printed_latin": "Cockle Green papaya salad",
+        "name_en": "Green Papaya Salad with Cockles",
+        "description_en": "Green papaya salad with blood cockles.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "seafood",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងបង្គាស្រស់",
+        "name_printed_latin": "Fresh shrimp Green papaya salad",
+        "name_en": "Green Papaya Salad with Fresh Shrimp",
+        "description_en": "Green papaya salad with raw or lightly cooked shrimp.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "seafood",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងក្តាមសេះ",
+        "name_printed_latin": "Green papaya salad mix with Blue sea crab",
+        "name_en": "Green Papaya Salad with Blue Swimmer Crab",
+        "description_en": "Green papaya salad with blue swimmer crab.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "seafood",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងមឹក",
+        "name_printed_latin": "Hit the squid papaya",
+        "name_en": "Papaya Salad with Squid",
+        "description_en": "Green papaya salad with squid. 'Hit the papaya' is a literal translation of 'បុកល្ហុង'.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Papaya Salad",
+        "category": "seafood",
+        "tags": [
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឈុតបុកល្ហុងគ្រឿងសមុទ្រ",
+        "name_printed_latin": "Seafood papaya Set",
+        "name_en": "Seafood Papaya Salad Set",
+        "description_en": "A large platter featuring papaya salad and a variety of seafood.",
+        "section_km": "ឈុត",
+        "section_en": "Set",
+        "category": "seafood",
+        "tags": [
+          "shared_platter",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(25000R)",
+            "amount": 25000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឈុតបុកល្ហុងស្លាបមាន់",
+        "name_printed_latin": "Chicken papaya Set",
+        "name_en": "Chicken Wing Papaya Salad Set",
+        "description_en": "A large platter featuring papaya salad and chicken wings.",
+        "section_km": "ឈុត",
+        "section_en": "Set",
+        "category": "chicken",
+        "tags": [
+          "shared_platter",
+          "vegetables",
+          "spicy",
+          "chicken"
+        ],
+        "prices": [
+          {
+            "price_text": "26000",
+            "amount": 26000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is on a handwritten sticker."
+      },
+      {
+        "name_km": "ឈុតត្រីសាម៉ុន",
+        "name_printed_latin": "Salmon Set",
+        "name_en": "Salmon Set",
+        "description_en": "A large platter featuring papaya salad and raw salmon.",
+        "section_km": "ឈុត",
+        "section_en": "Set",
+        "category": "fish",
+        "tags": [
+          "shared_platter",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(42000R)",
+            "amount": 42000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឈុតហតដក",
+        "name_printed_latin": "Hot dogs Set",
+        "name_en": "Hot Dogs Set",
+        "description_en": "A large platter featuring papaya salad and hot dogs.",
+        "section_km": "ឈុត",
+        "section_en": "Set",
+        "category": "pork",
+        "tags": [
+          "shared_platter",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "(22000R)",
+            "amount": 22000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The first digit of the price is slightly blurry but appears to be '2'."
+      },
+      {
+        "name_km": "ឈុតប៉ាត់តេ",
+        "name_printed_latin": "Patte Set",
+        "name_en": "Pate Set",
+        "description_en": "A large platter featuring papaya salad and pâté.",
+        "section_km": "ឈុត",
+        "section_en": "Set",
+        "category": "pork",
+        "tags": [
+          "shared_platter",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [],
+        "confidence": 0.8,
+        "notes": "The price is missing as the corner of the menu is torn off."
+      }
+    ]
+  }
+}

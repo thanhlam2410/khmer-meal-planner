@@ -1,0 +1,409 @@
+{
+  "image": "2026-07-20_22-24-59.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:11:11.709Z",
+  "seconds": 51.4,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6529,
+    "total_tokens": 9304,
+    "cost": 0.06875875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06875875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06529
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3116,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": "The Street",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ព្រុយត្រីសាម៉ុងអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Salmon Fins",
+        "description_en": "Grilled salmon fins, served with dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ខ្យងសែលអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Scallops",
+        "description_en": "Scallops grilled on the shell.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "គ្រំអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Clams",
+        "description_en": "Clams grilled on the half shell.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មឹកអាំង អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Squid with Salt and Chili",
+        "description_en": "Grilled squid served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គារទឹកកក",
+        "name_printed_latin": null,
+        "name_en": "Shrimp on Ice",
+        "description_en": "Raw shrimp served chilled on a bed of ice with dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "1ចាន/12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គារអាំង អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Shrimp with Salt and Chili",
+        "description_en": "Grilled shrimp on skewers, served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គារអាំង អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Shrimp with Salt and Chili",
+        "description_en": "Grilled shrimp served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "spicy",
+          "per_kg"
+        ],
+        "prices": [
+          {
+            "price_text": "កន្លះគីឡូ/30000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "កន្លះគីឡូ",
+            "variant_en": "half kg",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "អ័យស្ទួយ",
+        "name_printed_latin": "(Oyster)",
+        "name_en": "Oysters",
+        "description_en": "Raw oysters on the half shell.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "1ចាន/12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": "The Khmer name 'អ័យស្ទួយ' is a phonetic spelling of 'oyster'."
+      },
+      {
+        "name_km": "អ័យស្ទួយអាំង",
+        "name_printed_latin": "(Oyster)",
+        "name_en": "Grilled Oysters",
+        "description_en": "Oysters grilled on the half shell.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": "The Khmer name 'អ័យស្ទួយ' is a phonetic spelling of 'oyster'."
+      },
+      {
+        "name_km": "អ័យស្វ័យទឹកកក",
+        "name_printed_latin": null,
+        "name_en": "Oysters on Ice",
+        "description_en": "Raw oysters served chilled in a bucket of ice.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "1ចាន/12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": "The Khmer name 'អ័យស្វ័យ' appears to be a phonetic spelling or typo for 'oyster'."
+      },
+      {
+        "name_km": "លៀសហូល",
+        "name_printed_latin": null,
+        "name_en": "Steamed Clams in Foil",
+        "description_en": "Clams steamed in an aluminum foil packet.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "1ចាន/6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវអប់ (អំបិលម្ទេស)",
+        "name_printed_latin": null,
+        "name_en": "Steamed Clams (with Salt and Chili)",
+        "description_en": "Steamed clams, likely seasoned with or served with salt and chili.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "1ចាន/8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់ក្រឡុកទឹកភ្នែក",
+        "name_printed_latin": null,
+        "name_en": "\"Teary-Eyed\" Shaken Chicken Feet",
+        "description_en": "A very spicy chicken feet salad. 'ក្រឡុក' means shaken, and 'ទឹកភ្នែក' (tears) implies it's spicy enough to make you cry.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "spicy",
+          "salad"
+        ],
+        "prices": [
+          {
+            "price_text": "១ចាន/6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "១ចាន",
+            "unit_en": "per plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បាយស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Rice",
+        "description_en": "A plate of plain white steamed rice.",
+        "section_km": null,
+        "section_en": null,
+        "category": "rice",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "/1000៛",
+            "amount": 1000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price text is missing the unit, which is implied to be per plate."
+      },
+      {
+        "name_km": "នំប៉័ងប៊រ",
+        "name_printed_latin": null,
+        "name_en": "Buttered Bread",
+        "description_en": "Slices of baguette with butter, possibly toasted or with garlic.",
+        "section_km": null,
+        "section_en": null,
+        "category": "snack",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "/1000៛",
+            "amount": 1000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price text is missing the unit, which is implied to be per serving."
+      }
+    ]
+  }
+}

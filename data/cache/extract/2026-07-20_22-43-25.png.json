@@ -1,0 +1,348 @@
+{
+  "image": "2026-07-20_22-43-25.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:21:05.387Z",
+  "seconds": 50,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6428,
+    "total_tokens": 9203,
+    "cost": 0.06774875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06774875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06428
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3210,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ភោជនីយដ្ឋាន LOK OV POK",
+      "name_en": "LOK OV POK RESTAURANT",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "សម្លម្ជូរខ្ទិះម្នាស់សាច់ត្រី (បាយ)",
+        "name_printed_latin": "FISH SWEET SOUR PINEAPPLE AND COCONUT (RICE)",
+        "name_en": "Fish Sweet Sour Pineapple and Coconut Soup (with Rice)",
+        "description_en": "A sweet and sour soup with fish, pineapple, and coconut milk, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "fish",
+        "tags": [
+          "fish",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរជ្រក់ក្រូចឆ្មាមាន់ (បាយ)",
+        "name_printed_latin": "CHICKEN WITH PICKLED LIME SOUP (RICE)",
+        "name_en": "Chicken with Pickled Lime Soup (with Rice)",
+        "description_en": "A clear, savory soup with chicken and preserved limes, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      },
+      {
+        "name_km": "សម្លម្ជូរគ្រឿងសមុទ្រ(បាយ)",
+        "name_printed_latin": "Spicy Sour Soup with Prawn (Rice)",
+        "name_en": "Spicy Sour Soup with Prawn (with Rice)",
+        "description_en": "A spicy and sour soup with prawns, similar to Tom Yum, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "soup",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.75",
+            "amount": 5.75,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "This item is handwritten on a piece of tape. The Khmer name is transcribed as 'សម្លម្ជូរគ្រឿងសមុទ្រ(បាយ)' (Spicy Sour Seafood Soup), while the English specifies 'Prawn'."
+      },
+      {
+        "name_km": "ស្ងោរម្ជូរក្រអៅឈូក (បាយ)",
+        "name_printed_latin": "LOTUS ROOT SOUR SOUP (RICE)",
+        "name_en": "Lotus Root Sour Soup (with Rice)",
+        "description_en": "A sour soup featuring lotus root, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      },
+      {
+        "name_km": "សម្លកកូរ (បាយ)",
+        "name_printed_latin": "KAKO-CHICKEN OR FISH, LEMONGRASS, TUMERIC (RICE)",
+        "name_en": "Samlor Kako (Chicken or Fish) (with Rice)",
+        "description_en": "A traditional Cambodian soup with green kroeung, prahok, and various vegetables, with a choice of chicken or fish. Served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "soup",
+        "tags": [
+          "soup",
+          "chicken",
+          "fish",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      },
+      {
+        "name_km": "សម្លទំពាំង (បាយ)",
+        "name_printed_latin": "BAMBOO SHOOT SAMLOR (RICE)",
+        "name_en": "Bamboo Shoot Samlor (with Rice)",
+        "description_en": "A Cambodian soup made with bamboo shoots, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      },
+      {
+        "name_km": "សម្លម្ជូរអ្នកជិតខាង (បាយ)",
+        "name_printed_latin": "NEIGHBOR SOUR SOUP (RICE)",
+        "name_en": "Neighbor Sour Soup (with Rice)",
+        "description_en": "A sour soup with a unique house or local recipe, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "soup",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      },
+      {
+        "name_km": "សម្លលោកឪពុក (បាយ)",
+        "name_printed_latin": "MY FATHER'S FAVORITE CARAMEL PORK (RICE)",
+        "name_en": "My Father's Favorite Caramel Pork (with Rice)",
+        "description_en": "A caramelized pork stew, likely a version of Khor, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "pork",
+        "tags": [
+          "pork"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $6.00",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សម្លម្ជូរគ្រឿងសាច់គោ (បាយ)",
+        "name_printed_latin": "BEEF LEMONGRASS SOUR SOUP (RICE)",
+        "name_en": "Beef Lemongrass Sour Soup (with Rice)",
+        "description_en": "A sour soup with beef and a lemongrass-based kroeung paste, served with rice.",
+        "section_km": "សម្លទឹក / SOUPS SALOR",
+        "section_en": "Soups / Samlor",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "soup",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "ចាន $5.25",
+            "amount": 5.25,
+            "currency": "USD",
+            "variant_km": "ចាន",
+            "variant_en": "plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ឆ្នាំង $12.50",
+            "amount": 12.5,
+            "currency": "USD",
+            "variant_km": "ឆ្នាំង",
+            "variant_en": "pot",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The word 'ចាន' (plate) is inferred from the column layout and the first item."
+      }
+    ]
+  }
+}

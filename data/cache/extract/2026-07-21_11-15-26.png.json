@@ -1,0 +1,239 @@
+{
+  "image": "2026-07-21_11-15-26.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:23:02.997Z",
+  "seconds": 40.4,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 4957,
+    "total_tokens": 7732,
+    "cost": 0.05303875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05303875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.04957
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3237,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ឥន្ទធនូ",
+      "name_en": "RAINBOW",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ស៊ុបត្រីក្រហម",
+        "name_printed_latin": null,
+        "name_en": "Red Fish Soup",
+        "description_en": "Hot pot with red fish, vegetables, and dipping sauces.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fish",
+          "soup",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "40,000",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបមាន់ខ្មៅ",
+        "name_printed_latin": null,
+        "name_en": "Black Chicken Soup",
+        "description_en": "Hot pot with black chicken, vegetables, and dipping sauces.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "soup",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "45,000",
+            "amount": 45000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបប្រហិតត្រី",
+        "name_printed_latin": null,
+        "name_en": "Fish Ball Soup",
+        "description_en": "Hot pot with fish balls, vegetables, and dipping sauces. The accompanying image shows sliced beef, not fish balls.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fish",
+          "soup",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "40,000",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The name translates to 'Fish Ball Soup', but the image clearly shows sliced beef."
+      },
+      {
+        "name_km": "ម៉ូយ៉ាង",
+        "name_printed_latin": null,
+        "name_en": "Mookata",
+        "description_en": "Thai-style barbecue set with a grill pan, served with mixed meats and vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "grilled",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "40,000",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Meat",
+        "description_en": "Barbecue set with a grill pan, served with mixed meats and vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "seafood",
+          "grilled",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "40,000",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The image shows a mix of beef and seafood for grilling."
+      },
+      {
+        "name_km": "ស៊ុបសាច់អាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Meat Soup",
+        "description_en": "A large combination set for both hot pot and grilling, with various meats, meatballs, and vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "soup",
+          "grilled",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "55,000",
+            "amount": 55000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបឥន្ទធនូ",
+        "name_printed_latin": null,
+        "name_en": "Rainbow Soup",
+        "description_en": "The restaurant's signature 'Rainbow' hot pot, with a mix of meats, seafood, and vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "other",
+        "tags": [
+          "beef",
+          "seafood",
+          "soup",
+          "vegetables",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "45,000",
+            "amount": 45000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

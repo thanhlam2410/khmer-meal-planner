@@ -1,0 +1,95 @@
+{
+  "image": "2026-07-20_22-31-15.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:10.674Z",
+  "seconds": 16.3,
+  "usage": {
+    "prompt_tokens": 5261,
+    "completion_tokens": 1422,
+    "total_tokens": 6683,
+    "cost": 0.049484,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.049484,
+      "upstream_inference_prompt_cost": 0.021044,
+      "upstream_inference_completions_cost": 0.02844
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 366,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-31-15#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as 'ឆាខ្ញីសាច់ជ្រូក 2$ (8000៛)'. The riel price is partly faded by glare but readable as 8000. The 'vegetables' tag is acceptable because the dish contains ginger."
+      },
+      {
+        "id": "2026-07-20_22-31-15#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as 'ឆាផ្កាខាត់ណាសាច់គោ 2 $ (8000៛)'."
+      },
+      {
+        "id": "2026-07-20_22-31-15#003",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as 'ឆាត្រកួនប្រេងខ្យង 2.00$ (8000 ៛)'."
+      },
+      {
+        "id": "2026-07-20_22-31-15#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as 'ម្ជូរស្រែត្រី 2$ (8000៛)'."
+      },
+      {
+        "id": "2026-07-20_22-31-15#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as 'ឆាត្រសក់+ប៉េងប៉ោះគ្រឿងសមុទ្រ 3$ (12000៛)'. The riel price is partly covered by the Google Maps overlay, but 12000 is legible."
+      },
+      {
+        "id": "2026-07-20_22-31-15#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The start of the name is partly covered by the Google Maps overlay. The visible '…ស្រស់សាច់គោ' is consistent with ឆាម្រេចស្រស់សាច់គោ. Price is 2$ (8000៛)."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All six printed items were extracted correctly, with accurate Khmer names, translations, USD and KHR prices, and reasonable categories. The bottom two names and prices are partly covered by the Google Maps overlay but are still consistent with the extraction."
+  }
+}

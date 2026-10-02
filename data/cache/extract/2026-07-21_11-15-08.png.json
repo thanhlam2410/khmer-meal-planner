@@ -1,0 +1,1167 @@
+{
+  "image": "2026-07-21_11-15-08.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:23:13.953Z",
+  "seconds": 111.8,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 15430,
+    "total_tokens": 18205,
+    "cost": 0.15776875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.15776875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.1543
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5346,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "បាយឥន្ធធនូ",
+        "name_printed_latin": null,
+        "name_en": "Rainbow Fried Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Menu has a general note: 'ចានធំ តម្លៃបរិមាណ x2' (Large plate, price and quantity x2), which may apply to this item."
+      },
+      {
+        "name_km": "បាយសាច់ជ្រូកចៀន",
+        "name_printed_latin": null,
+        "name_en": "Fried Pork with Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "pork",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "6000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយសាច់មាន់",
+        "name_printed_latin": null,
+        "name_en": "Chicken with Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "chicken",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាបន្លែគ្រប់មុខ",
+        "name_printed_latin": null,
+        "name_en": "Fried Rice with Mixed Vegetables",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "vegetarian",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាម្ចូរ",
+        "name_printed_latin": null,
+        "name_en": "Sour Fried Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាកាពិ",
+        "name_printed_latin": null,
+        "name_en": "Shrimp Paste Fried Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "9500៛",
+            "amount": 9500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាយ៉ាំងចូវ",
+        "name_printed_latin": null,
+        "name_en": "Yangzhou Fried Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយខួបពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Rice with Egg Yolk",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "egg",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាសាច់ក្រកពងទា",
+        "name_printed_latin": null,
+        "name_en": "Fried Rice with Sausage and Duck Egg",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "pork",
+          "egg",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាខាត់ណា",
+        "name_printed_latin": null,
+        "name_en": "Fried Rice with Kailan",
+        "description_en": "With choice of beef, pork, or chicken.",
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "បាយឆាម្រះព្រៅ",
+        "name_printed_latin": null,
+        "name_en": "Basil Fried Rice",
+        "description_en": "With choice of beef, pork, or chicken.",
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "rice",
+        "tags": [
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "បាយឡុកឡាក់",
+        "name_printed_latin": null,
+        "name_en": "Lok Lak with Rice",
+        "description_en": "Stir-fried cubed meat, served with rice. With choice of beef, pork, or chicken.",
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "beef",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "9500៛",
+            "amount": 9500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "បាយឆាគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Seafood Fried Rice",
+        "description_en": null,
+        "section_km": "បាយឆា",
+        "section_en": "Fried Rice",
+        "category": "seafood",
+        "tags": [
+          "rice",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "9500៛",
+            "amount": 9500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីស្រួយគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Crispy Noodles with Seafood",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "seafood",
+        "tags": [
+          "noodle",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "9500៛",
+            "amount": 9500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Menu has a general note: 'ចានធំ តម្លៃបរិមាណ x2' (Large plate, price and quantity x2), which may apply to this item."
+      },
+      {
+        "name_km": "បុកល្ហុង",
+        "name_printed_latin": null,
+        "name_en": "Papaya Salad",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "salad",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បុកសណ្តែក",
+        "name_printed_latin": null,
+        "name_en": "Long Bean Salad",
+        "description_en": "With choice of beef or smoked fish.",
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "salad",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Protein choices listed below the item: សាច់គោ (beef), ត្រីឆ្អើរ (smoked fish)."
+      },
+      {
+        "name_km": "ប្រហិតបំពងម្សៅ",
+        "name_printed_latin": null,
+        "name_en": "Fried Meatballs with Flour",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "snack",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ស្លាបមាន់បំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Wings",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "chicken",
+        "tags": [
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ដំឡូងបំពង",
+        "name_printed_latin": null,
+        "name_en": "French Fries",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "snack",
+        "tags": [
+          "fried",
+          "vegetarian",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "អូម៉ាឡែត",
+        "name_printed_latin": null,
+        "name_en": "Omelette",
+        "description_en": null,
+        "section_km": "អារហារសំរន់",
+        "section_en": "Snacks",
+        "category": "egg",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "លីងចេកខ្ចី",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried with Green Banana",
+        "description_en": "A style of cooking offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'. Menu has a general note: 'ចានធំ តម្លៃបរិមាណ x2' (Large plate, price and quantity x2), which may apply to this item."
+      },
+      {
+        "name_km": "លីងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried with Salt and Chili",
+        "description_en": "A style of cooking offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'."
+      },
+      {
+        "name_km": "ឆាគ្រឿង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried with Kroeung",
+        "description_en": "A style of cooking with lemongrass paste, offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'."
+      },
+      {
+        "name_km": "ឆាក្តៅ",
+        "name_printed_latin": null,
+        "name_en": "Spicy Stir-fry with Holy Basil",
+        "description_en": "A style of cooking offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'."
+      },
+      {
+        "name_km": "ឆាព្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Jungle Stir-fry",
+        "description_en": "A spicy stir-fry with various herbs, offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'."
+      },
+      {
+        "name_km": "លីងគល់ស្លឹកគ្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried with Lemongrass Stems",
+        "description_en": "A style of cooking offered with a choice of protein: chicken feet, chicken, duck, frog, or eel.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "other",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": "This is a cooking style, with protein choices listed in the sub-heading 'ជើងមាន់-មាន់-ទា-កង្កែប-អន្ទង់'."
+      },
+      {
+        "name_km": "ឆាងាវ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Clams",
+        "description_en": null,
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "seafood",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "រ៉ូទី",
+        "name_printed_latin": null,
+        "name_en": "Roti",
+        "description_en": null,
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "snack",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "ក្រាត",
+        "name_printed_latin": null,
+        "name_en": "Krat",
+        "description_en": "A type of shellfish.",
+        "section_km": "ប្រភេទ គ្រឿងក្លែម",
+        "section_en": "Appetizers",
+        "category": "seafood",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "សាំងវិច",
+        "name_printed_latin": null,
+        "name_en": "Sandwich",
+        "description_en": "With choice of beef, pork, or chicken.",
+        "section_km": "សាំងវិច",
+        "section_en": "Sandwich",
+        "category": "snack",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "សាំងវិចហេមឈីស",
+        "name_printed_latin": null,
+        "name_en": "Ham and Cheese Sandwich",
+        "description_en": null,
+        "section_km": "សាំងវិច",
+        "section_en": "Sandwich",
+        "category": "snack",
+        "tags": [
+          "pork"
+        ],
+        "prices": [
+          {
+            "price_text": "8000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីញាំ",
+        "name_printed_latin": null,
+        "name_en": "Noodle Salad",
+        "description_en": null,
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "noodle",
+        "tags": [
+          "salad"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីឆាខាត់ណា",
+        "name_printed_latin": null,
+        "name_en": "Fried Noodles with Kailan",
+        "description_en": "With choice of beef, pork, or chicken.",
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "noodle",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "មីឆាគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Seafood Fried Noodles",
+        "description_en": null,
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "seafood",
+        "tags": [
+          "noodle",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "9500៛",
+            "amount": 9500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីកខ្លាំង",
+        "name_printed_latin": null,
+        "name_en": "Spicy Instant Noodles",
+        "description_en": "Literally 'strong noodles'.",
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "noodle",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីឆាកាពិ",
+        "name_printed_latin": null,
+        "name_en": "Shrimp Paste Fried Noodles",
+        "description_en": null,
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "noodle",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មីស្រួយ",
+        "name_printed_latin": null,
+        "name_en": "Crispy Noodles",
+        "description_en": "With choice of beef, pork, or chicken.",
+        "section_km": "មីឆា",
+        "section_en": "Fried Noodles",
+        "category": "noodle",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "8500៛",
+            "amount": 8500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": "Meat choices listed below the item: សាច់គោ (beef), ជ្រូក (pork), មាន់ (chicken)."
+      },
+      {
+        "name_km": "បង្គាស្រះ",
+        "name_printed_latin": null,
+        "name_en": "Pond Shrimp",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាបំពងប័រ",
+        "name_printed_latin": null,
+        "name_en": "Butter Fried Shrimp",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាត្រាំទឹកត្រី",
+        "name_printed_latin": null,
+        "name_en": "Shrimp Marinated in Fish Sauce",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាបំពងម្សៅ",
+        "name_printed_latin": null,
+        "name_en": "Battered Fried Shrimp",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាបំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Garlic Fried Shrimp",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "បង្គាឆាម្រេច",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Shrimp with Pepper",
+        "description_en": null,
+        "section_km": "បង្ហា",
+        "section_en": "Shrimp",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មឹកឆាម្រេច",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Squid with Pepper",
+        "description_en": null,
+        "section_km": "មឹក",
+        "section_en": "Squid",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      },
+      {
+        "name_km": "មឹកបំពងម្សៅ",
+        "name_printed_latin": null,
+        "name_en": "Battered Fried Squid",
+        "description_en": "Calamari",
+        "section_km": "មឹក",
+        "section_en": "Squid",
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "13500៛",
+            "amount": 13500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.99,
+        "notes": null
+      }
+    ]
+  }
+}

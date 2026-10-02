@@ -1,0 +1,125 @@
+{
+  "image": "2026-07-20_22-43-25.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:36.441Z",
+  "seconds": 24.4,
+  "usage": {
+    "prompt_tokens": 4879,
+    "completion_tokens": 2266,
+    "total_tokens": 7145,
+    "cost": 0.064836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.064836,
+      "upstream_inference_prompt_cost": 0.019516,
+      "upstream_inference_completions_cost": 0.04532
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 979,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-43-25#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-43-25#002",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The printed Khmer is shorter than the extraction. It reads roughly 'ស្ងោរ…មាន់ (បាយ)', and 'ក្រូចឆ្មា' does not appear to be printed. The extracted Khmer looks reconstructed from the English rather than transcribed. Re-check the middle word."
+      },
+      {
+        "id": "2026-07-20_22-43-25#003",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "This name is handwritten on a pasted-over label. The handwriting appears to include 'ហឹរ' (spicy), and the item likely refers to prawn rather than generic 'គ្រឿងសមុទ្រ'. The extracted 'សម្លម្ជូរគ្រឿងសមុទ្រ' does not match the handwriting exactly. Prices $5.75 / $12.50 match."
+      },
+      {
+        "id": "2026-07-20_22-43-25#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-43-25#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-43-25#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-43-25#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-43-25#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Only the plate price ($6.00) is printed; no pot price is shown."
+      },
+      {
+        "id": "2026-07-20_22-43-25#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The 'spicy' tag is not supported by the printed text, but this is minor."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All 9 items are present and all prices are correct. Items #002 and #003 have Khmer names that do not match the printed or handwritten text closely. #002 appears to be reconstructed from the English. #003 is a handwritten label that seems to include 'ហឹរ' and a prawn reference. Both should be re-checked."
+  }
+}

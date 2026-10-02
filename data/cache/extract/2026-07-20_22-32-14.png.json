@@ -1,0 +1,252 @@
+{
+  "image": "2026-07-20_22-32-14.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:18:36.858Z",
+  "seconds": 29.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 3638,
+    "total_tokens": 6413,
+    "cost": 0.03984875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.03984875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.03638
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1820,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "មីគាវគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Seafood Wonton Noodle Soup",
+        "description_en": "Egg noodle soup with wontons and mixed seafood.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "soup",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "គុយទាវគាវគ្រឿងក្នុងជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Pork Offal Wonton Kuy Teav",
+        "description_en": "Rice noodle soup with wontons and pork offal (innards).",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មីគាវបាក់សៀប",
+        "name_printed_latin": null,
+        "name_en": "Meatball Wonton Noodle Soup",
+        "description_en": "Egg noodle soup with wontons and meatballs (typically pork).",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "គុយទាវបាក់សៀបសុទ្ធ",
+        "name_printed_latin": null,
+        "name_en": "Kuy Teav with Sliced Pork",
+        "description_en": "Rice noodle soup with only sliced pork. 'Bak Sieb' in this context refers to the sliced pork, and 'Sot' means 'only'.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "3 $",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "គុយទាវគាវសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Beef Wonton Kuy Teav",
+        "description_en": "Rice noodle soup with wontons and sliced beef.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រីចៀនជូអែម",
+        "name_printed_latin": null,
+        "name_en": "Sweet and Sour Fried Fish",
+        "description_en": "Fried fish topped with a sweet and sour sauce, pineapple, and other vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "fish",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2.50$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(10000៛)",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

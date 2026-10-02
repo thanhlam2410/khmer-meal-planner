@@ -1,0 +1,125 @@
+{
+  "image": "2026-07-20_22-23-50.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:17.116Z",
+  "seconds": 22.7,
+  "usage": {
+    "prompt_tokens": 6024,
+    "completion_tokens": 1711,
+    "total_tokens": 7735,
+    "cost": 0.058316,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.058316,
+      "upstream_inference_prompt_cost": 0.024096,
+      "upstream_inference_completions_cost": 0.03422
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 487,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-23-50#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#003",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The label reads បាយផាក់ឡូ, with no final វ. Pak lov is braised five-spice pork, so the pork category fits; the egg/soup tags are plausible. No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-23-50#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": false,
+        "correct_prices": null,
+        "note": "ក្រឡុក here means beaten or scrambled, so this is a scrambled duck egg (omelette), as the photo shows. It is not balut, which is ពងទាកូន. Suggested name_en: 'Scrambled Duck Egg'. The category should be 'egg', not 'snack'. No price is printed."
+      },
+      {
+        "id": "2026-07-20_22-23-50#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      },
+      {
+        "id": "2026-07-20_22-23-50#009",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "No price is printed for this item."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All 9 printed items were captured, and the menu shows no prices, so empty price lists are correct. Two items need correcting: #003 should be spelled បាយផាក់ឡូ without the final វ, and #006 is a scrambled duck egg rather than balut, so its category should be 'egg'."
+  }
+}

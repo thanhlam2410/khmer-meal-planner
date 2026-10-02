@@ -1,0 +1,558 @@
+{
+  "image": "2026-07-21_11-16-25.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:24:17.593Z",
+  "seconds": 74.6,
+  "usage": {
+    "prompt_tokens": 2259,
+    "completion_tokens": 10230,
+    "total_tokens": 12489,
+    "cost": 0.10512375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.10512375,
+      "upstream_inference_prompt_cost": 0.00282375,
+      "upstream_inference_completions_cost": 0.1023
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5426,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ភោជនីយដ្ឋាន រាត្រីបាត់ដំបង",
+      "name_en": "Reatry Battambong Restaurant",
+      "visible": true
+    },
+    "image_quality": "fair",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "សាច់មាន់, សាច់ត្រី, សាច់ជ្រូក, សាច់គោឆាខ្ញី",
+        "name_printed_latin": "Fried chicken - Fish - Pork - Beef With Ginger",
+        "name_en": "Stir-fried Chicken, Fish, Pork, or Beef with Ginger",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "chicken",
+          "fish",
+          "pork",
+          "beef",
+          "fried"
+        ],
+        "prices": [],
+        "confidence": 0.8,
+        "notes": "Prices for both small and large plates are completely obscured by handwriting and are unreadable."
+      },
+      {
+        "name_km": "ឆាមឹកស្រស់",
+        "name_printed_latin": "Fried Squid With light peppers",
+        "name_en": "Stir-fried Fresh Squid with Light Peppers",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "2.50$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "4.50$",
+            "amount": 4.5,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The Khmer name is slightly blurry but legible."
+      },
+      {
+        "name_km": "ឆាលិង្គគោបន្លែគ្រប់មុខ",
+        "name_printed_latin": "Stir fried beef bull penis with vegetable",
+        "name_en": "Stir-fried Beef Penis with Vegetables",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "beef",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The Khmer name is difficult to read, but inferred from the clear English translation printed next to it."
+      },
+      {
+        "name_km": "ឡុកឡាក់សាច់គោ, សាច់ជ្រូក, សាច់មាន់, សាច់ត្រី",
+        "name_printed_latin": "Fried lok lak beef pork chicken fish",
+        "name_en": "Lok Lak with Beef, Pork, Chicken, or Fish",
+        "description_en": "A classic Cambodian stir-fry dish, typically served with rice and a fried egg.",
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "beef",
+          "pork",
+          "chicken",
+          "fish",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.8,
+        "notes": "Price for small plate is crossed out and unreadable."
+      },
+      {
+        "name_km": "ឆាក្តៅ (គ្រឿង, ព្រៃ) សាច់គោ, សាច់ជ្រូក, សាច់មាន់, សាច់ទា, អន្ទង់, កង្កែប",
+        "name_printed_latin": null,
+        "name_en": "Spicy Stir-fry (Kroeung or Wild Style) with Beef, Pork, Chicken, Duck, Eel, or Frog",
+        "description_en": "'Cha Kdao' is a spicy stir-fry. 'Kroeung' refers to a lemongrass paste, 'Prey' means wild style.",
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "spicy",
+          "fried",
+          "beef",
+          "pork",
+          "chicken",
+          "duck",
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.8,
+        "notes": "Price for small plate is crossed out and unreadable."
+      },
+      {
+        "name_km": "ឆាកែងសាច់គោ, សាច់ជ្រូក, សាច់មាន់",
+        "name_printed_latin": "Fired Beef pork chicken",
+        "name_en": "Stir-fried 'Kaeng' with Beef, Pork, or Chicken",
+        "description_en": "'Cha Kaeng' is a type of stir-fry, often with a slightly sour and spicy flavor profile.",
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "beef",
+          "pork",
+          "chicken",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "4.5$",
+            "amount": 4.5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាឆ្អឹងជំនីជ្រូកជូរអែម",
+        "name_printed_latin": null,
+        "name_en": "Sweet and Sour Stir-fried Pork Ribs",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "pork",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាក្រវ៉ាញសាច់គោ, សាច់ជ្រូក, សាច់ត្រី, អន្ទង់",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Cardamom with Beef, Pork, Fish, or Eel",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "beef",
+          "pork",
+          "fish",
+          "seafood",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់គោ, សាច់ជ្រូកឆាប៉េងប៉ោះ",
+        "name_printed_latin": "Beef pork fried tomatoes",
+        "name_en": "Stir-fried Beef or Pork with Tomatoes",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "beef",
+          "pork",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [],
+        "confidence": 0.8,
+        "notes": "Prices for both small and large plates are crossed out and unreadable."
+      },
+      {
+        "name_km": "សាច់គោ, សាច់ជ្រូក, ឆាផ្កាខាត់ណា",
+        "name_printed_latin": "Beef pork fried cauliflower chili",
+        "name_en": "Stir-fried Beef or Pork with Cauliflower and Chili",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "beef",
+          "pork",
+          "fried",
+          "vegetables",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "Printed prices are crossed out but still legible."
+      },
+      {
+        "name_km": "ផ្សិតចំបើងឆាសាច់គោ, សាច់មាន់, សាច់ជ្រូក, សាច់ត្រី",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Straw Mushrooms with Beef, Chicken, Pork, or Fish",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "other",
+        "tags": [
+          "vegetables",
+          "beef",
+          "chicken",
+          "pork",
+          "fish",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "4.00$",
+            "amount": 4,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "6.00$",
+            "amount": 6,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោះតាន់ឆាស្ពៃជូរ",
+        "name_printed_latin": "Intestines with vegetable",
+        "name_en": "Stir-fried Pork Intestine with Pickled Greens",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "pork",
+        "tags": [
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The English name 'Intestines with vegetable' is printed on this line and seems to be a general description for the following few items."
+      },
+      {
+        "name_km": "ឆាគ្រឿងពោះតាន់",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Pork Intestine with Kroeung",
+        "description_en": "Kroeung is a Cambodian spice paste.",
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "pork",
+        "tags": [
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោះតាន់ឆាម្រេចខ្ចី",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Pork Intestine with Green Peppercorns",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "pork",
+        "tags": [
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោះតាន់ឆាប្រៃផ្អែម",
+        "name_printed_latin": null,
+        "name_en": "Salty and Sweet Stir-fried Pork Intestine",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "pork",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "5.00$",
+            "amount": 5,
+            "currency": "USD",
+            "variant_km": "ចានតូច",
+            "variant_en": "small plate",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "7.00$",
+            "amount": 7,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បន្លែពិសេស",
+        "name_printed_latin": "Fried special vegetable",
+        "name_en": "Special Fried Vegetables",
+        "description_en": null,
+        "section_km": "ម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "fried",
+          "vegetables",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "8.00$",
+            "amount": 8,
+            "currency": "USD",
+            "variant_km": "ចានធំ",
+            "variant_en": "large plate",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Only one price is listed, in the 'large plate' column."
+      }
+    ]
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "image": "2026-07-20_22-33-49.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:20:15.428Z",
+  "seconds": 47.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 5571,
+    "total_tokens": 8346,
+    "cost": 0.05917875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05917875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.05571
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2667,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "មុខម្ហូបឆា",
+      "name_en": "Mukh Mhoub Chha",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ឆាផ្សិតភ្លៅមាន់ប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried King Oyster Mushroom with Oyster Sauce",
+        "description_en": "The Khmer name 'phset phlau mean' translates to 'chicken thigh mushroom', a common name for King Oyster Mushroom.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាកាឆែតប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Oyster Sauce",
+        "description_en": null,
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាកាឆែតសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Beef",
+        "description_en": null,
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាក្រសាំងទៀបសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Watercress with Beef",
+        "description_en": null,
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រកួនប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Morning Glory with Oyster Sauce",
+        "description_en": "Also known as water spinach.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រកួនសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Morning Glory with Beef",
+        "description_en": "Also known as water spinach.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាខាត់ណាប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Kailan with Oyster Sauce",
+        "description_en": "Kailan is also known as Chinese broccoli.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាខាត់ណាសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Kailan with Beef",
+        "description_en": "Kailan is also known as Chinese broccoli.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាផ្សិតម្ជុលប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Enoki Mushroom with Oyster Sauce",
+        "description_en": "The Khmer name 'phset mchul' translates to 'needle mushroom'.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាពោតបារាំងប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Okra with Oyster Sauce",
+        "description_en": "The Khmer name 'pot barang' literally translates to 'French corn'.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាស្ពៃតឿប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Bok Choy with Oyster Sauce",
+        "description_en": "The Khmer name 'spey toea' translates to 'dwarf cabbage'.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The price is slightly worn but appears to be 10000៛."
+      },
+      {
+        "name_km": "ឆាស្ពៃបូកគោប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Napa Cabbage with Oyster Sauce",
+        "description_en": "The Khmer name 'spey bokor' refers to Napa cabbage.",
+        "section_km": "មុខម្ហូបឆា",
+        "section_en": "Stir-fried Dishes",
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

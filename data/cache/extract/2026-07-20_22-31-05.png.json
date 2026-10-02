@@ -1,0 +1,246 @@
+{
+  "image": "2026-07-20_22-31-05.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:17:48.572Z",
+  "seconds": 34.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 4322,
+    "total_tokens": 7097,
+    "cost": 0.04668875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.04668875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.04322
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2541,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "បាយភ្លៅមាន់ចៀន",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Thigh with Rice",
+        "description_en": "A dish of steamed rice served with a whole fried chicken thigh, typically accompanied by a small soup and dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried",
+          "rice"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរស្ពៃចង្កឹះសាច់ជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Water Spinach Stem and Pork Soup",
+        "description_en": "A clear soup made with pork slices and the stems of water spinach.",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "pork",
+          "soup",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរស្ពៃបូកគោសាច់ចិញ្ច្រាំ",
+        "name_printed_latin": null,
+        "name_en": "Napa Cabbage Soup with Minced Meat",
+        "description_en": "A simple soup with napa cabbage and minced meat (likely pork).",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "pork",
+          "soup",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The image shows minced pork, which is common for this dish."
+      },
+      {
+        "name_km": "ឆាក្រអៅឈូកសាច់ជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Lotus Root with Pork",
+        "description_en": "Sliced lotus root stir-fried with pieces of pork.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្ងោរជ្រក់សាច់មាន់",
+        "name_printed_latin": null,
+        "name_en": "Sour Chicken Soup",
+        "description_en": "A traditional Cambodian sour soup with chicken, often flavored with lemongrass, galangal, and lime.",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "chicken",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "2.50$",
+            "amount": 2.5,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(10000៛)",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាម្ទេសប្លោកសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Beef with Bell Pepper",
+        "description_en": "Sliced beef stir-fried with bell peppers and other vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

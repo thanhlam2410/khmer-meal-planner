@@ -1,0 +1,185 @@
+{
+  "image": "2026-07-20_22-24-59.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:11:36.558Z",
+  "seconds": 24.8,
+  "usage": {
+    "prompt_tokens": 5877,
+    "completion_tokens": 2462,
+    "total_tokens": 8339,
+    "cost": 0.072748,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.072748,
+      "upstream_inference_prompt_cost": 0.023508,
+      "upstream_inference_completions_cost": 0.04924
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 820,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-24-59#001",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#003",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as គ្រុំអាំង. The extraction dropped the ុ vowel."
+      },
+      {
+        "id": "2026-07-20_22-24-59#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Item 24, per plate."
+      },
+      {
+        "id": "2026-07-20_22-24-59#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Item 25, sold by the half kilo."
+      },
+      {
+        "id": "2026-07-20_22-24-59#008",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as អ័យស្ទ័យ (Oyster). The extraction wrote the second syllable as ស្ទួយ instead of ស្ទ័យ."
+      },
+      {
+        "id": "2026-07-20_22-24-59#009",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as អ័យស្ទ័យអាំង (Oyster). The extraction wrote ស្ទួយ instead of ស្ទ័យ."
+      },
+      {
+        "id": "2026-07-20_22-24-59#010",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as អ័យស្ទ័យទឹកកក. The extraction used subscript វ (ស្វ័យ) instead of ទ (ស្ទ័យ)."
+      },
+      {
+        "id": "2026-07-20_22-24-59#011",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The vowel under ហ is hard to read; it may be printed as លៀសហុល. The foil preparation in the English name is inferred from the photo."
+      },
+      {
+        "id": "2026-07-20_22-24-59#012",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#013",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Price uses the Khmer numeral ១ for the plate count."
+      },
+      {
+        "id": "2026-07-20_22-24-59#014",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-24-59#015",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Printed as នំប៉័ងប៊ឺ (butter = ប៊ឺ), not ប៊រ."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "All 15 items (menu numbers 19–33) are present, and every price and currency matches the image. Five items have minor Khmer spelling errors: the missing vowel in គ្រុំ, the oyster word misspelled across all three oyster items (it should be អ័យស្ទ័យ), and ប៊ឺ in the bread item. No printed items were missed."
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "image": "2026-07-20_22-47-26.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:21:37.376Z",
+  "seconds": 56.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 7286,
+    "total_tokens": 10061,
+    "cost": 0.07632875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.07632875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.07286
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3396,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": "Lilis",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ហ្វីពិសេសគ្រឿងក្នុងគោ",
+        "name_printed_latin": null,
+        "name_en": "Special Beef Offal",
+        "description_en": "A special dish featuring beef offal, likely a soup or hot pot.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "beef",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The word 'ហ្វី' is unusual and may refer to a specific style of dish, possibly related to pho."
+      },
+      {
+        "name_km": "ហ៊ូ",
+        "name_printed_latin": null,
+        "name_en": "Hu",
+        "description_en": null,
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "other",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.8,
+        "notes": "The meaning of 'ហ៊ូ' is unclear. It might be a specific dish name or a typo."
+      },
+      {
+        "name_km": "ស៊ុបក្ដាម",
+        "name_printed_latin": null,
+        "name_en": "Crab Soup",
+        "description_en": null,
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "seafood",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "10.000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបពងទាកូនពុះ (អាចរើសប្រភេទមីបាន)",
+        "name_printed_latin": null,
+        "name_en": "Boiling Balut Soup (can choose noodle type)",
+        "description_en": "Soup with balut (fertilized duck egg), with a choice of noodles.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "soup",
+        "tags": [
+          "egg",
+          "soup",
+          "noodle"
+        ],
+        "prices": [
+          {
+            "price_text": "9.000៛",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបពងទាកូនពុះសាច់ក្តាមម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Spicy Crab Meat and Balut Soup",
+        "description_en": "Soup with balut (fertilized duck egg) and spicy crab meat.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "soup",
+        "tags": [
+          "egg",
+          "seafood",
+          "spicy",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "15.000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបពងទាកូនពុះសាច់ក្តាមម្ទេស (បង្កង)",
+        "name_printed_latin": null,
+        "name_en": "Spicy Crayfish and Balut Soup",
+        "description_en": "Soup with balut (fertilized duck egg) and spicy crayfish.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "soup",
+        "tags": [
+          "egg",
+          "seafood",
+          "spicy",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "2.0000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "(បង្កង)",
+            "variant_en": "(Crayfish)",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "Price is written as '2.0000៛', which is interpreted as 20,000 KHR."
+      },
+      {
+        "name_km": "ពងទាកូន",
+        "name_printed_latin": null,
+        "name_en": "Balut",
+        "description_en": "Fertilized duck egg.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "egg",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "1.500៛",
+            "amount": 1500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មីស៊ុបពោះគោគ្រឿងក្នុងចម្រុះ",
+        "name_printed_latin": null,
+        "name_en": "Mixed Beef Tripe and Offal Noodle Soup",
+        "description_en": null,
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "noodle",
+        "tags": [
+          "beef",
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "9.000៛",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពង់ក្រចកូនដុត ឬបំពងម្សៅ",
+        "name_printed_latin": null,
+        "name_en": "Grilled or Fried Baby Horseshoe Crab",
+        "description_en": "Baby horseshoe crab, served either grilled or battered and fried.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "5.000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The first word 'ពង់' is likely a typo for 'ពង' (egg) or 'កូន' (baby), but the phrase refers to baby horseshoe crabs."
+      },
+      {
+        "name_km": "ខ្យង ខ្ចៅ ចំហុយ ឬដុត",
+        "name_printed_latin": null,
+        "name_en": "Steamed or Grilled Snails",
+        "description_en": "Snails (khyong, khjao), served either steamed or grilled.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "5.000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវស្រះ 1ចាន",
+        "name_printed_latin": null,
+        "name_en": "Pond Clams (1 plate)",
+        "description_en": null,
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "8.000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": "1ចាន",
+            "unit_en": "1 plate"
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "លៀសដុត អំពិលទុំ",
+        "name_printed_latin": null,
+        "name_en": "Grilled Clams with Ripe Tamarind",
+        "description_en": null,
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "5.000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតឆឹង (១ឈុត)",
+        "name_printed_latin": null,
+        "name_en": "Caramelized Meatballs (1 set)",
+        "description_en": "Meatballs stir-fried in a sweet and savory caramelized sauce.",
+        "section_km": "អាហារពេលរសៀល (2:00PM - 9:00PM)",
+        "section_en": "Afternoon Food (2:00PM - 9:00PM)",
+        "category": "snack",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "12.000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": "(១ឈុត)",
+            "variant_en": "(1 set)",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កាហ្វេបូង",
+        "name_printed_latin": null,
+        "name_en": "Bong Coffee",
+        "description_en": "A type of coffee, possibly iced.",
+        "section_km": "មានលក់ទឹកក្រឡុក និងភេសជ្ជៈគ្រប់មុខ",
+        "section_en": "Shakes and all kinds of beverages available",
+        "category": "coffee_tea",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4.500៛",
+            "amount": 4500,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The meaning of 'បូង' is unclear, it may be a brand or style."
+      },
+      {
+        "name_km": "ទឹកក្រឡុក",
+        "name_printed_latin": null,
+        "name_en": "Fruit Shake",
+        "description_en": null,
+        "section_km": "មានលក់ទឹកក្រឡុក និងភេសជ្ជៈគ្រប់មុខ",
+        "section_en": "Shakes and all kinds of beverages available",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4.000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

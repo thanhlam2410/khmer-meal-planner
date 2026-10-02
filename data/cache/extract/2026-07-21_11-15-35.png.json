@@ -1,0 +1,274 @@
+{
+  "image": "2026-07-21_11-15-35.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:23:20.184Z",
+  "seconds": 37.6,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 4678,
+    "total_tokens": 7453,
+    "cost": 0.05024875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05024875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.04678
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2557,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "សាច់គោឥន្ទធនូ",
+        "name_printed_latin": null,
+        "name_en": "Rainbow Beef",
+        "description_en": "Beef rolls stuffed with vegetables, resembling a rainbow when sliced.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "beef",
+        "tags": [
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "16,000៛",
+            "amount": 16000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ងៀតក្របី",
+        "name_printed_latin": null,
+        "name_en": "Dried Buffalo Meat",
+        "description_en": "Sun-dried buffalo meat, typically served fried or grilled.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "beef",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់ខ្ទឹមសរ",
+        "name_printed_latin": null,
+        "name_en": "Chicken Feet with Garlic",
+        "description_en": "Fried or steamed chicken feet prepared with garlic.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រាវពិសេស",
+        "name_printed_latin": null,
+        "name_en": "Special Taro Cakes",
+        "description_en": "Fried cakes made from taro.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "vegetable",
+        "tags": [
+          "fried",
+          "vegetarian",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ជំពុះទាបំពងល្ងរ",
+        "name_printed_latin": null,
+        "name_en": "Fried Duck Beaks with Sesame",
+        "description_en": "Duck beaks fried until crispy and tossed with sesame seeds.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "duck",
+        "tags": [
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ភ្លាមឹកកន្លែចេក",
+        "name_printed_latin": null,
+        "name_en": "Squid Salad with Banana Blossom",
+        "description_en": "A sour and spicy Cambodian salad (phlea) with squid and shredded banana blossom.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "seafood",
+        "tags": [
+          "salad",
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "បុកសណ្ដែកត្រីឆ្អើរ",
+        "name_printed_latin": null,
+        "name_en": "Pounded Long Bean Salad with Smoked Fish",
+        "description_en": "A pounded salad (bok) made with long beans and flakes of smoked fish.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "fish",
+        "tags": [
+          "salad",
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "មឹកដើម",
+        "name_printed_latin": null,
+        "name_en": "Original Squid",
+        "description_en": "Grilled whole or sliced squid.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "seafood",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      },
+      {
+        "name_km": "ប្រហិតសំបុកចាប",
+        "name_printed_latin": null,
+        "name_en": "Bird's Nest Meatball",
+        "description_en": "A dish of fried fish paste or meatballs arranged to look like a bird's nest, often using fried tofu skin or taro.",
+        "section_km": "ម្ហូបប្រចាំហាង",
+        "section_en": "Best Seller",
+        "category": "fish",
+        "tags": [
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.98,
+        "notes": null
+      }
+    ]
+  }
+}

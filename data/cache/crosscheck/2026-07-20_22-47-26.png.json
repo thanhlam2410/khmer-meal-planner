@@ -1,0 +1,185 @@
+{
+  "image": "2026-07-20_22-47-26.png",
+  "model": "anthropic/claude-opus-5.5",
+  "checked_at": "2026-10-02T04:26:52.841Z",
+  "seconds": 35.7,
+  "usage": {
+    "prompt_tokens": 6181,
+    "completion_tokens": 3395,
+    "total_tokens": 9576,
+    "cost": 0.092624,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.092624,
+      "upstream_inference_prompt_cost": 0.024724,
+      "upstream_inference_completions_cost": 0.0679
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1322,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "items": [
+      {
+        "id": "2026-07-20_22-47-26#001",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The first word is printed as ហ៊ូ, the same glyph as the next line. It is not ហ្វី. The name should be ហ៊ូពិសេសគ្រឿងក្នុងគោ, which means 'Special Hu (noodle soup) with Beef Offal'. Category 'noodle' would also fit."
+      },
+      {
+        "id": "2026-07-20_22-47-26#002",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": false,
+        "correct_prices": null,
+        "note": "Hu (hu tieu) is a noodle soup. The category should be 'noodle' with the tag 'soup', not 'other'. 'Hu Tieu Noodle Soup' would be a clearer English name."
+      },
+      {
+        "id": "2026-07-20_22-47-26#003",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#004",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "'Balut Soup (can choose noodle type)' is adequate. The word 'Boiling' for ពុះ is questionable."
+      },
+      {
+        "id": "2026-07-20_22-47-26#005",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#006",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The price is printed as '2.0000៛', which is likely a typo for 20.000៛. An amount of 20000 is a reasonable reading. បង្កង is usually rendered as lobster or giant prawn."
+      },
+      {
+        "id": "2026-07-20_22-47-26#007",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#008",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#009",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The print reads ពងក្រចកូនដុត ឬបំពងម្សៅ, with no bantoc on ពង. The extraction added a spurious ់."
+      },
+      {
+        "id": "2026-07-20_22-47-26#010",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "Could add a 'steamed' tag."
+      },
+      {
+        "id": "2026-07-20_22-47-26#011",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#012",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": null
+      },
+      {
+        "id": "2026-07-20_22-47-26#013",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "ប្រហិត generally refers to fish or meat balls. The translation is acceptable."
+      },
+      {
+        "id": "2026-07-20_22-47-26#014",
+        "exists": true,
+        "name_km_ok": false,
+        "translation_ok": false,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The print reads កាហ្វេដូង, which means Coconut Coffee. It does not read កាហ្វេបូង."
+      },
+      {
+        "id": "2026-07-20_22-47-26#015",
+        "exists": true,
+        "name_km_ok": true,
+        "translation_ok": true,
+        "price_ok": true,
+        "category_ok": true,
+        "correct_prices": null,
+        "note": "The price is partly obscured by the gallery button, but 4.000៛ is legible."
+      }
+    ],
+    "missing_items": [],
+    "overall_comment": "The extraction captured all 15 priced items, and every price is correct. Two items were misread: item 1 (ហ៊ូ, not ហ្វី) and item 14 (កាហ្វេដូង, coconut coffee). Item 9 has an extra diacritic. Item 2 should be categorized as a noodle soup. The line 'មានលក់ទឹកក្រឡុក និងភេសជ្ជៈគ្រប់មុខ' is a section header, not an item."
+  }
+}

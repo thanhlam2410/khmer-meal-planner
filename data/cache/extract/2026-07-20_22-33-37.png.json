@@ -1,0 +1,340 @@
+{
+  "image": "2026-07-20_22-33-37.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:20:02.375Z",
+  "seconds": 38.5,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 4998,
+    "total_tokens": 7773,
+    "cost": 0.05344875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05344875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.04998
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2290,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ជ្រក់ជើងទា",
+        "name_printed_latin": null,
+        "name_en": "Pickled Duck Feet Salad",
+        "description_en": "A sour and spicy salad made with duck feet.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "duck",
+        "tags": [
+          "salad"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជ្រក់ជើងមាន់",
+        "name_printed_latin": null,
+        "name_en": "Pickled Chicken Feet Salad",
+        "description_en": "A sour and spicy salad made with chicken feet.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "chicken",
+        "tags": [
+          "salad"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើង មាន់ ទឹក ស៊ី អ៊ីវ",
+        "name_printed_latin": null,
+        "name_en": "Chicken Feet with Soy Sauce",
+        "description_en": "Chicken feet cooked or marinated in soy sauce.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "chicken",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់គោអាំងទឹកកាពិ",
+        "name_printed_latin": null,
+        "name_en": "Grilled Beef with Fermented Shrimp Paste Dip",
+        "description_en": "Slices of grilled beef served with a dipping sauce made from fermented shrimp paste.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "beef",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោតបំពងឬពោតលីង",
+        "name_printed_latin": null,
+        "name_en": "Fried Corn or Roasted Corn",
+        "description_en": "Corn kernels that are either deep-fried or roasted.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "vegetable",
+        "tags": [
+          "fried",
+          "snack",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមប្រៃសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Salted Sea Crab Salad",
+        "description_en": "A salad-like dish made with preserved salted sea crabs, often spicy and sour.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "seafood",
+        "tags": [
+          "salad"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ខ្យងអប់",
+        "name_printed_latin": null,
+        "name_en": "Steamed Snails",
+        "description_en": "Snails steamed in a pot, often with herbs like lemongrass.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ព្រុយត្រីអាំង",
+        "name_printed_latin": null,
+        "name_en": "Grilled Fish Fins",
+        "description_en": "Fish fins, likely from a larger fish, grilled and served as a snack.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "fish",
+        "tags": [
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពងទាបិសាច",
+        "name_printed_latin": null,
+        "name_en": "\"Demon\" Duck Eggs",
+        "description_en": "A dish with duck eggs, likely prepared in a spicy or intensely flavored sauce.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "egg",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស៊ុបពងទាកូន",
+        "name_printed_latin": null,
+        "name_en": "Fertilized Duck Egg Soup (Balut Soup)",
+        "description_en": "A soup made with balut (fertilized duck embryo).",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "egg",
+        "tags": [
+          "soup"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កំពិស បំពង ឬ លីង",
+        "name_printed_latin": null,
+        "name_en": "Fried or Roasted Small Shrimp",
+        "description_en": "Small shrimp (krill-like) that are either deep-fried until crispy or roasted.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "seafood",
+        "tags": [
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បាយឆាឡុកឡាក់",
+        "name_printed_latin": null,
+        "name_en": "Fried Rice with Lok Lak",
+        "description_en": "A plate of fried rice served with stir-fried meat (Lok Lak style), often topped with a fried egg.",
+        "section_km": "មុខម្ហូបផ្សែងៗ",
+        "section_en": "Various Dishes",
+        "category": "rice",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

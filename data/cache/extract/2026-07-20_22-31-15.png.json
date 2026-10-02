@@ -1,0 +1,255 @@
+{
+  "image": "2026-07-20_22-31-15.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:18:05.973Z",
+  "seconds": 39.8,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 5003,
+    "total_tokens": 7778,
+    "cost": 0.05349875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05349875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.05003
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3196,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ឆាខ្ញីសាច់ជ្រូក",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Pork with Ginger",
+        "description_en": "Pork stir-fried with fresh ginger and vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2$",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាផ្កាខាត់ណាសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Beef with Cauliflower",
+        "description_en": "Beef stir-fried with cauliflower and other vegetables like carrots.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2 $",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រកួនប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Morning Glory with Oyster Sauce",
+        "description_en": "Water spinach stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "2.00$",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ម្ជូរស្រែត្រី",
+        "name_printed_latin": null,
+        "name_en": "Countryside Sour Soup with Fish",
+        "description_en": "A traditional Cambodian sour soup with fish and greens.",
+        "section_km": null,
+        "section_en": null,
+        "category": "soup",
+        "tags": [
+          "fish",
+          "soup",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "2$",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រសក់+ប៉េងប៉ោះគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Cucumber and Tomato with Seafood",
+        "description_en": "Seafood, primarily squid, stir-fried with cucumber and tomato.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "fried",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "3$",
+            "amount": 3,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(12000៛)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាម្រេចស្រស់សាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Beef with Fresh Pepper",
+        "description_en": "Beef stir-fried with fresh green peppercorns and red chili.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "fried",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "2$",
+            "amount": 2,
+            "currency": "USD",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "(8000៛)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

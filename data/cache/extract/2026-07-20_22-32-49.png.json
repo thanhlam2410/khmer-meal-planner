@@ -1,0 +1,356 @@
+{
+  "image": "2026-07-20_22-32-49.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:19:28.109Z",
+  "seconds": 51.3,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6637,
+    "total_tokens": 9412,
+    "cost": 0.06983875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06983875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06637
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3772,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "ម្ហូប បុប្ផា",
+      "name_en": "Mhoub Bopha",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ឆាផ្សិតភ្លៅមាន់ប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Chicken Thigh Mushroom with Oyster Sauce",
+        "description_en": "A stir-fried dish featuring 'chicken thigh' mushrooms (a type of mushroom) with oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "The restaurant name is partially obscured by glare but appears to be 'ម្ហូប បុប្ផា' (Mhoub Bopha)."
+      },
+      {
+        "name_km": "ឆាកាឆែតប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Oyster Sauce",
+        "description_en": "Water mimosa, a crunchy aquatic vegetable, stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាកាឆែតសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Water Mimosa with Beef",
+        "description_en": "Water mimosa, a crunchy aquatic vegetable, stir-fried with slices of beef.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាក្រសាំងទៀបសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Wild Culantro with Beef",
+        "description_en": "Beef stir-fried with wild culantro, a fragrant herb also known as sawtooth coriander.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រកួនប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Morning Glory with Oyster Sauce",
+        "description_en": "Morning glory (water spinach) stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាត្រកួនសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Morning Glory with Beef",
+        "description_en": "Morning glory (water spinach) stir-fried with slices of beef.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាខាត់ណាប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Kailan with Oyster Sauce",
+        "description_en": "Kailan (Chinese broccoli) stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាខាត់ណាសាច់គោ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Kailan with Beef",
+        "description_en": "Kailan (Chinese broccoli) stir-fried with slices of beef.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "beef",
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាផ្សិតម្ជុលប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Enoki Mushroom with Oyster Sauce",
+        "description_en": "Enoki mushrooms stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាពោតបារាំងប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Baby Corn with Oyster Sauce",
+        "description_en": "Baby corn stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆាស្ពៃតឿប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Baby Bok Choy with Oyster Sauce",
+        "description_en": "Baby bok choy stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "This item is numbered 41."
+      },
+      {
+        "name_km": "ឆាស្ពៃបូកគោប្រេងខ្យង",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Napa Cabbage with Oyster Sauce",
+        "description_en": "Napa cabbage stir-fried in oyster sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "This item is numbered 42 in the text, but the number in the red box above the image is 41."
+      }
+    ]
+  }
+}

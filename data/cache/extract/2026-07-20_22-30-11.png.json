@@ -1,0 +1,2055 @@
+{
+  "image": "2026-07-20_22-30-11.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:18:38.798Z",
+  "seconds": 154.7,
+  "usage": {
+    "prompt_tokens": 4323,
+    "completion_tokens": 22442,
+    "total_tokens": 26765,
+    "cost": 0.22982375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.22982375,
+      "upstream_inference_prompt_cost": 0.00540375,
+      "upstream_inference_completions_cost": 0.22442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5071,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": "The Street Cambodia TK branch",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "អយស្ទ័រទឹកដោះគោក្រឡុក",
+        "name_printed_latin": null,
+        "name_en": "Oyster Milkshake",
+        "description_en": "A savory and creamy drink made with oysters and milk, shaken.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 20,000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 40,000៛",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "កំពឹសលោត",
+        "name_printed_latin": null,
+        "name_en": "Jumping Shrimp",
+        "description_en": "A spicy salad made with live small freshwater shrimp.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "បង្កងកូនកាត់",
+        "name_printed_latin": null,
+        "name_en": "Hybrid Crayfish",
+        "description_en": "A dish featuring a type of crayfish or small lobster.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "គ. 20,000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 40,000៛",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ភ្លាបង្គា",
+        "name_printed_latin": null,
+        "name_en": "Shrimp Salad",
+        "description_en": "A Khmer-style salad with shrimp, herbs, and a tangy dressing.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ក្តាមសេះហោះ",
+        "name_printed_latin": null,
+        "name_en": "Flying Horse Crab",
+        "description_en": "A spicy dish made with horse crab.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ភ្លាក្តាមសេះ",
+        "name_printed_latin": null,
+        "name_en": "Horse Crab Salad",
+        "description_en": "A Khmer-style salad with horse crab, herbs, and a tangy dressing.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "អ័យស្ទ័រស្រស់ 8-10គ្រាប់ (ជប៉ុន)",
+        "name_printed_latin": null,
+        "name_en": "Fresh Oysters 8-10 pcs (Japanese)",
+        "description_en": "A platter of 8 to 10 fresh Japanese oysters.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 60,000៛",
+            "amount": 60000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible."
+      },
+      {
+        "name_km": "អ័យស្ទ័រស្រស់ 4-6គ្រាប់ធំ (ជប៉ុន)",
+        "name_printed_latin": null,
+        "name_en": "Fresh Oysters 4-6 large pcs (Japanese)",
+        "description_en": "A platter of 4 to 6 large fresh Japanese oysters.",
+        "section_km": null,
+        "section_en": "Special Dishes",
+        "category": "seafood",
+        "tags": [
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 60,000៛",
+            "amount": 60000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The section header is not visible. The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ជើងមាន់ក្រឡុកទឹកភ្នែក",
+        "name_printed_latin": null,
+        "name_en": "Crying Chicken Feet Salad",
+        "description_en": "A spicy salad made with chicken feet, literally 'chicken feet shaken with tears'.",
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "chicken",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 16,000៛",
+            "amount": 16000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ក្តាមប្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Salted Crab",
+        "description_en": "A dish of preserved, salted crab.",
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "មឹកក្រឡុក",
+        "name_printed_latin": null,
+        "name_en": "Shaken Squid",
+        "description_en": "Squid shaken with spices and herbs.",
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ញាំដៃមឹកយក្ស ទឹកកាពិ",
+        "name_printed_latin": null,
+        "name_en": "Giant Squid Tentacle Salad with Shrimp Paste Sauce",
+        "description_en": null,
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ញាំងាវទឹកកាពិ",
+        "name_printed_latin": null,
+        "name_en": "Clam Salad with Shrimp Paste Sauce",
+        "description_en": null,
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 15,000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 30,000៛",
+            "amount": 30000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "ជ្រក់ជើងទា",
+        "name_printed_latin": null,
+        "name_en": "Pickled Duck Feet",
+        "description_en": null,
+        "section_km": "ម្ហូបជ្រក់",
+        "section_en": "Pickled Dishes",
+        "category": "duck",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "គ. 20,000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 40,000៛",
+            "amount": 40000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "បាយឆាគ្រឿងសមុទ្រ",
+        "name_printed_latin": null,
+        "name_en": "Seafood Fried Rice",
+        "description_en": null,
+        "section_km": "បាយ",
+        "section_en": "Rice Dishes",
+        "category": "rice",
+        "tags": [
+          "seafood"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 24,000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "បាយឆាយ៉ាងចូវ",
+        "name_printed_latin": null,
+        "name_en": "Yang Chow Fried Rice",
+        "description_en": null,
+        "section_km": "បាយ",
+        "section_en": "Rice Dishes",
+        "category": "rice",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "គ. 12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 24,000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "បាយស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Rice",
+        "description_en": null,
+        "section_km": "បាយ",
+        "section_en": "Rice Dishes",
+        "category": "rice",
+        "tags": [
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "1,000៛",
+            "amount": 1000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "ដំឡូងបំពង",
+        "name_printed_latin": null,
+        "name_en": "French Fries",
+        "description_en": null,
+        "section_km": "បាយ",
+        "section_en": "Rice Dishes",
+        "category": "snack",
+        "tags": [
+          "fried",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "គ. 5,000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": "គ.",
+            "variant_en": "small",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ធ. 10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ធ.",
+            "variant_en": "large",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "Item is partially obscured by a 'Google Maps' logo."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue The Street",
+        "name_en": "Blue The Street",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "14,000៛",
+            "amount": 14000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Mojito",
+        "name_en": "Mojito",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "White Margarita",
+        "name_en": "White Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Margarita",
+        "name_en": "Blue Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Pink Margarita",
+        "name_en": "Pink Margarita",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Long Island",
+        "name_en": "Long Island",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger Margarita",
+        "name_en": "Tiger Margarita",
+        "description_en": "(Strawberry, Passion, Blue)",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "20,000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Cruiser Margarita",
+        "name_en": "Cruiser Margarita",
+        "description_en": "(Strawberry, Passion, Blue)",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "24,000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Rainbow",
+        "name_en": "Rainbow",
+        "description_en": "(Blue, Pink, Yellow, Green Purple)",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "14,000៛",
+            "amount": 14000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue / Pink Petro",
+        "name_en": "Blue / Pink Petro",
+        "description_en": "A large format cocktail, likely for sharing.",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "24,000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Yellow / Green Petro",
+        "name_en": "Yellow / Green Petro",
+        "description_en": "A large format cocktail, likely for sharing.",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "24,000៛",
+            "amount": 24000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "The ឱទិន",
+        "name_printed_latin": null,
+        "name_en": "The Oun Tin",
+        "description_en": "(Pink, Yellow, Green, Purple)",
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic",
+          "shared_platter"
+        ],
+        "prices": [
+          {
+            "price_text": "60,000៛",
+            "amount": 60000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "The Steet RGB",
+        "name_en": "The Street RGB",
+        "description_en": null,
+        "section_km": "ស្រាក្រឡុក",
+        "section_en": "Cocktails",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "12,000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Strawberry Smoothie",
+        "name_en": "Strawberry Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Passion Smoothie",
+        "name_en": "Passion Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Orange Smoothie",
+        "name_en": "Orange Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Melon Smoothie",
+        "name_en": "Melon Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Berry Smoothie",
+        "name_en": "Blueberry Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Kiwi Smoothie",
+        "name_en": "Kiwi Smoothie",
+        "description_en": null,
+        "section_km": null,
+        "section_en": "Smoothie",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "8,000៛",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Strawberry Soda",
+        "name_en": "Strawberry Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Passion Soda",
+        "name_en": "Passion Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Orange Soda",
+        "name_en": "Orange Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Melon Soda",
+        "name_en": "Melon Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Blue Berry Soda",
+        "name_en": "Blueberry Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Kiwi Soda",
+        "name_en": "Kiwi Soda",
+        "description_en": null,
+        "section_km": "អ៊ីតាលីសូដា",
+        "section_en": "Italian Soda",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Anchor Beer",
+        "name_en": "Anchor Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 5,000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Singha Beer",
+        "name_en": "Singha Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 7,000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "ABC Beer",
+        "name_en": "ABC Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 7,000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 9,000៛",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger Can",
+        "name_en": "Tiger Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 6,000៛",
+            "amount": 6000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Tiger Crystal Light",
+        "name_en": "Tiger Crystal Light",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 7,000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Angkor Beer",
+        "name_en": "Angkor Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 3,500៛",
+            "amount": 3500,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 5,000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Cambodia Beer",
+        "name_en": "Cambodia Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 3,500៛",
+            "amount": 3500,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 5,000៛",
+            "amount": 5000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Hanuman Beer",
+        "name_en": "Hanuman Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          },
+          {
+            "price_text": "ដប 7,000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Krud Beer",
+        "name_en": "Krud Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "កំប៉ុង 4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": "កំប៉ុង",
+            "variant_en": "can",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Henieken Beer",
+        "name_en": "Heineken Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "ដប 7,000៛",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "Name is misspelled as 'Henieken' on the menu."
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Vodka Cruiser",
+        "name_en": "Vodka Cruiser",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "alcohol",
+        "tags": [
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "ដប 10,000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Guinness beer",
+        "name_en": "Guinness Beer",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "ដប 9,000៛",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": "ដប",
+            "variant_en": "bottle",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Singha Beer Big Bottle ដបធំ (ថៃ)",
+        "name_en": "Singha Beer Big Bottle (Thai)",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "ដប 13,000៛",
+            "amount": 13000,
+            "currency": "KHR",
+            "variant_km": "ដបធំ (ថៃ)",
+            "variant_en": "Big Bottle (Thai)",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Chang Beer big Bottle ដបធំ (ថៃ)",
+        "name_en": "Chang Beer Big Bottle (Thai)",
+        "description_en": null,
+        "section_km": "ស្រាបៀរ",
+        "section_en": "Beer",
+        "category": "beer",
+        "tags": [
+          "beer",
+          "drink",
+          "alcoholic"
+        ],
+        "prices": [
+          {
+            "price_text": "ដប 13,000៛",
+            "amount": 13000,
+            "currency": "KHR",
+            "variant_km": "ដបធំ (ថៃ)",
+            "variant_en": "Big Bottle (Thai)",
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Coca-cola",
+        "name_en": "Coca-Cola",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "pepsi",
+        "name_en": "Pepsi",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Sprite",
+        "name_en": "Sprite",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Fanta",
+        "name_en": "Fanta",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Aquarius",
+        "name_en": "Aquarius",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "Sting (លឿង/ក្រហម)",
+        "name_printed_latin": "Sting",
+        "name_en": "Sting (Yellow/Red)",
+        "description_en": "Energy drink, available in yellow or red flavors.",
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Vigor",
+        "name_en": "Vigor",
+        "description_en": "Energy drink.",
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "soft_drink",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "3,000៛",
+            "amount": 3000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "Fuze Tea (តែក្រូចឆ្មាស្លឹកគ្រៃ)",
+        "name_printed_latin": "Fuze Tea",
+        "name_en": "Fuze Tea (Lemongrass Lemon Tea)",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "coffee_tea",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "",
+        "name_printed_latin": "Oishi",
+        "name_en": "Oishi",
+        "description_en": "Brand of bottled green tea.",
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "coffee_tea",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "តែត្រជាក់ចិន",
+        "name_printed_latin": null,
+        "name_en": "Cold Chinese Tea",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "coffee_tea",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The currency symbol is printed like a Yen symbol but is intended to be Riel."
+      },
+      {
+        "name_km": "តែក្រូចឆ្មារ",
+        "name_printed_latin": null,
+        "name_en": "Lemon Tea",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "coffee_tea",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "ទឹកត្រចៀកក្រាញ់",
+        "name_printed_latin": null,
+        "name_en": "Pennywort Juice",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "juice",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "4,000៛",
+            "amount": 4000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      },
+      {
+        "name_km": "ទឹកសុទ្ធ Dasani",
+        "name_printed_latin": null,
+        "name_en": "Dasani Purified Water",
+        "description_en": null,
+        "section_km": "ភេសជ្ជៈ",
+        "section_en": "Beverages",
+        "category": "water",
+        "tags": [
+          "drink"
+        ],
+        "prices": [
+          {
+            "price_text": "2,000៛",
+            "amount": 2000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": null
+      }
+    ]
+  }
+}

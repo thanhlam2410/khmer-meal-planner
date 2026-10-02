@@ -1,0 +1,344 @@
+{
+  "image": "2026-07-20_22-33-16.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:19:42.722Z",
+  "seconds": 50.9,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6414,
+    "total_tokens": 9189,
+    "cost": 0.06760875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06760875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06414
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3708,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "មុខម្ហូប",
+      "name_en": "Mok Mhoup",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "ខ្យងអាំងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Snails with Salt and Chili",
+        "description_en": "Snails grilled in a dimpled pan, served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "grilled",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ខាត់ណាទឹកភ្នែក",
+        "name_printed_latin": null,
+        "name_en": "\"Tears\" Kale",
+        "description_en": "Stir-fried kale, likely very spicy, hence the name 'tears'.",
+        "section_km": null,
+        "section_en": null,
+        "category": "vegetable",
+        "tags": [
+          "vegetables",
+          "spicy",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ក្តាមប្រៃ",
+        "name_printed_latin": null,
+        "name_en": "Salted Crab",
+        "description_en": "Fermented or salted small crabs, often stir-fried with vegetables.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បាយក្តាំងពិសេស",
+        "name_printed_latin": null,
+        "name_en": "Special Crispy Rice",
+        "description_en": "Crispy scorched rice from the bottom of the pot, served with a savory topping.",
+        "section_km": null,
+        "section_en": null,
+        "category": "rice",
+        "tags": [
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "16000៛",
+            "amount": 16000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ត្រីអប់អំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Fish with Salt and Chili",
+        "description_en": "A whole fish steamed or baked, seasoned with salt and chili.",
+        "section_km": null,
+        "section_en": null,
+        "category": "fish",
+        "tags": [
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "20000៛",
+            "amount": 20000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ជើងមាន់បំពងខ្ទឹមស",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Feet with Garlic",
+        "description_en": "Chicken feet deep-fried until crispy and tossed with garlic.",
+        "section_km": null,
+        "section_en": null,
+        "category": "chicken",
+        "tags": [
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "10000៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវឆាម្រេច",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Clams with Pepper",
+        "description_en": "Clams stir-fried with black or green pepper.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវឆាអំបិលទុំ",
+        "name_printed_latin": null,
+        "name_en": "Stir-fried Clams with Salt and Garlic",
+        "description_en": "Clams stir-fried in a savory sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.9,
+        "notes": "The word 'ទុំ' (tum) is unusual in this context and may be a typo for 'ខ្ទឹម' (khteum - garlic)."
+      },
+      {
+        "name_km": "ងាវស្រះ",
+        "name_printed_latin": null,
+        "name_en": "Fresh Clams",
+        "description_en": "Raw or lightly blanched clams, often served with a dipping sauce. 'Srah' literally means 'pond' but implies fresh in this context.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ភ្លាបង្គា",
+        "name_printed_latin": null,
+        "name_en": "Shrimp Salad",
+        "description_en": "A classic Khmer salad with raw or lightly cooked shrimp, herbs, and a lime-based dressing.",
+        "section_km": null,
+        "section_en": null,
+        "category": "seafood",
+        "tags": [
+          "salad",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹងជំនីអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Pork Ribs with Salt and Chili",
+        "description_en": "Fried or grilled pork ribs seasoned with salt and chili.",
+        "section_km": null,
+        "section_en": null,
+        "category": "pork",
+        "tags": [
+          "fried",
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "12000៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់គោអាំងអំបិលម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Beef with Salt and Chili",
+        "description_en": "Slices of beef grilled and served with a salt and chili dipping sauce.",
+        "section_km": null,
+        "section_en": null,
+        "category": "beef",
+        "tags": [
+          "grilled"
+        ],
+        "prices": [
+          {
+            "price_text": "15000៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "image": "2026-07-20_22-32-57.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:19:23.917Z",
+  "seconds": 45.1,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 5409,
+    "total_tokens": 8184,
+    "cost": 0.05755875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.05755875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.05409
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2619,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": null,
+      "name_en": null,
+      "visible": false
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "មាន់លីង អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken with Salt and Chili",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់ជ្រូក បី ជាន់ លីង អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Three-Layer Pork Belly with Salt and Chili",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹង ជំនីលីង អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Grilled Pork Ribs with Salt and Chili",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "grilled",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សាច់ជ្រូក បី ជាន់ បំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Three-Layer Pork Belly",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ស្លាបមាន់ បំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Chicken Wings",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "មាន់លីង គល់ ស្លឹក គ្រែ",
+        "name_printed_latin": null,
+        "name_en": "Grilled Chicken with Lemongrass Stems",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "chicken",
+        "tags": [
+          "chicken",
+          "grilled",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ពោះវៀន បំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Intestines",
+        "description_en": "Typically pork intestines.",
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១៦០០០៛",
+            "amount": 16000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "សៃយ៉រ បង្គា បំពង",
+        "name_printed_latin": null,
+        "name_en": "Fried Shrimp Spring Rolls",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "fried",
+          "snack"
+        ],
+        "prices": [
+          {
+            "price_text": "១០០០០៛",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ងាវអប់ អំបិល ម្ទេស",
+        "name_printed_latin": null,
+        "name_en": "Steamed Clams with Salt and Chili",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "seafood",
+        "tags": [
+          "seafood",
+          "spicy"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "អណ្តាត ទា បំពង ខ្ទឹម ស",
+        "name_printed_latin": null,
+        "name_en": "Fried Duck Tongue with Garlic",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "duck",
+        "tags": [
+          "duck",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១៥០០០៛",
+            "amount": 15000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "ឆ្អឹង ជំនីបំពង ខ្ទឹម ស",
+        "name_printed_latin": null,
+        "name_en": "Fried Pork Ribs with Garlic",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "pork",
+        "tags": [
+          "pork",
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "កង្កែប បំពង ខ្ទឹម ស",
+        "name_printed_latin": null,
+        "name_en": "Fried Frog with Garlic",
+        "description_en": null,
+        "section_km": "មុខម្ហូបលីង / បំពង",
+        "section_en": "Grilled Dishes / Fried Dishes",
+        "category": "other",
+        "tags": [
+          "fried"
+        ],
+        "prices": [
+          {
+            "price_text": "១២០០០៛",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      }
+    ]
+  }
+}

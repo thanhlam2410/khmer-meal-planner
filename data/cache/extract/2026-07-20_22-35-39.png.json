@@ -1,0 +1,423 @@
+{
+  "image": "2026-07-20_22-35-39.png",
+  "model": "google/gemini-2.5-pro",
+  "extracted_at": "2026-10-02T04:22:42.555Z",
+  "seconds": 193.2,
+  "usage": {
+    "prompt_tokens": 2775,
+    "completion_tokens": 6525,
+    "total_tokens": 9300,
+    "cost": 0.06871875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.06871875,
+      "upstream_inference_prompt_cost": 0.00346875,
+      "upstream_inference_completions_cost": 0.06525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3058,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "result": {
+    "restaurant": {
+      "name_km": "រចនា បុកល្ហុង",
+      "name_en": "Rachana Papaya Salad",
+      "visible": true
+    },
+    "image_quality": "good",
+    "rotation_degrees": 0,
+    "items": [
+      {
+        "name_km": "បុកនំបញ្ចុក",
+        "name_printed_latin": "Hit the noodles",
+        "name_en": "Pounded Rice Noodle Salad",
+        "description_en": "Spicy salad with fermented rice noodles, vegetables, and dressing.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "noodle",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(7000R)",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកស្វាយ",
+        "name_printed_latin": "Bok Svay",
+        "name_en": "Green Mango Salad",
+        "description_en": "Spicy salad with shredded green mango.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "salad",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(7000R)",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកកំពីងរាជ",
+        "name_printed_latin": "Hit Kamping Reach",
+        "name_en": "Pounded Santol Salad",
+        "description_en": "Spicy salad made with santol fruit (cotton fruit).",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "salad",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "10000",
+            "amount": 10000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": "Price is handwritten. Currency is assumed to be KHR based on context."
+      },
+      {
+        "name_km": "បុកកន្ទួត",
+        "name_printed_latin": "Hit the bundle",
+        "name_en": "Pounded Star Gooseberry Salad",
+        "description_en": "Spicy salad made with star gooseberries.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "salad",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(8000R)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងខ្យង",
+        "name_printed_latin": "Hit the snail papaya",
+        "name_en": "Papaya Salad with Snails",
+        "description_en": "Spicy green papaya salad with snails.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(8000R)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងជើងមាន់",
+        "name_printed_latin": "Hit the chicken leg papaya",
+        "name_en": "Papaya Salad with Chicken Feet",
+        "description_en": "Spicy green papaya salad with chicken feet.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "chicken",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(8000R)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងបំពង",
+        "name_printed_latin": "Hit the fried papaya",
+        "name_en": "Fried Papaya Salad",
+        "description_en": "Crispy fried shredded papaya served with a spicy dipping sauce.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "salad",
+        "tags": [
+          "fried",
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងត្រីសាម៉ុន",
+        "name_printed_latin": "Beat the salmon papaya",
+        "name_en": "Papaya Salad with Salmon",
+        "description_en": "Spicy green papaya salad with pieces of salmon.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "fish",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(18000R)",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងត្រីចូណា",
+        "name_printed_latin": "Hit the Tuna",
+        "name_en": "Papaya Salad with Tuna",
+        "description_en": "Spicy green papaya salad with pieces of tuna.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "fish",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(18000R)",
+            "amount": 18000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកសណ្តែកគួរ",
+        "name_printed_latin": "Beat the beans Should",
+        "name_en": "Pounded Long Bean Salad",
+        "description_en": "Spicy salad made with pounded long beans.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "vegetable",
+        "tags": [
+          "spicy",
+          "vegetables",
+          "vegetarian"
+        ],
+        "prices": [
+          {
+            "price_text": "(7000R)",
+            "amount": 7000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកពោត",
+        "name_printed_latin": "Hit the Corn",
+        "name_en": "Pounded Corn Salad",
+        "description_en": "Spicy salad made with corn kernels.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "vegetable",
+        "tags": [
+          "spicy",
+          "vegetables",
+          "vegetarian"
+        ],
+        "prices": [],
+        "confidence": 0.8,
+        "notes": "The price for this item is cut off at the bottom of the menu."
+      },
+      {
+        "name_km": "បុកពោតបង្គាស្រស់",
+        "name_printed_latin": "Beat Fresh corn & Shrimp",
+        "name_en": "Pounded Fresh Corn and Shrimp Salad",
+        "description_en": "Spicy salad with corn kernels and fresh shrimp.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(12000R)",
+            "amount": 12000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកពោតក្តាមសេះ",
+        "name_printed_latin": "Hit the horse crab corn",
+        "name_en": "Pounded Corn and Blue Swimmer Crab Salad",
+        "description_en": "Spicy salad with corn kernels and blue swimmer crab (known as horse crab).",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "seafood",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(13000R)",
+            "amount": 13000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកមី",
+        "name_printed_latin": "Bok Mi",
+        "name_en": "Pounded Instant Noodle Salad",
+        "description_en": "Spicy salad made with instant noodles and vegetables.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "noodle",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(8000R)",
+            "amount": 8000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 1,
+        "notes": null
+      },
+      {
+        "name_km": "បុកល្ហុងណែម",
+        "name_printed_latin": "Hit the Nam papaya",
+        "name_en": "Papaya Salad with Fermented Pork Sausage",
+        "description_en": "Spicy green papaya salad with 'Naem', a type of fermented pork sausage.",
+        "section_km": "បុកល្ហុង",
+        "section_en": "Pounded Salads",
+        "category": "pork",
+        "tags": [
+          "spicy",
+          "vegetables"
+        ],
+        "prices": [
+          {
+            "price_text": "(9000R)",
+            "amount": 9000,
+            "currency": "KHR",
+            "variant_km": null,
+            "variant_en": null,
+            "unit_km": null,
+            "unit_en": null
+          }
+        ],
+        "confidence": 0.95,
+        "notes": "The price is slightly obscured but appears to be 9000R."
+      }
+    ]
+  }
+}
