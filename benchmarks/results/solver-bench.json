@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "generated_at": "2026-10-02T05:56:23.894Z",
+    "node": "v24.12.0",
+    "dataset": {
+      "generated_at": "2026-10-02T04:49:53.086Z",
+      "extract_model": "google/gemini-2.5-pro",
+      "crosscheck_model": "anthropic/claude-opus-5.5",
+      "riel_per_usd": 4000,
+      "source_images": 31,
+      "restaurants": 12,
+      "items": 546,
+      "note": "Original Khmer text is kept in *_km fields and prices[].price_text. USD prices are computed in code at a fixed rate."
+    },
+    "runs_per_scenario": 200
+  },
+  "results": [
+    {
+      "name": "brief: $10 chicken + vegetables + 2 beers",
+      "request": {
+        "budget_usd": 10,
+        "wants": [
+          {
+            "tag": "chicken",
+            "qty": 1
+          },
+          {
+            "tag": "vegetables",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 2
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.21,
+        "p95": 0.39,
+        "max": 0.86,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 5.5,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Chicken with Rice (8000៛ ≈ $2) @ Rainbow",
+          "1× Papaya Salad (8000៛ ≈ $2) @ Rainbow",
+          "2× Anchor Beer (3.000៛ ≈ $0.75) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 7.51
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "brief at $4 (over budget → 2-stop option)",
+      "request": {
+        "budget_usd": 4,
+        "wants": [
+          {
+            "tag": "chicken",
+            "qty": 1
+          },
+          {
+            "tag": "vegetables",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 2
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.23,
+        "p95": 0.35,
+        "max": 0.71,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 5.5,
+        "within_budget": false,
+        "over_budget_by_usd": 1.5,
+        "lines": [
+          "1× Chicken with Rice (8000៛ ≈ $2) @ Rainbow",
+          "1× Papaya Salad (8000៛ ≈ $2) @ Rainbow",
+          "2× Anchor Beer (3.000៛ ≈ $0.75) @ Rainbow"
+        ]
+      },
+      "within_budget_option": {
+        "restaurants": [
+          "The Street",
+          "Rainbow"
+        ],
+        "total_usd": 3.76
+      },
+      "alternatives": [
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 7.51
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "The best plan (1 restaurant) is over budget.",
+        "A plan within budget exists if you visit 2 restaurants.",
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "no budget: chicken + 2 beers",
+      "request": {
+        "wants": [
+          {
+            "tag": "chicken",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 2
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.13,
+        "p95": 0.2,
+        "max": 0.27,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 3.5,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Chicken with Rice (8000៛ ≈ $2) @ Rainbow",
+          "2× Anchor Beer (3.000៛ ≈ $0.75) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 3.76
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar.",
+        "No budget was given: plans are not limited by price."
+      ]
+    },
+    {
+      "name": "dish name: $10 oysters",
+      "request": {
+        "budget_usd": 10,
+        "wants": [
+          {
+            "tag": "oyster",
+            "qty": 1
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.23,
+        "p95": 0.32,
+        "max": 0.44,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "The Street"
+        ],
+        "total_usd": 3,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Oysters (1ចាន/12000៛ ≈ $3) @ The Street"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 5
+        },
+        {
+          "restaurants": [
+            "Vimean Ekareach Rice Shop (Late Night Rice)"
+          ],
+          "total_usd": 10
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "premium: $100 feast for two",
+      "request": {
+        "budget_usd": 100,
+        "style": "premium",
+        "wants": [
+          {
+            "tag": "seafood",
+            "qty": 1
+          },
+          {
+            "tag": "beef",
+            "qty": 1
+          },
+          {
+            "tag": "vegetables",
+            "qty": 1
+          },
+          {
+            "tag": "soup",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 2
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 1.69,
+        "p95": 1.98,
+        "max": 2.14,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 52.25,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Grilled Meat (40,000 ≈ $10) @ Rainbow",
+          "1× Grilled Meat Soup (55,000 ≈ $13.75) @ Rainbow",
+          "1× Rainbow Soup (45,000 ≈ $11.25) @ Rainbow",
+          "1× Black Chicken Soup (45,000 ≈ $11.25) @ Rainbow",
+          "2× Singha (Thai large bottle) (12.000៛ ≈ $3) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [],
+      "unavailable_wants": [],
+      "notes": [
+        "Premium: the most generous single-restaurant spreads within $100.",
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "$10 duck + juice + beer",
+      "request": {
+        "budget_usd": 10,
+        "wants": [
+          {
+            "tag": "duck",
+            "qty": 1
+          },
+          {
+            "tag": "juice",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 1
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.46,
+        "p95": 0.53,
+        "max": 0.6,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 3.51,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Fried Rice with Sausage and Duck Egg (8500៛ ≈ $2.13) @ Rainbow",
+          "1× Orange Juice / Fruit Juice (2.500៛ ≈ $0.63) @ Rainbow",
+          "1× Anchor Beer (3.000៛ ≈ $0.75) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 6.88
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "stress: 6 wants, 3 dishes each kind",
+      "request": {
+        "budget_usd": 60,
+        "wants": [
+          {
+            "tag": "chicken",
+            "qty": 2
+          },
+          {
+            "tag": "vegetables",
+            "qty": 2
+          },
+          {
+            "tag": "seafood",
+            "qty": 2
+          },
+          {
+            "tag": "pork",
+            "qty": 1
+          },
+          {
+            "tag": "rice",
+            "qty": 1
+          },
+          {
+            "tag": "beer",
+            "qty": 4
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 7.84,
+        "p95": 8.77,
+        "max": 9.71,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 19.76,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Chicken with Rice (8000៛ ≈ $2) @ Rainbow",
+          "1× Fried Chicken Wings (10000៛ ≈ $2.5) @ Rainbow",
+          "1× Papaya Salad (8000៛ ≈ $2) @ Rainbow",
+          "1× French Fries (8000៛ ≈ $2) @ Rainbow",
+          "1× Seafood Fried Rice (9500៛ ≈ $2.38) @ Rainbow",
+          "1× Crispy Noodles with Seafood (9500៛ ≈ $2.38) @ Rainbow",
+          "1× Ham and Cheese Sandwich (8000៛ ≈ $2) @ Rainbow",
+          "1× Fried Pork with Rice (6000៛ ≈ $1.5) @ Rainbow",
+          "4× Anchor Beer (3.000៛ ≈ $0.75) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    },
+    {
+      "name": "unavailable dish: pizza",
+      "request": {
+        "budget_usd": 20,
+        "wants": [
+          {
+            "tag": "pizza",
+            "qty": 1
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.21,
+        "p95": 0.24,
+        "max": 0.39,
+        "runs": 200
+      },
+      "found": false,
+      "best": null,
+      "within_budget_option": null,
+      "alternatives": [],
+      "unavailable_wants": [
+        "pizza"
+      ],
+      "notes": [
+        "No restaurant in the dataset serves: pizza."
+      ]
+    },
+    {
+      "name": "synonym: wine → alcohol category",
+      "request": {
+        "budget_usd": 20,
+        "wants": [
+          {
+            "tag": "wine",
+            "qty": 1
+          }
+        ]
+      },
+      "latency_ms": {
+        "p50": 0.21,
+        "p95": 0.25,
+        "max": 0.41,
+        "runs": 200
+      },
+      "found": true,
+      "best": {
+        "restaurants": [
+          "Rainbow"
+        ],
+        "total_usd": 1.63,
+        "within_budget": true,
+        "over_budget_by_usd": 0,
+        "lines": [
+          "1× Bruntys Cider (6.500៛ ≈ $1.63) @ Rainbow"
+        ]
+      },
+      "within_budget_option": null,
+      "alternatives": [
+        {
+          "restaurants": [
+            "Tbal Khmer"
+          ],
+          "total_usd": 2.5
+        },
+        {
+          "restaurants": [
+            "The Street Cambodia TK branch"
+          ],
+          "total_usd": 2.5
+        }
+      ],
+      "unavailable_wants": [],
+      "notes": [
+        "Prices come from menu photos (~2024) at a fixed 4000 riel per US dollar."
+      ]
+    }
+  ]
+}

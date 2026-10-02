@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-10-02T05:55:32+00:00",
+  "source": "logs/llm-usage.jsonl",
+  "calls": 42,
+  "total_cost_usd": 3.5352,
+  "by_stage_model": [
+    {
+      "stage": "crosscheck",
+      "model": "anthropic/claude-opus-5.5",
+      "calls": 10,
+      "failed_attempts": 0,
+      "prompt_tokens": 68527,
+      "completion_tokens": 31055,
+      "reasoning_tokens": 11603,
+      "cost_usd": 0.8952,
+      "cost_per_success_usd": 0.0895,
+      "latency_s": {
+        "p50": 24.8,
+        "p95": 64.5,
+        "max": 64.5,
+        "mean": 33.6
+      },
+      "errors": []
+    },
+    {
+      "stage": "extract",
+      "model": "google/gemini-2.5-pro",
+      "calls": 32,
+      "failed_attempts": 1,
+      "prompt_tokens": 91065,
+      "completion_tokens": 253189,
+      "reasoning_tokens": 117762,
+      "cost_usd": 2.64,
+      "cost_per_success_usd": 0.0852,
+      "latency_s": {
+        "p50": 50.9,
+        "p95": 154.6,
+        "max": 179.3,
+        "mean": 62.3
+      },
+      "errors": [
+        "Model did not return JSON: "
+      ]
+    }
+  ]
+}

@@ -1,0 +1,489 @@
+{
+  "generated_at": "2026-10-02T05:55:32+00:00",
+  "method": "Claude Opus 5.5 judged each extracted item against the menu image (true/false per field). rate = agreed / judged; 95% Wilson interval. Model-vs-model agreement, not human ground truth.",
+  "sample": {
+    "images_total": 31,
+    "images_audited": 10,
+    "items_audited": 165,
+    "selection": "random, ceil(31 × 0.3) = 10 images, seed 42 (scripts/extraction/extract.py)"
+  },
+  "fields": {
+    "exists": {
+      "agreed": 165,
+      "judged": 165,
+      "rate_pct": 100.0,
+      "ci95_pct": [
+        97.7,
+        100.0
+      ],
+      "predicted": null
+    },
+    "name_km_ok": {
+      "agreed": 145,
+      "judged": 165,
+      "rate_pct": 87.9,
+      "ci95_pct": [
+        82.0,
+        92.0
+      ],
+      "predicted": "60–75%"
+    },
+    "translation_ok": {
+      "agreed": 153,
+      "judged": 165,
+      "rate_pct": 92.7,
+      "ci95_pct": [
+        87.7,
+        95.8
+      ],
+      "predicted": "85–90%"
+    },
+    "price_ok": {
+      "agreed": 160,
+      "judged": 165,
+      "rate_pct": 97.0,
+      "ci95_pct": [
+        93.1,
+        98.7
+      ],
+      "predicted": "88–93%"
+    },
+    "category_ok": {
+      "agreed": 160,
+      "judged": 165,
+      "rate_pct": 97.0,
+      "ci95_pct": [
+        93.1,
+        98.7
+      ],
+      "predicted": "90–95%"
+    }
+  },
+  "all_fields_correct": {
+    "agreed": 131,
+    "judged": 165,
+    "rate_pct": 79.4,
+    "ci95_pct": [
+      72.6,
+      84.9
+    ]
+  },
+  "missing_items_reported": 2,
+  "price_disputes_by_image": [
+    "2026-07-21_11-16-25"
+  ],
+  "per_image": [
+    {
+      "image": "2026-07-20_22-23-50.png",
+      "items_extracted": 9,
+      "items_judged": 9,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 88.9,
+      "translation_ok": 88.9,
+      "price_ok": 100.0,
+      "category_ok": 88.9,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.058316
+    },
+    {
+      "image": "2026-07-20_22-24-59.png",
+      "items_extracted": 15,
+      "items_judged": 15,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 66.7,
+      "translation_ok": 100.0,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.072748
+    },
+    {
+      "image": "2026-07-20_22-27-14.png",
+      "items_extracted": 35,
+      "items_judged": 35,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 94.3,
+      "translation_ok": 94.3,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.135192
+    },
+    {
+      "image": "2026-07-20_22-31-05.png",
+      "items_extracted": 6,
+      "items_judged": 6,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 100.0,
+      "translation_ok": 83.3,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.051096
+    },
+    {
+      "image": "2026-07-20_22-31-15.png",
+      "items_extracted": 6,
+      "items_judged": 6,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 100.0,
+      "translation_ok": 100.0,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.049484
+    },
+    {
+      "image": "2026-07-20_22-36-45.png",
+      "items_extracted": 9,
+      "items_judged": 9,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 88.9,
+      "translation_ok": 88.9,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.061884
+    },
+    {
+      "image": "2026-07-20_22-43-25.png",
+      "items_extracted": 9,
+      "items_judged": 9,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 77.8,
+      "translation_ok": 100.0,
+      "price_ok": 100.0,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.064836
+    },
+    {
+      "image": "2026-07-20_22-47-26.png",
+      "items_extracted": 15,
+      "items_judged": 15,
+      "missing_items_reported": 0,
+      "exists": 100.0,
+      "name_km_ok": 80.0,
+      "translation_ok": 86.7,
+      "price_ok": 100.0,
+      "category_ok": 93.3,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.092624
+    },
+    {
+      "image": "2026-07-21_11-15-08.png",
+      "items_extracted": 45,
+      "items_judged": 45,
+      "missing_items_reported": 1,
+      "exists": 100.0,
+      "name_km_ok": 91.1,
+      "translation_ok": 88.9,
+      "price_ok": 100.0,
+      "category_ok": 93.3,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.1703
+    },
+    {
+      "image": "2026-07-21_11-16-25.png",
+      "items_extracted": 16,
+      "items_judged": 16,
+      "missing_items_reported": 1,
+      "exists": 100.0,
+      "name_km_ok": 87.5,
+      "translation_ok": 100.0,
+      "price_ok": 68.8,
+      "category_ok": 100.0,
+      "judge_model": "anthropic/claude-opus-5.5",
+      "judge_cost_usd": 0.138728
+    }
+  ],
+  "disputed_items": [
+    {
+      "id": "2026-07-20_22-23-50#003",
+      "name_en": "Rice with Pak Lov",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "The label reads បាយផាក់ឡូ, with no final វ. Pak lov is braised five-spice pork, so the pork category fits; the egg/soup tags are plausible. No price is printed."
+    },
+    {
+      "id": "2026-07-20_22-23-50#006",
+      "name_en": "Shaken Duck Egg (Balut)",
+      "failed": [
+        "translation_ok",
+        "category_ok"
+      ],
+      "note": "ក្រឡុក here means beaten or scrambled, so this is a scrambled duck egg (omelette), as the photo shows. It is not balut, which is ពងទាកូន. Suggested name_en: 'Scrambled Duck Egg'. The category should be 'egg', not 'snack'. No price is printed."
+    },
+    {
+      "id": "2026-07-20_22-24-59#003",
+      "name_en": "Grilled Clams",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as គ្រុំអាំង. The extraction dropped the ុ vowel."
+    },
+    {
+      "id": "2026-07-20_22-24-59#008",
+      "name_en": "Oysters",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as អ័យស្ទ័យ (Oyster). The extraction wrote the second syllable as ស្ទួយ instead of ស្ទ័យ."
+    },
+    {
+      "id": "2026-07-20_22-24-59#009",
+      "name_en": "Grilled Oysters",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as អ័យស្ទ័យអាំង (Oyster). The extraction wrote ស្ទួយ instead of ស្ទ័យ."
+    },
+    {
+      "id": "2026-07-20_22-24-59#010",
+      "name_en": "Oysters on Ice",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as អ័យស្ទ័យទឹកកក. The extraction used subscript វ (ស្វ័យ) instead of ទ (ស្ទ័យ)."
+    },
+    {
+      "id": "2026-07-20_22-24-59#015",
+      "name_en": "Buttered Bread",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as នំប៉័ងប៊ឺ (butter = ប៊ឺ), not ប៊រ."
+    },
+    {
+      "id": "2026-07-20_22-27-14#003",
+      "name_en": "White Rice",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "D-3 Khmer is partly hidden by glare. It appears to read 'បាយស ១ចាន' (one plate of rice), not just 'បាយស'. The extraction dropped the quantity word."
+    },
+    {
+      "id": "2026-07-20_22-27-14#007",
+      "name_en": "Sweet and Sour Fried Shrimp",
+      "failed": [
+        "translation_ok"
+      ],
+      "note": "ជូរហឹរ means sour and spicy, not sweet and sour. Better: 'Stir-fried Shrimp, Sour and Spicy'."
+    },
+    {
+      "id": "2026-07-20_22-27-14#035",
+      "name_en": "Khmer Dessert with Sticky Rice",
+      "failed": [
+        "name_km_ok",
+        "translation_ok"
+      ],
+      "note": "Printed Khmer is 'បង្អែមខ្នុរបាយដំណើប', where ខ្នុរ means jackfruit; it is not ខ្មែរ (Khmer). The English should be 'Jackfruit Dessert with Sticky Rice'."
+    },
+    {
+      "id": "2026-07-20_22-31-05#002",
+      "name_en": "Water Spinach Stem and Pork Soup",
+      "failed": [
+        "translation_ok"
+      ],
+      "note": "ស្ពៃចង្កឹះ is choy sum/bok choy stems, not water spinach (ត្រកួន). A better name is 'Choy Sum Soup with Pork'."
+    },
+    {
+      "id": "2026-07-20_22-36-45#003",
+      "name_en": "Rice with Phak Lov",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "The label reads បាយផាក់ឡូ, with no final វ. The extraction added វ (ផាក់ឡូវ). Pha lo is braised pork with egg, so 'Rice with Braised Pork & Egg (Pha Lo)' would be a clearer English name. No price is printed."
+    },
+    {
+      "id": "2026-07-20_22-36-45#006",
+      "name_en": "Shaken Duck Egg (Balut)",
+      "failed": [
+        "translation_ok"
+      ],
+      "note": "ពងទាក្រឡុក is scrambled/shaken duck egg, and the photo shows a scrambled egg dish. It is not balut, which would be ពងទាកូន. Suggested English name: 'Scrambled Duck Egg'. No price is printed."
+    },
+    {
+      "id": "2026-07-20_22-43-25#002",
+      "name_en": "Chicken with Pickled Lime Soup (with Rice)",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "The printed Khmer is shorter than the extraction. It reads roughly 'ស្ងោរ…មាន់ (បាយ)', and 'ក្រូចឆ្មា' does not appear to be printed. The extracted Khmer looks reconstructed from the English rather than transcribed. Re-check the middle word."
+    },
+    {
+      "id": "2026-07-20_22-43-25#003",
+      "name_en": "Spicy Sour Soup with Prawn (with Rice)",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "This name is handwritten on a pasted-over label. The handwriting appears to include 'ហឹរ' (spicy), and the item likely refers to prawn rather than generic 'គ្រឿងសមុទ្រ'. The extracted 'សម្លម្ជូរគ្រឿងសមុទ្រ' does not match the handwriting exactly. Prices $5.75 / $12.50 match."
+    },
+    {
+      "id": "2026-07-20_22-47-26#001",
+      "name_en": "Special Beef Offal",
+      "failed": [
+        "name_km_ok",
+        "translation_ok"
+      ],
+      "note": "The first word is printed as ហ៊ូ, the same glyph as the next line. It is not ហ្វី. The name should be ហ៊ូពិសេសគ្រឿងក្នុងគោ, which means 'Special Hu (noodle soup) with Beef Offal'. Category 'noodle' would also fit."
+    },
+    {
+      "id": "2026-07-20_22-47-26#002",
+      "name_en": "Hu",
+      "failed": [
+        "category_ok"
+      ],
+      "note": "Hu (hu tieu) is a noodle soup. The category should be 'noodle' with the tag 'soup', not 'other'. 'Hu Tieu Noodle Soup' would be a clearer English name."
+    },
+    {
+      "id": "2026-07-20_22-47-26#009",
+      "name_en": "Grilled or Fried Baby Horseshoe Crab",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "The print reads ពងក្រចកូនដុត ឬបំពងម្សៅ, with no bantoc on ពង. The extraction added a spurious ់."
+    },
+    {
+      "id": "2026-07-20_22-47-26#014",
+      "name_en": "Bong Coffee",
+      "failed": [
+        "name_km_ok",
+        "translation_ok"
+      ],
+      "note": "The print reads កាហ្វេដូង, which means Coconut Coffee. It does not read កាហ្វេបូង."
+    },
+    {
+      "id": "2026-07-21_11-15-08#001",
+      "name_en": "Rainbow Fried Rice",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "Printed as បាយឥន្ទធនូ, with ទ rather than ធ before ធនូ."
+    },
+    {
+      "id": "2026-07-21_11-15-08#005",
+      "name_en": "Sour Fried Rice",
+      "failed": [
+        "name_km_ok",
+        "translation_ok"
+      ],
+      "note": "Printed as បាយឆាម្នាស, which is Pineapple Fried Rice, not បាយឆាម្ជូរ/Sour Fried Rice."
+    },
+    {
+      "id": "2026-07-21_11-15-08#008",
+      "name_en": "Fried Rice with Egg Yolk",
+      "failed": [
+        "translation_ok"
+      ],
+      "note": "Likely egg-wrapped rice rather than 'with egg yolk'."
+    },
+    {
+      "id": "2026-07-21_11-15-08#024",
+      "name_en": "Spicy Stir-fry with Holy Basil",
+      "failed": [
+        "translation_ok"
+      ],
+      "note": "ឆាក្តៅ means 'hot stir-fry'; holy basil is not printed."
+    },
+    {
+      "id": "2026-07-21_11-15-08#027",
+      "name_en": "Stir-fried Clams",
+      "failed": [
+        "name_km_ok",
+        "translation_ok",
+        "category_ok"
+      ],
+      "note": "The printed name is not ឆាងាវ; it looks like ឆាហាំង្ស/ឆាម៉ាំង… (unclear). It sits in the chicken/duck/frog/eel section, so the dish is not clams and not seafood."
+    },
+    {
+      "id": "2026-07-21_11-15-08#028",
+      "name_en": "Roti",
+      "failed": [
+        "category_ok"
+      ],
+      "note": "Listed in the chicken/duck/frog/eel section, so this is likely a meat preparation rather than a snack."
+    },
+    {
+      "id": "2026-07-21_11-15-08#029",
+      "name_en": "Krat",
+      "failed": [
+        "category_ok"
+      ],
+      "note": "Listed in the chicken/duck/frog/eel section, not seafood."
+    },
+    {
+      "id": "2026-07-21_11-15-08#035",
+      "name_en": "Spicy Instant Noodles",
+      "failed": [
+        "name_km_ok",
+        "translation_ok"
+      ],
+      "note": "Printed as មីកន្ទាំង, which is Mee Kantang (stir-fried flat noodles), not spicy instant noodles."
+    },
+    {
+      "id": "2026-07-21_11-16-25#001",
+      "name_en": "Stir-fried Chicken, Fish, Pork, or Beef with Ginger",
+      "failed": [
+        "price_ok"
+      ],
+      "note": "Row 1 exists. Its price cells are obscured by a handwritten sticker that seems to sit between rows 1 and 2, so the price cannot be confirmed. Leaving prices empty may be wrong, but the correct values cannot be read reliably."
+    },
+    {
+      "id": "2026-07-21_11-16-25#002",
+      "name_en": "Stir-fried Fresh Squid with Light Peppers",
+      "failed": [
+        "price_ok"
+      ],
+      "note": "The printed small-plate price under the sticker reads 2.00$, not 2.50$. Handwritten stickers with Khmer numerals (apparently ៤$ / ៦$) cover these cells and may be updated prices. Uncertain."
+    },
+    {
+      "id": "2026-07-21_11-16-25#004",
+      "name_en": "Lok Lak with Beef, Pork, Chicken, or Fish",
+      "failed": [
+        "price_ok"
+      ],
+      "note": "The large plate shows 6.00$, but the small-plate cell has a handwritten sticker (looks like ៤$) that the extraction omitted. The exact value is uncertain."
+    },
+    {
+      "id": "2026-07-21_11-16-25#005",
+      "name_en": "Spicy Stir-fry (Kroeung or Wild Style) with Beef, Pork, Chicken, Duck, Eel, or Frog",
+      "failed": [
+        "price_ok"
+      ],
+      "note": "The price cells for this row and the next are covered by handwritten stickers (about ៤$ / ៦$), so the assignment of 6.00$ is not clearly supported. The 'seafood' tag for eel/frog is loose but acceptable."
+    },
+    {
+      "id": "2026-07-21_11-16-25#009",
+      "name_en": "Stir-fried Beef or Pork with Tomatoes",
+      "failed": [
+        "price_ok"
+      ],
+      "note": "The price cells are covered by a handwritten sticker (looks like ៤$ / ៦$ in Khmer numerals). Prices should not be empty, but the exact values are uncertain."
+    },
+    {
+      "id": "2026-07-21_11-16-25#014",
+      "name_en": "Stir-fried Pork Intestine with Green Peppercorns",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "The printed Khmer for this row does not clearly read ពោះតាន់ឆាម្រេចខ្ចី. It may be a different cooking method, or swapped with the next row. Low legibility."
+    },
+    {
+      "id": "2026-07-21_11-16-25#015",
+      "name_en": "Salty and Sweet Stir-fried Pork Intestine",
+      "failed": [
+        "name_km_ok"
+      ],
+      "note": "This last intestine row appears to end in ...ឆាម្រេចខ្ចី rather than ...ឆាប្រៃផ្អែម, which suggests a misread or a swap with #014. Uncertain."
+    }
+  ]
+}

@@ -13,7 +13,8 @@
     "predev": "cp data/menus.json public/menus.json",
     "prebuild": "cp data/menus.json public/menus.json",
     "build:debug": "cp data/menus.json public/menus.json && tsc -b && vite build --mode debug",
-    "diagrams": "for f in docs/diagrams/*.mmd; do npx -y @mermaid-js/mermaid-cli -i \"$f\" -o \"${f%.mmd}.png\" -b white -s 2; done"
+    "diagrams": "for f in docs/diagrams/*.mmd; do npx -y @mermaid-js/mermaid-cli -i \"$f\" -o \"${f%.mmd}.png\" -b white -s 2; done",
+    "bench": "python3 benchmarks/extraction_accuracy.py && python3 benchmarks/llm_usage.py && node benchmarks/solver_bench.ts"
   },
   "dependencies": {
     "react": "^19.2.8",
